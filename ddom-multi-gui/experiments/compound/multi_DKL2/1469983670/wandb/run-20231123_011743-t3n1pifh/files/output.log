@@ -1,0 +1,29 @@
+('out_directory: '
+ './experiments/compound/multi_DKL2/1469983670/wandb/run-20231123_011743-t3n1pifh/files')
+The device used is : cuda
+[8.04357011e-05 1.55209298e-04 2.54620596e-04 4.14302588e-04
+ 6.38217224e-04 9.84181489e-04 1.50528217e-03 2.31866121e-03
+ 3.53105144e-03 5.40530577e-03 8.22762856e-03 1.25651040e-02
+ 1.91752106e-02 2.92109897e-02 4.44344599e-02 6.75275126e-02
+ 1.02493418e-01 1.55253617e-01 2.32940838e-01 3.12883848e-01]
+DEVICE: cuda
+/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/gpytorch/lazy/triangular_lazy_tensor.py:136: UserWarning: torch.triangular_solve is deprecated in favor of torch.linalg.solve_triangularand will be removed in a future PyTorch release.
+torch.linalg.solve_triangular has its arguments reversed and does not return a copy of one of the inputs.
+X = torch.triangular_solve(B, A).solution
+should be replaced with
+X = torch.linalg.solve_triangular(A, B). (Triggered internally at ../aten/src/ATen/native/BatchLinearAlgebra.cpp:2115.)
+  res = torch.triangular_solve(right_tensor, self.evaluate(), upper=self.upper).solution
+Epoch 1/200, Train Loss: 0.006479826437102424, Val Loss: 0.004412299036979675
+Epoch 2/200, Train Loss: 0.0028935335261954204, Val Loss: 0.0014729286283254623
+Epoch 3/200, Train Loss: 0.00010349967154777712, Val Loss: -0.0012495607435703277
+Epoch 4/200, Train Loss: -0.0023591194252173104, Val Loss: -0.0033116066455841065
+Traceback (most recent call last):
+  File "design_baselines/diff_multi/DKL_train_regression_x0_multi.py", line 713, in <module>
+    device=device,
+  File "design_baselines/diff_multi/DKL_train_regression_x0_multi.py", line 434, in run_classifier
+    loss.backward()
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/torch/_tensor.py", line 489, in backward
+    self, gradient, retain_graph, create_graph, inputs=inputs
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/torch/autograd/__init__.py", line 199, in backward
+    allow_unreachable=True, accumulate_grad=True)  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt

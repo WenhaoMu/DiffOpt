@@ -1,0 +1,102 @@
+('out_directory: '
+ './experiments/compound/multi_DKL1/1469983670/wandb/run-20231123_010434-0lbdlff1/files')
+The device used is : cuda
+[0.00316918 0.0072529  0.01241131 0.01619215 0.01927074 0.02262353
+ 0.02631122 0.03051457 0.03533518 0.04085936 0.04722409 0.05451293
+ 0.06284052 0.07218581 0.08231845 0.09331833 0.10262941 0.10205275
+ 0.09619775 0.07277971]
+DEVICE: cuda
+OUTPUT SHAPE:  torch.Size([128]) Y shape:  torch.Size([128])
+OUTPUT SHAPE:  torch.Size([128]) Y shape:  torch.Size([128])
+OUTPUT SHAPE:  torch.Size([128]) Y shape:  torch.Size([128])
+OUTPUT SHAPE:  torch.Size([128]) Y shape:  torch.Size([128])
+OUTPUT SHAPE:  torch.Size([128]) Y shape:  torch.Size([128])
+OUTPUT SHAPE:  torch.Size([128]) Y shape:  torch.Size([128])
+OUTPUT SHAPE:  torch.Size([128]) Y shape:  torch.Size([128])
+OUTPUT SHAPE:  torch.Size([128]) Y shape:  torch.Size([128])
+OUTPUT SHAPE:  torch.Size([128]) Y shape:  torch.Size([128])
+OUTPUT SHAPE:  torch.Size([128]) Y shape:  torch.Size([128])
+OUTPUT SHAPE:  torch.Size([128]) Y shape:  torch.Size([128])
+OUTPUT SHAPE:  torch.Size([128]) Y shape:  torch.Size([128])
+OUTPUT SHAPE:  torch.Size([128]) Y shape:  torch.Size([128])
+OUTPUT SHAPE:  torch.Size([128]) Y shape:  torch.Size([128])
+OUTPUT SHAPE:  torch.Size([128]) Y shape:  torch.Size([128])
+/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/gpytorch/lazy/triangular_lazy_tensor.py:136: UserWarning: torch.triangular_solve is deprecated in favor of torch.linalg.solve_triangularand will be removed in a future PyTorch release.
+torch.linalg.solve_triangular has its arguments reversed and does not return a copy of one of the inputs.
+X = torch.triangular_solve(B, A).solution
+should be replaced with
+X = torch.linalg.solve_triangular(A, B). (Triggered internally at ../aten/src/ATen/native/BatchLinearAlgebra.cpp:2115.)
+  res = torch.triangular_solve(right_tensor, self.evaluate(), upper=self.upper).solution
+OUTPUT SHAPE:  torch.Size([128]) Y shape:  torch.Size([128])
+OUTPUT SHAPE:  torch.Size([128]) Y shape:  torch.Size([128])
+OUTPUT SHAPE:  torch.Size([128]) Y shape:  torch.Size([128])
+OUTPUT SHAPE:  torch.Size([128]) Y shape:  torch.Size([128])
+OUTPUT SHAPE:  torch.Size([128]) Y shape:  torch.Size([128])
+OUTPUT SHAPE:  torch.Size([128]) Y shape:  torch.Size([128])
+OUTPUT SHAPE:  torch.Size([128]) Y shape:  torch.Size([128])
+OUTPUT SHAPE:  torch.Size([128]) Y shape:  torch.Size([128])
+OUTPUT SHAPE:  torch.Size([128]) Y shape:  torch.Size([128])
+OUTPUT SHAPE:  torch.Size([128]) Y shape:  torch.Size([128])
+OUTPUT SHAPE:  torch.Size([128]) Y shape:  torch.Size([128])
+OUTPUT SHAPE:  torch.Size([128]) Y shape:  torch.Size([128])
+OUTPUT SHAPE:  torch.Size([128]) Y shape:  torch.Size([128])
+OUTPUT SHAPE:  torch.Size([128]) Y shape:  torch.Size([128])
+OUTPUT SHAPE:  torch.Size([128]) Y shape:  torch.Size([128])
+OUTPUT SHAPE:  torch.Size([128]) Y shape:  torch.Size([128])
+OUTPUT SHAPE:  torch.Size([128]) Y shape:  torch.Size([128])
+OUTPUT SHAPE:  torch.Size([128]) Y shape:  torch.Size([128])
+OUTPUT SHAPE:  torch.Size([128]) Y shape:  torch.Size([128])
+OUTPUT SHAPE:  torch.Size([128]) Y shape:  torch.Size([128])
+OUTPUT SHAPE:  torch.Size([128]) Y shape:  torch.Size([128])
+OUTPUT SHAPE:  torch.Size([128]) Y shape:  torch.Size([128])
+OUTPUT SHAPE:  torch.Size([128]) Y shape:  torch.Size([128])
+OUTPUT SHAPE:  torch.Size([128]) Y shape:  torch.Size([128])
+OUTPUT SHAPE:  torch.Size([128]) Y shape:  torch.Size([128])
+OUTPUT SHAPE:  torch.Size([128]) Y shape:  torch.Size([128])
+OUTPUT SHAPE:  torch.Size([128]) Y shape:  torch.Size([128])
+OUTPUT SHAPE:  torch.Size([128]) Y shape:  torch.Size([128])
+OUTPUT SHAPE:  torch.Size([128]) Y shape:  torch.Size([128])
+OUTPUT SHAPE:  torch.Size([128]) Y shape:  torch.Size([128])
+OUTPUT SHAPE:  torch.Size([128]) Y shape:  torch.Size([128])
+OUTPUT SHAPE:  torch.Size([128]) Y shape:  torch.Size([128])
+OUTPUT SHAPE:  torch.Size([128]) Y shape:  torch.Size([128])
+OUTPUT SHAPE:  torch.Size([128]) Y shape:  torch.Size([128])
+OUTPUT SHAPE:  torch.Size([128]) Y shape:  torch.Size([128])
+OUTPUT SHAPE:  torch.Size([128]) Y shape:  torch.Size([128])
+OUTPUT SHAPE:  torch.Size([128]) Y shape:  torch.Size([128])
+OUTPUT SHAPE:  torch.Size([128]) Y shape:  torch.Size([128])
+OUTPUT SHAPE:  torch.Size([128]) Y shape:  torch.Size([128])
+OUTPUT SHAPE:  torch.Size([128]) Y shape:  torch.Size([128])
+OUTPUT SHAPE:  torch.Size([128]) Y shape:  torch.Size([128])
+Traceback (most recent call last):
+  File "design_baselines/diff_multi/DKL_train_regression_x0_multi.py", line 713, in <module>
+    device=device,
+  File "design_baselines/diff_multi/DKL_train_regression_x0_multi.py", line 401, in run_classifier
+    for train_X, train_Y,_ in train_loader:
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/torch/utils/data/dataloader.py", line 628, in __next__
+    data = self._next_data()
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/torch/utils/data/dataloader.py", line 1316, in _next_data
+    idx, data = self._get_data()
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/torch/utils/data/dataloader.py", line 1282, in _get_data
+    success, data = self._try_get_data()
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/torch/utils/data/dataloader.py", line 1120, in _try_get_data
+    data = self._data_queue.get(timeout=timeout)
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/multiprocessing/queues.py", line 113, in get
+    return _ForkingPickler.loads(res)
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/torch/multiprocessing/reductions.py", line 305, in rebuild_storage_fd
+    fd = df.detach()
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/multiprocessing/resource_sharer.py", line 57, in detach
+    with _resource_sharer.get_connection(self._id) as conn:
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/multiprocessing/resource_sharer.py", line 87, in get_connection
+    c = Client(address, authkey=process.current_process().authkey)
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/multiprocessing/connection.py", line 498, in Client
+    answer_challenge(c, authkey)
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/multiprocessing/connection.py", line 747, in answer_challenge
+    response = connection.recv_bytes(256)        # reject large message
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/multiprocessing/connection.py", line 216, in recv_bytes
+    buf = self._recv_bytes(maxlength)
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/multiprocessing/connection.py", line 411, in _recv_bytes
+    return self._recv(size)
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/multiprocessing/connection.py", line 379, in _recv
+    chunk = read(handle, remaining)
+KeyboardInterrupt

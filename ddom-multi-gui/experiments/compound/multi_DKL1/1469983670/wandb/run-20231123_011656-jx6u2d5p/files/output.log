@@ -1,0 +1,34 @@
+('out_directory: '
+ './experiments/compound/multi_DKL1/1469983670/wandb/run-20231123_011656-jx6u2d5p/files')
+The device used is : cuda
+[0.00316918 0.0072529  0.01241131 0.01619215 0.01927074 0.02262353
+ 0.02631122 0.03051457 0.03533518 0.04085936 0.04722409 0.05451293
+ 0.06284052 0.07218581 0.08231845 0.09331833 0.10262941 0.10205275
+ 0.09619775 0.07277971]
+DEVICE: cuda
+/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/gpytorch/lazy/triangular_lazy_tensor.py:136: UserWarning: torch.triangular_solve is deprecated in favor of torch.linalg.solve_triangularand will be removed in a future PyTorch release.
+torch.linalg.solve_triangular has its arguments reversed and does not return a copy of one of the inputs.
+X = torch.triangular_solve(B, A).solution
+should be replaced with
+X = torch.linalg.solve_triangular(A, B). (Triggered internally at ../aten/src/ATen/native/BatchLinearAlgebra.cpp:2115.)
+  res = torch.triangular_solve(right_tensor, self.evaluate(), upper=self.upper).solution
+Epoch 1/200, Train Loss: 0.005415574063857396, Val Loss: 0.0034700939655303957
+Epoch 2/200, Train Loss: 0.0020100254772437943, Val Loss: 0.0005559739619493485
+Epoch 3/200, Train Loss: -0.0008927975694597182, Val Loss: -0.0024182274341583254
+Epoch 4/200, Train Loss: -0.003821443114015791, Val Loss: -0.005388704001903534
+Epoch 5/200, Train Loss: -0.006681122084458669, Val Loss: -0.008184590816497802
+Epoch 6/200, Train Loss: -0.009333404395315383, Val Loss: -0.010506849765777588
+Epoch 7/200, Train Loss: -0.011606649756431579, Val Loss: -0.012572621822357178
+Epoch 8/200, Train Loss: -0.013307074374622769, Val Loss: -0.014296400189399719
+Epoch 9/200, Train Loss: -0.014461350136333042, Val Loss: -0.015160858750343323
+Epoch 10/200, Train Loss: -0.01492694263988071, Val Loss: -0.015150226712226867
+Traceback (most recent call last):
+  File "design_baselines/diff_multi/DKL_train_regression_x0_multi.py", line 713, in <module>
+    device=device,
+  File "design_baselines/diff_multi/DKL_train_regression_x0_multi.py", line 434, in run_classifier
+    loss.backward()
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/torch/_tensor.py", line 489, in backward
+    self, gradient, retain_graph, create_graph, inputs=inputs
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/torch/autograd/__init__.py", line 199, in backward
+    allow_unreachable=True, accumulate_grad=True)  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt
