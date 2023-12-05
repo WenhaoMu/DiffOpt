@@ -1,0 +1,2689 @@
+('out_directory: '
+ './experiments/dkitty/classifier_guided/1469983670_noreweight/wandb/run-20230825_201721-mgktiijv/files')
+Score matching loss
+[6.35055376e-32 0.00000000e+00 1.73513404e-28 6.69832809e-27
+ 3.58047111e-25 1.71133669e-23 2.26336713e-21 8.88439870e-20
+ 2.56280197e-18 3.80071993e-17 1.92581302e-15 7.43442773e-14
+ 2.18657953e-12 1.61164585e-10 9.59688596e-09 4.22499199e-07
+ 1.68254841e-05 6.53682542e-04 2.51387630e-02 9.74190196e-01]
+[[3.9186952e+00]
+ [4.4395347e-19]
+ [4.9546335e-20]
+ ...
+ [1.7606901e-04]
+ [4.9546335e-20]
+ [1.7606901e-04]]
+(10004, 1)
+/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/loops/epoch/training_epoch_loop.py:53: LightningDeprecationWarning: Setting `max_steps = None` is deprecated in v1.5 and will no longer be supported in v1.7. Use `max_steps = -1` instead.
+  "Setting `max_steps = None` is deprecated in v1.5 and will no longer be supported in v1.7."
+/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/trainer/connectors/callback_connector.py:97: LightningDeprecationWarning: Setting `Trainer(progress_bar_refresh_rate=20)` is deprecated in v1.5 and will be removed in v1.7. Please pass `pytorch_lightning.callbacks.progress.TQDMProgressBar` with `refresh_rate` directly to the Trainer's `callbacks` argument instead. Or, to disable the progress bar pass `enable_progress_bar = False` to the Trainer.
+  f"Setting `Trainer(progress_bar_refresh_rate={progress_bar_refresh_rate})` is deprecated in v1.5 and"
+--- Logging error ---
+Traceback (most recent call last):
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/logging/__init__.py", line 1028, in emit
+    stream.write(msg + self.terminator)
+ValueError: I/O operation on closed file.
+Call stack:
+  File "design_baselines/diff/trainer_noweight.py", line 969, in <module>
+    device=device,
+  File "design_baselines/diff/trainer_noweight.py", line 431, in run_training
+    limit_test_batches=0,
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/utilities/argparse.py", line 339, in insert_env_defaults
+    return fn(self, **kwargs)
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/trainer/trainer.py", line 606, in __init__
+    self._setup_on_init(num_sanity_val_steps)
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/trainer/trainer.py", line 687, in _setup_on_init
+    self._log_device_info()
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/trainer/trainer.py", line 1801, in _log_device_info
+    f"GPU available: {torch.cuda.is_available()}, used: {isinstance(self.accelerator, GPUAccelerator)}"
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/utilities/rank_zero.py", line 32, in wrapped_fn
+    return fn(*args, **kwargs)
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/utilities/rank_zero.py", line 75, in rank_zero_info
+    _info(*args, stacklevel=stacklevel, **kwargs)
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/utilities/rank_zero.py", line 57, in _info
+    log.info(*args, **kwargs)
+Message: 'GPU available: True, used: True'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/logging/__init__.py", line 1028, in emit
+    stream.write(msg + self.terminator)
+ValueError: I/O operation on closed file.
+Call stack:
+  File "design_baselines/diff/trainer_noweight.py", line 969, in <module>
+    device=device,
+  File "design_baselines/diff/trainer_noweight.py", line 431, in run_training
+    limit_test_batches=0,
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/utilities/argparse.py", line 339, in insert_env_defaults
+    return fn(self, **kwargs)
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/trainer/trainer.py", line 606, in __init__
+    self._setup_on_init(num_sanity_val_steps)
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/trainer/trainer.py", line 687, in _setup_on_init
+    self._log_device_info()
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/trainer/trainer.py", line 1805, in _log_device_info
+    rank_zero_info(f"TPU available: {_TPU_AVAILABLE}, using: {num_tpu_cores} TPU cores")
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/utilities/rank_zero.py", line 32, in wrapped_fn
+    return fn(*args, **kwargs)
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/utilities/rank_zero.py", line 75, in rank_zero_info
+    _info(*args, stacklevel=stacklevel, **kwargs)
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/utilities/rank_zero.py", line 57, in _info
+    log.info(*args, **kwargs)
+Message: 'TPU available: False, using: 0 TPU cores'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/logging/__init__.py", line 1028, in emit
+    stream.write(msg + self.terminator)
+ValueError: I/O operation on closed file.
+Call stack:
+  File "design_baselines/diff/trainer_noweight.py", line 969, in <module>
+    device=device,
+  File "design_baselines/diff/trainer_noweight.py", line 431, in run_training
+    limit_test_batches=0,
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/utilities/argparse.py", line 339, in insert_env_defaults
+    return fn(self, **kwargs)
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/trainer/trainer.py", line 606, in __init__
+    self._setup_on_init(num_sanity_val_steps)
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/trainer/trainer.py", line 687, in _setup_on_init
+    self._log_device_info()
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/trainer/trainer.py", line 1808, in _log_device_info
+    rank_zero_info(f"IPU available: {_IPU_AVAILABLE}, using: {num_ipus} IPUs")
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/utilities/rank_zero.py", line 32, in wrapped_fn
+    return fn(*args, **kwargs)
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/utilities/rank_zero.py", line 75, in rank_zero_info
+    _info(*args, stacklevel=stacklevel, **kwargs)
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/utilities/rank_zero.py", line 57, in _info
+    log.info(*args, **kwargs)
+Message: 'IPU available: False, using: 0 IPUs'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/logging/__init__.py", line 1028, in emit
+    stream.write(msg + self.terminator)
+ValueError: I/O operation on closed file.
+Call stack:
+  File "design_baselines/diff/trainer_noweight.py", line 969, in <module>
+    device=device,
+  File "design_baselines/diff/trainer_noweight.py", line 431, in run_training
+    limit_test_batches=0,
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/utilities/argparse.py", line 339, in insert_env_defaults
+    return fn(self, **kwargs)
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/trainer/trainer.py", line 606, in __init__
+    self._setup_on_init(num_sanity_val_steps)
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/trainer/trainer.py", line 687, in _setup_on_init
+    self._log_device_info()
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/trainer/trainer.py", line 1811, in _log_device_info
+    rank_zero_info(f"HPU available: {_HPU_AVAILABLE}, using: {num_hpus} HPUs")
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/utilities/rank_zero.py", line 32, in wrapped_fn
+    return fn(*args, **kwargs)
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/utilities/rank_zero.py", line 75, in rank_zero_info
+    _info(*args, stacklevel=stacklevel, **kwargs)
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/utilities/rank_zero.py", line 57, in _info
+    log.info(*args, **kwargs)
+Message: 'HPU available: False, using: 0 HPUs'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/logging/__init__.py", line 1028, in emit
+    stream.write(msg + self.terminator)
+ValueError: I/O operation on closed file.
+Call stack:
+  File "design_baselines/diff/trainer_noweight.py", line 969, in <module>
+    device=device,
+  File "design_baselines/diff/trainer_noweight.py", line 431, in run_training
+    limit_test_batches=0,
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/utilities/argparse.py", line 339, in insert_env_defaults
+    return fn(self, **kwargs)
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/trainer/trainer.py", line 627, in __init__
+    fast_dev_run,
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/trainer/trainer.py", line 673, in _init_debugging_flags
+    self.limit_val_batches = _determine_batch_limits(limit_val_batches, "limit_val_batches")
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/trainer/trainer.py", line 2875, in _determine_batch_limits
+    rank_zero_info(f"`Trainer({name}=1.0)` was configured so {message}.")
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/utilities/rank_zero.py", line 32, in wrapped_fn
+    return fn(*args, **kwargs)
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/utilities/rank_zero.py", line 75, in rank_zero_info
+    _info(*args, stacklevel=stacklevel, **kwargs)
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/utilities/rank_zero.py", line 57, in _info
+    log.info(*args, **kwargs)
+Message: '`Trainer(limit_val_batches=1.0)` was configured so 100% of the batches will be used..'
+Arguments: ()
+Sanity Checking: 0it [00:00, ?it/s]
+--- Logging error ---
+Traceback (most recent call last):
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/logging/__init__.py", line 1028, in emit
+    stream.write(msg + self.terminator)
+ValueError: I/O operation on closed file.
+Call stack:
+  File "design_baselines/diff/trainer_noweight.py", line 969, in <module>
+    device=device,
+  File "design_baselines/diff/trainer_noweight.py", line 447, in run_training
+    trainer.fit(model, data_module)
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/trainer/trainer.py", line 771, in fit
+    self._fit_impl, model, train_dataloaders, val_dataloaders, datamodule, ckpt_path
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/trainer/trainer.py", line 723, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/trainer/trainer.py", line 811, in _fit_impl
+    results = self._run(model, ckpt_path=self.ckpt_path)
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/trainer/trainer.py", line 1217, in _run
+    self.strategy.setup(self)
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/strategies/single_device.py", line 72, in setup
+    super().setup(trainer)
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/strategies/strategy.py", line 138, in setup
+    self.accelerator.setup(trainer)
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/accelerators/gpu.py", line 47, in setup
+    self.set_nvidia_flags(trainer.local_rank)
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/accelerators/gpu.py", line 57, in set_nvidia_flags
+    _log.info(f"LOCAL_RANK: {local_rank} - CUDA_VISIBLE_DEVICES: [{devices}]")
+Message: 'LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/logging/__init__.py", line 1028, in emit
+    stream.write(msg + self.terminator)
+ValueError: I/O operation on closed file.
+Call stack:
+  File "design_baselines/diff/trainer_noweight.py", line 969, in <module>
+    device=device,
+  File "design_baselines/diff/trainer_noweight.py", line 447, in run_training
+    trainer.fit(model, data_module)
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/trainer/trainer.py", line 771, in fit
+    self._fit_impl, model, train_dataloaders, val_dataloaders, datamodule, ckpt_path
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/trainer/trainer.py", line 723, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/trainer/trainer.py", line 811, in _fit_impl
+    results = self._run(model, ckpt_path=self.ckpt_path)
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/trainer/trainer.py", line 1221, in _run
+    self._call_callback_hooks("on_fit_start")
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/trainer/trainer.py", line 1636, in _call_callback_hooks
+    fn(self, self.lightning_module, *args, **kwargs)
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/callbacks/model_summary.py", line 63, in on_fit_start
+    self.summarize(summary_data, total_parameters, trainable_parameters, model_size)
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/callbacks/model_summary.py", line 73, in summarize
+    log.info("\n" + summary_table)
+Message: '\n  | Name            | Type                  | Params\n----------------------------------------------------------\n0 | score_estimator | MLP                   | 2.2 M \n1 | inf_sde         | VariancePreservingSDE | 1     \n2 | gen_sde         | ScorePluginReverseSDE | 2.2 M \n----------------------------------------------------------\n2.2 M     Trainable params\n1         Non-trainable params\n2.2 M     Total params\n8.864     Total estimated model params size (MB)'
+
+
+Epoch 0:  76%|███████████████████████████████████████████████████████████████████▌                     | 60/79 [00:02<00:00, 23.94it/s, loss=28, v_num=iijv, train_loss=28.00]
+
+
+
+
+Epoch 2:  76%|██████████████████████████████████████████████████▉                | 60/79 [00:02<00:00, 21.03it/s, loss=28, v_num=iijv, train_loss=27.30, elbo_estimator=-112.]
+
+
+Epoch 3:  76%|█████████████████████████████████████████████████▎               | 60/79 [00:03<00:01, 16.74it/s, loss=27.7, v_num=iijv, train_loss=27.80, elbo_estimator=-112.]
+
+
+Epoch 4:  76%|█████████████████████████████████████████████████▎               | 60/79 [00:03<00:01, 17.83it/s, loss=27.8, v_num=iijv, train_loss=28.40, elbo_estimator=-111.]
+
+Epoch 5:  76%|█████████████████████████████████████████████████▎               | 60/79 [00:02<00:00, 21.41it/s, loss=27.3, v_num=iijv, train_loss=26.60, elbo_estimator=-111.]
+
+
+Epoch 6:  76%|██████████████████████████████████████████████████▉                | 60/79 [00:03<00:00, 19.37it/s, loss=27, v_num=iijv, train_loss=27.00, elbo_estimator=-110.]
+
+
+
+
+Epoch 8:  76%|█████████████████████████████████████████████████▎               | 60/79 [00:03<00:00, 19.22it/s, loss=25.2, v_num=iijv, train_loss=24.80, elbo_estimator=-107.]
+
+
+
+
+
+
+Epoch 11:  76%|████████████████████████████████████████████████▌               | 60/79 [00:03<00:01, 16.26it/s, loss=21.5, v_num=iijv, train_loss=22.00, elbo_estimator=-100.]
+
+
+Epoch 12:  76%|████████████████████████████████████████████████▌               | 60/79 [00:03<00:01, 17.00it/s, loss=20.2, v_num=iijv, train_loss=20.90, elbo_estimator=-99.5]
+
+
+Epoch 13:  76%|████████████████████████████████████████████████▌               | 60/79 [00:02<00:00, 21.21it/s, loss=19.2, v_num=iijv, train_loss=19.80, elbo_estimator=-100.]
+
+
+
+
+Epoch 15:  76%|████████████████████████████████████████████████▌               | 60/79 [00:03<00:01, 18.33it/s, loss=17.2, v_num=iijv, train_loss=17.20, elbo_estimator=-101.]
+
+
+
+Epoch 17:  76%|████████████████████████████████████████████████▌               | 60/79 [00:03<00:01, 16.52it/s, loss=16.1, v_num=iijv, train_loss=17.10, elbo_estimator=-100.]
+
+
+Epoch 18:  76%|████████████████████████████████████████████████▌               | 60/79 [00:03<00:00, 19.48it/s, loss=15.7, v_num=iijv, train_loss=16.90, elbo_estimator=-101.]
+
+
+
+Epoch 20:  76%|████████████████████████████████████████████████▌               | 60/79 [00:03<00:01, 18.32it/s, loss=15.2, v_num=iijv, train_loss=16.70, elbo_estimator=-100.]
+
+
+Epoch 21:  76%|████████████████████████████████████████████████▌               | 60/79 [00:02<00:00, 20.12it/s, loss=15.1, v_num=iijv, train_loss=14.90, elbo_estimator=-103.]
+
+Epoch 22:  76%|████████████████████████████████████████████████▌               | 60/79 [00:02<00:00, 22.64it/s, loss=14.7, v_num=iijv, train_loss=13.90, elbo_estimator=-103.]
+
+
+Epoch 23:  76%|████████████████████████████████████████████████▌               | 60/79 [00:02<00:00, 20.13it/s, loss=14.3, v_num=iijv, train_loss=14.70, elbo_estimator=-103.]
+
+
+
+
+Epoch 25:  76%|████████████████████████████████████████████████▌               | 60/79 [00:03<00:00, 19.50it/s, loss=14.4, v_num=iijv, train_loss=15.80, elbo_estimator=-103.]
+
+
+Epoch 26:  76%|████████████████████████████████████████████████▌               | 60/79 [00:03<00:01, 17.07it/s, loss=14.2, v_num=iijv, train_loss=13.90, elbo_estimator=-101.]
+
+
+
+
+
+
+Epoch 29:  76%|████████████████████████████████████████████████▌               | 60/79 [00:03<00:00, 19.50it/s, loss=13.8, v_num=iijv, train_loss=14.00, elbo_estimator=-97.5]
+
+
+Epoch 30:  76%|████████████████████████████████████████████████▌               | 60/79 [00:03<00:01, 16.94it/s, loss=13.9, v_num=iijv, train_loss=13.70, elbo_estimator=-98.1]
+
+
+Epoch 31:  76%|████████████████████████████████████████████████▌               | 60/79 [00:03<00:01, 16.75it/s, loss=13.9, v_num=iijv, train_loss=13.50, elbo_estimator=-97.7]
+
+
+Epoch 32:  76%|████████████████████████████████████████████████▌               | 60/79 [00:03<00:01, 17.86it/s, loss=13.9, v_num=iijv, train_loss=12.90, elbo_estimator=-96.9]
+
+
+Epoch 33:  76%|████████████████████████████████████████████████▌               | 60/79 [00:03<00:00, 19.20it/s, loss=13.4, v_num=iijv, train_loss=14.90, elbo_estimator=-97.6]
+
+
+Epoch 34:  76%|████████████████████████████████████████████████▌               | 60/79 [00:03<00:01, 17.42it/s, loss=13.5, v_num=iijv, train_loss=13.70, elbo_estimator=-98.3]
+
+
+
+
+Epoch 36:  76%|████████████████████████████████████████████████▌               | 60/79 [00:02<00:00, 21.87it/s, loss=13.5, v_num=iijv, train_loss=14.60, elbo_estimator=-95.4]
+
+
+
+
+Epoch 38:  76%|██████████████████████████████████████████████████▏               | 60/79 [00:03<00:00, 19.21it/s, loss=13, v_num=iijv, train_loss=13.70, elbo_estimator=-95.4]
+
+
+Epoch 39:  76%|████████████████████████████████████████████████▌               | 60/79 [00:03<00:01, 17.56it/s, loss=12.9, v_num=iijv, train_loss=13.00, elbo_estimator=-93.5]
+
+
+Epoch 40:  76%|████████████████████████████████████████████████▌               | 60/79 [00:02<00:00, 20.82it/s, loss=12.9, v_num=iijv, train_loss=12.60, elbo_estimator=-93.2]
+
+
+
+
+Epoch 42:  76%|████████████████████████████████████████████████▌               | 60/79 [00:02<00:00, 20.15it/s, loss=12.8, v_num=iijv, train_loss=14.20, elbo_estimator=-93.7]
+
+
+Epoch 43:  76%|████████████████████████████████████████████████▌               | 60/79 [00:03<00:01, 18.69it/s, loss=12.8, v_num=iijv, train_loss=13.00, elbo_estimator=-91.7]
+
+Epoch 44:  76%|████████████████████████████████████████████████▌               | 60/79 [00:03<00:00, 19.34it/s, loss=12.8, v_num=iijv, train_loss=12.00, elbo_estimator=-91.2]
+
+
+Epoch 45:  76%|████████████████████████████████████████████████▌               | 60/79 [00:03<00:00, 19.32it/s, loss=12.9, v_num=iijv, train_loss=13.60, elbo_estimator=-91.8]
+
+
+Epoch 46:  76%|████████████████████████████████████████████████▌               | 60/79 [00:02<00:00, 20.07it/s, loss=12.5, v_num=iijv, train_loss=12.90, elbo_estimator=-92.1]
+
+
+
+
+Epoch 48:  76%|████████████████████████████████████████████████▌               | 60/79 [00:03<00:01, 17.30it/s, loss=12.5, v_num=iijv, train_loss=11.70, elbo_estimator=-89.9]
+
+
+Epoch 49:  76%|████████████████████████████████████████████████▌               | 60/79 [00:03<00:01, 18.19it/s, loss=12.4, v_num=iijv, train_loss=11.30, elbo_estimator=-86.6]
+
+
+
+
+Epoch 51:  76%|████████████████████████████████████████████████▌               | 60/79 [00:03<00:00, 19.11it/s, loss=12.5, v_num=iijv, train_loss=13.00, elbo_estimator=-88.6]
+
+
+Epoch 52:  76%|████████████████████████████████████████████████▌               | 60/79 [00:03<00:01, 16.82it/s, loss=12.2, v_num=iijv, train_loss=13.30, elbo_estimator=-87.2]
+
+
+
+
+
+
+
+
+
+Epoch 56:  76%|████████████████████████████████████████████████▌               | 60/79 [00:03<00:00, 19.10it/s, loss=12.4, v_num=iijv, train_loss=13.20, elbo_estimator=-84.9]
+
+
+Epoch 57:  76%|██████████████████████████████████████████████████▏               | 60/79 [00:03<00:01, 17.49it/s, loss=12, v_num=iijv, train_loss=13.00, elbo_estimator=-83.3]
+
+
+
+
+Epoch 59:  76%|██████████████████████████████████████████████████▏               | 60/79 [00:02<00:00, 22.83it/s, loss=12, v_num=iijv, train_loss=11.30, elbo_estimator=-83.0]
+
+
+
+
+
+Epoch 61:  76%|████████████████████████████████████████████████▌               | 60/79 [00:04<00:01, 14.84it/s, loss=11.7, v_num=iijv, train_loss=13.50, elbo_estimator=-83.2]
+
+
+Epoch 62:  76%|████████████████████████████████████████████████▌               | 60/79 [00:03<00:01, 18.17it/s, loss=11.9, v_num=iijv, train_loss=13.10, elbo_estimator=-81.5]
+
+
+
+Epoch 64:  76%|████████████████████████████████████████████████▌               | 60/79 [00:04<00:01, 14.59it/s, loss=11.9, v_num=iijv, train_loss=12.90, elbo_estimator=-80.0]
+
+
+Epoch 65:  76%|████████████████████████████████████████████████▌               | 60/79 [00:03<00:01, 17.97it/s, loss=11.5, v_num=iijv, train_loss=11.60, elbo_estimator=-80.0]
+
+
+
+
+
+
+
+Epoch 68:  76%|████████████████████████████████████████████████▌               | 60/79 [00:03<00:01, 18.89it/s, loss=11.5, v_num=iijv, train_loss=11.90, elbo_estimator=-79.1]
+
+
+Epoch 69:  76%|████████████████████████████████████████████████▌               | 60/79 [00:03<00:01, 18.45it/s, loss=11.4, v_num=iijv, train_loss=13.60, elbo_estimator=-80.3]
+
+
+Epoch 70:  76%|████████████████████████████████████████████████▌               | 60/79 [00:03<00:01, 17.80it/s, loss=11.3, v_num=iijv, train_loss=11.80, elbo_estimator=-81.8]
+
+
+
+
+Epoch 72:  76%|██████████████████████████████████████████████████▏               | 60/79 [00:03<00:00, 19.68it/s, loss=11, v_num=iijv, train_loss=11.30, elbo_estimator=-79.3]
+
+
+Epoch 73:  76%|██████████████████████████████████████████████████▏               | 60/79 [00:03<00:01, 18.08it/s, loss=11, v_num=iijv, train_loss=11.90, elbo_estimator=-79.6]
+
+
+Epoch 74:  76%|████████████████████████████████████████████████▌               | 60/79 [00:03<00:01, 17.56it/s, loss=11.5, v_num=iijv, train_loss=13.00, elbo_estimator=-80.5]
+
+
+
+
+Epoch 76:  76%|████████████████████████████████████████████████▌               | 60/79 [00:03<00:01, 17.12it/s, loss=11.2, v_num=iijv, train_loss=12.60, elbo_estimator=-81.5]
+
+
+
+
+Epoch 78:  76%|████████████████████████████████████████████████▌               | 60/79 [00:03<00:01, 17.59it/s, loss=11.2, v_num=iijv, train_loss=12.60, elbo_estimator=-79.9]
+
+
+Epoch 79:  76%|████████████████████████████████████████████████▌               | 60/79 [00:03<00:00, 19.62it/s, loss=11.6, v_num=iijv, train_loss=13.20, elbo_estimator=-79.5]
+
+
+Epoch 80:  76%|████████████████████████████████████████████████▌               | 60/79 [00:03<00:01, 18.51it/s, loss=11.5, v_num=iijv, train_loss=12.10, elbo_estimator=-81.5]
+
+
+
+
+
+
+
+Epoch 83:  76%|████████████████████████████████████████████████▌               | 60/79 [00:02<00:00, 20.38it/s, loss=10.7, v_num=iijv, train_loss=12.60, elbo_estimator=-84.7]
+
+
+Epoch 84:  76%|████████████████████████████████████████████████▌               | 60/79 [00:03<00:01, 17.13it/s, loss=11.1, v_num=iijv, train_loss=11.70, elbo_estimator=-78.9]
+
+
+
+
+Epoch 86:  76%|██████████████████████████████████████████████████▏               | 60/79 [00:02<00:00, 20.63it/s, loss=11, v_num=iijv, train_loss=12.20, elbo_estimator=-77.8]
+
+
+Epoch 87:  76%|████████████████████████████████████████████████▌               | 60/79 [00:03<00:01, 17.52it/s, loss=10.9, v_num=iijv, train_loss=10.90, elbo_estimator=-82.0]
+
+
+
+
+Epoch 89:  76%|████████████████████████████████████████████████▌               | 60/79 [00:03<00:00, 19.39it/s, loss=11.2, v_num=iijv, train_loss=12.00, elbo_estimator=-80.2]
+
+
+Epoch 90:  76%|██████████████████████████████████████████████████▏               | 60/79 [00:03<00:01, 17.57it/s, loss=11, v_num=iijv, train_loss=12.30, elbo_estimator=-83.0]
+
+
+
+
+Epoch 92:  76%|████████████████████████████████████████████████▌               | 60/79 [00:03<00:00, 19.98it/s, loss=10.6, v_num=iijv, train_loss=11.80, elbo_estimator=-82.3]
+
+
+Epoch 93:  76%|██████████████████████████████████████████████████▏               | 60/79 [00:03<00:01, 16.98it/s, loss=11, v_num=iijv, train_loss=12.20, elbo_estimator=-80.7]
+
+
+Epoch 94:  76%|████████████████████████████████████████████████▌               | 60/79 [00:03<00:01, 18.14it/s, loss=11.1, v_num=iijv, train_loss=12.10, elbo_estimator=-82.9]
+
+
+Epoch 95:  76%|████████████████████████████████████████████████▌               | 60/79 [00:03<00:00, 19.99it/s, loss=10.7, v_num=iijv, train_loss=11.20, elbo_estimator=-80.7]
+
+
+
+Epoch 97:  76%|████████████████████████████████████████████████▌               | 60/79 [00:03<00:00, 19.32it/s, loss=10.5, v_num=iijv, train_loss=11.00, elbo_estimator=-79.8]
+
+
+Epoch 98:  76%|████████████████████████████████████████████████▌               | 60/79 [00:03<00:01, 16.98it/s, loss=10.7, v_num=iijv, train_loss=12.50, elbo_estimator=-77.7]
+
+
+Epoch 99:  76%|████████████████████████████████████████████████▌               | 60/79 [00:03<00:01, 16.80it/s, loss=10.7, v_num=iijv, train_loss=12.00, elbo_estimator=-77.5]
+
+
+
+Epoch 101:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 17.33it/s, loss=10.6, v_num=iijv, train_loss=10.60, elbo_estimator=-76.4]
+
+
+Epoch 102:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 18.36it/s, loss=11.3, v_num=iijv, train_loss=13.50, elbo_estimator=-76.0]
+
+
+Epoch 103:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 16.05it/s, loss=11.5, v_num=iijv, train_loss=13.00, elbo_estimator=-76.3]
+
+
+Epoch 104:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 20.44it/s, loss=10.9, v_num=iijv, train_loss=13.00, elbo_estimator=-82.5]
+
+
+
+Epoch 106:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 17.47it/s, loss=10.7, v_num=iijv, train_loss=11.90, elbo_estimator=-79.2]
+
+
+Epoch 107:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 16.36it/s, loss=10.3, v_num=iijv, train_loss=11.60, elbo_estimator=-77.3]
+
+
+Epoch 108:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 23.18it/s, loss=10.5, v_num=iijv, train_loss=12.30, elbo_estimator=-73.0]
+
+
+
+
+Epoch 110:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 20.86it/s, loss=10.6, v_num=iijv, train_loss=11.90, elbo_estimator=-80.8]
+
+
+Epoch 111:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:00, 19.70it/s, loss=10.6, v_num=iijv, train_loss=11.30, elbo_estimator=-79.1]
+
+
+
+
+Epoch 113:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 20.08it/s, loss=10.5, v_num=iijv, train_loss=12.80, elbo_estimator=-77.8]
+
+
+Epoch 114:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 17.50it/s, loss=10.5, v_num=iijv, train_loss=12.50, elbo_estimator=-78.1]
+
+
+
+
+Epoch 116:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:00, 19.59it/s, loss=10.5, v_num=iijv, train_loss=10.80, elbo_estimator=-84.0]
+
+
+
+
+
+
+
+Epoch 119:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 18.77it/s, loss=10.2, v_num=iijv, train_loss=11.70, elbo_estimator=-77.4]
+
+
+
+
+Epoch 121:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:00, 19.49it/s, loss=10.4, v_num=iijv, train_loss=11.90, elbo_estimator=-79.6]
+
+
+
+
+Epoch 123:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:00, 19.67it/s, loss=10.5, v_num=iijv, train_loss=12.40, elbo_estimator=-72.6]
+
+
+Epoch 124:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 18.02it/s, loss=10.1, v_num=iijv, train_loss=12.60, elbo_estimator=-81.0]
+
+
+
+
+Epoch 126:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:00, 19.22it/s, loss=10.2, v_num=iijv, train_loss=13.30, elbo_estimator=-77.1]
+
+
+Epoch 127:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 18.59it/s, loss=10.2, v_num=iijv, train_loss=11.30, elbo_estimator=-76.2]
+
+
+
+
+Epoch 129:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 20.45it/s, loss=10.1, v_num=iijv, train_loss=10.90, elbo_estimator=-78.9]
+
+
+
+
+Epoch 131:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 18.24it/s, loss=9.83, v_num=iijv, train_loss=9.970, elbo_estimator=-80.3]
+
+
+Epoch 132:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 16.89it/s, loss=10.2, v_num=iijv, train_loss=10.20, elbo_estimator=-81.4]
+
+
+
+
+Epoch 134:  76%|█████████████████████████████████████████████████▎               | 60/79 [00:03<00:00, 19.61it/s, loss=10, v_num=iijv, train_loss=11.20, elbo_estimator=-77.1]
+
+
+
+
+Epoch 136:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 20.18it/s, loss=10.1, v_num=iijv, train_loss=12.30, elbo_estimator=-78.9]
+
+
+Epoch 137:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 17.84it/s, loss=10.2, v_num=iijv, train_loss=12.10, elbo_estimator=-78.3]
+
+
+Epoch 138:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:00, 19.50it/s, loss=10.2, v_num=iijv, train_loss=11.10, elbo_estimator=-88.1]
+
+
+Epoch 139:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 17.14it/s, loss=10.2, v_num=iijv, train_loss=12.30, elbo_estimator=-83.0]
+
+
+Epoch 140:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:00, 19.72it/s, loss=9.77, v_num=iijv, train_loss=10.70, elbo_estimator=-73.9]
+
+
+
+
+Epoch 142:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:00, 19.58it/s, loss=10.3, v_num=iijv, train_loss=10.90, elbo_estimator=-79.1]
+
+
+Epoch 143:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 18.32it/s, loss=9.73, v_num=iijv, train_loss=12.70, elbo_estimator=-73.6]
+
+
+Epoch 144:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 15.84it/s, loss=10.1, v_num=iijv, train_loss=11.00, elbo_estimator=-77.6]
+
+
+
+
+
+
+Epoch 146:  76%|███████████████████████████████████████████████▊               | 60/79 [00:05<00:01, 11.23it/s, loss=10.3, v_num=iijv, train_loss=15.20, elbo_estimator=-78.1]
+
+
+Epoch 147:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:00, 19.79it/s, loss=10.3, v_num=iijv, train_loss=10.50, elbo_estimator=-79.1]
+
+
+
+
+Epoch 149:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:00, 19.09it/s, loss=10.3, v_num=iijv, train_loss=14.00, elbo_estimator=-76.2]
+
+
+Epoch 150:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 21.10it/s, loss=10.1, v_num=iijv, train_loss=10.80, elbo_estimator=-87.2]
+
+
+Epoch 151: 100%|███████████████████████████████████████████████████████████████| 79/79 [00:04<00:00, 15.87it/s, loss=10.8, v_num=iijv, train_loss=6.720, elbo_estimator=-72.4]
+
+Epoch 152:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 18.16it/s, loss=10.4, v_num=iijv, train_loss=13.30, elbo_estimator=-72.4]
+
+
+Epoch 153: 100%|███████████████████████████████████████████████████████████████| 79/79 [00:04<00:00, 17.09it/s, loss=9.97, v_num=iijv, train_loss=10.20, elbo_estimator=-80.8]
+
+Epoch 154:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:00, 19.34it/s, loss=9.95, v_num=iijv, train_loss=10.90, elbo_estimator=-83.7]
+
+Epoch 155:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 17.12it/s, loss=9.93, v_num=iijv, train_loss=11.00, elbo_estimator=-72.7]
+
+
+
+
+Epoch 157:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 18.21it/s, loss=9.85, v_num=iijv, train_loss=11.70, elbo_estimator=-86.4]
+
+
+Epoch 158:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 17.87it/s, loss=9.86, v_num=iijv, train_loss=12.10, elbo_estimator=-82.1]
+
+
+
+
+
+
+
+Epoch 161:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 18.37it/s, loss=9.93, v_num=iijv, train_loss=11.80, elbo_estimator=-85.3]
+
+
+Epoch 162:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 17.13it/s, loss=9.98, v_num=iijv, train_loss=11.60, elbo_estimator=-85.9]
+
+
+
+
+Epoch 164:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 22.30it/s, loss=9.96, v_num=iijv, train_loss=11.80, elbo_estimator=-83.1]
+
+
+
+
+Epoch 166:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 18.94it/s, loss=9.96, v_num=iijv, train_loss=12.30, elbo_estimator=-90.0]
+
+
+Epoch 167:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 18.25it/s, loss=9.93, v_num=iijv, train_loss=9.870, elbo_estimator=-88.3]
+
+
+Epoch 168:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 16.40it/s, loss=9.99, v_num=iijv, train_loss=12.10, elbo_estimator=-76.5]
+
+
+Epoch 169:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 18.08it/s, loss=9.85, v_num=iijv, train_loss=14.00, elbo_estimator=-89.2]
+
+
+Epoch 170:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 16.56it/s, loss=9.89, v_num=iijv, train_loss=11.20, elbo_estimator=-79.2]
+
+
+
+
+Epoch 172:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 18.87it/s, loss=10.2, v_num=iijv, train_loss=12.00, elbo_estimator=-79.7]
+
+
+Epoch 173:  76%|█████████████████████████████████████████████████▎               | 60/79 [00:02<00:00, 20.32it/s, loss=10, v_num=iijv, train_loss=12.10, elbo_estimator=-78.2]
+
+
+
+
+
+
+
+Epoch 176:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 17.72it/s, loss=9.42, v_num=iijv, train_loss=11.30, elbo_estimator=-95.1]
+
+
+Epoch 177:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 18.62it/s, loss=10.1, v_num=iijv, train_loss=10.10, elbo_estimator=-115.]
+
+
+Epoch 178:  76%|████████████████████████████████████████████████▌               | 60/79 [00:03<00:01, 15.88it/s, loss=9.6, v_num=iijv, train_loss=10.90, elbo_estimator=-76.2]
+
+
+
+
+
+
+
+Epoch 181:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:00, 19.27it/s, loss=9.96, v_num=iijv, train_loss=12.50, elbo_estimator=-85.5]
+
+
+Epoch 182:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:00, 19.03it/s, loss=9.91, v_num=iijv, train_loss=11.40, elbo_estimator=-87.2]
+
+
+Epoch 183:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 18.03it/s, loss=10.5, v_num=iijv, train_loss=11.70, elbo_estimator=-91.4]
+
+
+Epoch 184:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 20.58it/s, loss=9.88, v_num=iijv, train_loss=11.30, elbo_estimator=-84.9]
+
+Epoch 185:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 20.45it/s, loss=9.97, v_num=iijv, train_loss=12.10, elbo_estimator=-89.1]
+
+
+
+
+Epoch 187:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 17.35it/s, loss=10.2, v_num=iijv, train_loss=10.40, elbo_estimator=-93.6]
+
+
+Epoch 188:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 18.89it/s, loss=9.91, v_num=iijv, train_loss=11.50, elbo_estimator=-88.6]
+
+
+Epoch 189:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 17.01it/s, loss=9.67, v_num=iijv, train_loss=11.60, elbo_estimator=-89.3]
+
+
+
+
+Epoch 191:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 21.80it/s, loss=9.98, v_num=iijv, train_loss=11.80, elbo_estimator=-104.]
+
+
+Epoch 192:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:00, 19.40it/s, loss=9.95, v_num=iijv, train_loss=13.20, elbo_estimator=-91.2]
+
+
+
+
+Epoch 194:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 20.34it/s, loss=9.83, v_num=iijv, train_loss=11.60, elbo_estimator=-102.]
+
+Epoch 195:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 16.84it/s, loss=9.99, v_num=iijv, train_loss=11.10, elbo_estimator=-88.5]
+
+
+Epoch 196:  76%|█████████████████████████████████████████████████▎               | 60/79 [00:03<00:01, 18.33it/s, loss=10, v_num=iijv, train_loss=11.00, elbo_estimator=-91.4]
+
+
+Epoch 197:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 17.36it/s, loss=9.79, v_num=iijv, train_loss=12.30, elbo_estimator=-122.]
+
+
+Epoch 198:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 18.91it/s, loss=9.92, v_num=iijv, train_loss=9.730, elbo_estimator=-84.2]
+
+Epoch 199:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 20.36it/s, loss=9.81, v_num=iijv, train_loss=11.30, elbo_estimator=-77.3]
+
+Epoch 200:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 17.59it/s, loss=9.79, v_num=iijv, train_loss=11.60, elbo_estimator=-86.6]
+
+
+Epoch 201:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:00, 19.49it/s, loss=9.93, v_num=iijv, train_loss=10.50, elbo_estimator=-91.1]
+
+
+
+
+Epoch 203:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 18.84it/s, loss=10.1, v_num=iijv, train_loss=11.40, elbo_estimator=-81.6]
+
+
+Epoch 204:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 16.38it/s, loss=9.83, v_num=iijv, train_loss=11.00, elbo_estimator=-118.]
+
+
+Epoch 205:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 18.82it/s, loss=9.66, v_num=iijv, train_loss=10.40, elbo_estimator=-87.8]
+
+Epoch 206:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 20.11it/s, loss=9.67, v_num=iijv, train_loss=11.10, elbo_estimator=-84.1]
+
+
+Epoch 207:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 17.35it/s, loss=9.69, v_num=iijv, train_loss=11.30, elbo_estimator=-88.1]
+
+
+Epoch 208:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 16.47it/s, loss=9.65, v_num=iijv, train_loss=11.40, elbo_estimator=-99.9]
+
+
+Epoch 209:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 18.05it/s, loss=9.74, v_num=iijv, train_loss=12.50, elbo_estimator=-95.9]
+
+
+Epoch 210:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:00, 19.65it/s, loss=9.65, v_num=iijv, train_loss=10.90, elbo_estimator=-93.1]
+
+
+
+
+Epoch 212:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 18.20it/s, loss=10.1, v_num=iijv, train_loss=11.50, elbo_estimator=-104.]
+
+
+Epoch 213:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 21.02it/s, loss=10.3, v_num=iijv, train_loss=11.50, elbo_estimator=-77.0]
+
+
+Epoch 214:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 15.89it/s, loss=9.96, v_num=iijv, train_loss=14.30, elbo_estimator=-93.9]
+
+Epoch 215:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:00, 19.03it/s, loss=9.82, v_num=iijv, train_loss=11.30, elbo_estimator=-102.]
+
+
+Epoch 216:  76%|████████████████████████████████████████████████▌               | 60/79 [00:03<00:00, 19.50it/s, loss=9.7, v_num=iijv, train_loss=11.00, elbo_estimator=-86.7]
+
+
+
+
+Epoch 218:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 17.95it/s, loss=9.83, v_num=iijv, train_loss=11.60, elbo_estimator=-98.8]
+
+
+
+
+Epoch 220:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 17.90it/s, loss=9.95, v_num=iijv, train_loss=12.40, elbo_estimator=-82.3]
+
+
+Epoch 221:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 17.21it/s, loss=9.83, v_num=iijv, train_loss=11.70, elbo_estimator=-111.]
+
+
+
+Epoch 223:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 16.46it/s, loss=9.68, v_num=iijv, train_loss=12.60, elbo_estimator=-90.6]
+
+
+Epoch 224:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:00, 19.15it/s, loss=10.1, v_num=iijv, train_loss=12.50, elbo_estimator=-86.6]
+
+
+Epoch 225:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 20.80it/s, loss=10.3, v_num=iijv, train_loss=11.00, elbo_estimator=-105.]
+
+
+Epoch 226:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 16.37it/s, loss=9.89, v_num=iijv, train_loss=12.50, elbo_estimator=-101.]
+
+
+
+
+
+
+
+
+
+Epoch 230:  76%|███████████████████████████████████████████████▊               | 60/79 [00:04<00:01, 13.00it/s, loss=10.2, v_num=iijv, train_loss=11.30, elbo_estimator=-90.1]
+
+
+Epoch 231:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 16.45it/s, loss=9.81, v_num=iijv, train_loss=13.00, elbo_estimator=-102.]
+
+
+
+
+
+
+
+Epoch 234:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:00, 19.47it/s, loss=9.74, v_num=iijv, train_loss=12.60, elbo_estimator=-88.1]
+
+
+Epoch 235:  76%|█████████████████████████████████████████████████▎               | 60/79 [00:03<00:01, 17.32it/s, loss=10, v_num=iijv, train_loss=11.40, elbo_estimator=-102.]
+
+
+Epoch 236:  76%|████████████████████████████████████████████████▌               | 60/79 [00:03<00:01, 16.34it/s, loss=9.9, v_num=iijv, train_loss=11.40, elbo_estimator=-95.0]
+
+
+Epoch 237:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:00, 19.43it/s, loss=9.85, v_num=iijv, train_loss=10.50, elbo_estimator=-93.5]
+
+
+Epoch 238:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 17.87it/s, loss=9.71, v_num=iijv, train_loss=11.10, elbo_estimator=-101.]
+
+
+
+
+
+
+
+Epoch 241:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 18.72it/s, loss=9.44, v_num=iijv, train_loss=10.80, elbo_estimator=-108.]
+
+
+Epoch 242:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 17.89it/s, loss=9.78, v_num=iijv, train_loss=11.30, elbo_estimator=-113.]
+
+
+Epoch 243:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 17.50it/s, loss=9.82, v_num=iijv, train_loss=10.40, elbo_estimator=-95.2]
+
+
+
+
+Epoch 245:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 20.47it/s, loss=9.74, v_num=iijv, train_loss=11.00, elbo_estimator=-98.1]
+
+
+Epoch 246:  76%|█████████████████████████████████████████████████▎               | 60/79 [00:03<00:01, 18.03it/s, loss=10, v_num=iijv, train_loss=12.40, elbo_estimator=-127.]
+
+
+
+
+Epoch 248:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 21.97it/s, loss=9.94, v_num=iijv, train_loss=11.60, elbo_estimator=-88.1]
+
+
+Epoch 249:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 17.05it/s, loss=9.86, v_num=iijv, train_loss=11.80, elbo_estimator=-101.]
+
+
+
+
+
+Epoch 251:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 16.84it/s, loss=9.81, v_num=iijv, train_loss=11.00, elbo_estimator=-84.0]
+
+
+Epoch 252:  76%|████████████████████████████████████████████████▌               | 60/79 [00:03<00:01, 18.07it/s, loss=9.7, v_num=iijv, train_loss=11.00, elbo_estimator=-96.1]
+
+
+Epoch 253:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:00, 19.85it/s, loss=9.89, v_num=iijv, train_loss=9.800, elbo_estimator=-96.0]
+
+
+
+
+
+
+
+Epoch 256:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:00, 19.46it/s, loss=10.5, v_num=iijv, train_loss=11.70, elbo_estimator=-103.]
+
+
+Epoch 257:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 17.00it/s, loss=9.85, v_num=iijv, train_loss=11.70, elbo_estimator=-96.7]
+
+
+Epoch 258:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:00, 19.70it/s, loss=9.75, v_num=iijv, train_loss=11.80, elbo_estimator=-96.7]
+
+
+
+
+
+
+Epoch 261:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 18.04it/s, loss=9.66, v_num=iijv, train_loss=13.90, elbo_estimator=-95.3]
+
+
+Epoch 262:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 17.30it/s, loss=9.91, v_num=iijv, train_loss=12.90, elbo_estimator=-95.5]
+
+
+Epoch 263:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 18.23it/s, loss=10.2, v_num=iijv, train_loss=12.50, elbo_estimator=-105.]
+
+
+Epoch 264:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 15.63it/s, loss=9.46, v_num=iijv, train_loss=11.10, elbo_estimator=-92.9]
+
+
+Epoch 265:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 18.69it/s, loss=9.66, v_num=iijv, train_loss=10.10, elbo_estimator=-94.2]
+
+
+Epoch 266:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 17.62it/s, loss=9.61, v_num=iijv, train_loss=11.50, elbo_estimator=-106.]
+
+
+Epoch 267:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 16.02it/s, loss=9.99, v_num=iijv, train_loss=10.80, elbo_estimator=-111.]
+
+
+Epoch 268:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 17.99it/s, loss=9.67, v_num=iijv, train_loss=12.30, elbo_estimator=-79.5]
+
+
+Epoch 269:  76%|███████████████████████████████████████████████▊               | 60/79 [00:04<00:01, 14.59it/s, loss=9.56, v_num=iijv, train_loss=11.00, elbo_estimator=-89.1]
+
+
+
+
+Epoch 271:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 18.05it/s, loss=9.38, v_num=iijv, train_loss=12.40, elbo_estimator=-98.2]
+
+
+Epoch 272:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 18.01it/s, loss=9.75, v_num=iijv, train_loss=12.20, elbo_estimator=-94.4]
+
+Epoch 273:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 16.68it/s, loss=9.48, v_num=iijv, train_loss=12.40, elbo_estimator=-119.]
+
+
+Epoch 274:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 20.61it/s, loss=9.78, v_num=iijv, train_loss=9.790, elbo_estimator=-98.8]
+
+
+Epoch 275:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 18.67it/s, loss=9.69, v_num=iijv, train_loss=12.80, elbo_estimator=-86.4]
+
+
+Epoch 276:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 17.74it/s, loss=9.39, v_num=iijv, train_loss=11.00, elbo_estimator=-99.5]
+
+
+Epoch 277:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 17.95it/s, loss=9.73, v_num=iijv, train_loss=10.30, elbo_estimator=-102.]
+
+Epoch 278:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 21.88it/s, loss=9.51, v_num=iijv, train_loss=10.20, elbo_estimator=-105.]
+
+
+Epoch 279:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 17.38it/s, loss=9.82, v_num=iijv, train_loss=11.80, elbo_estimator=-110.]
+
+
+
+
+
+
+Epoch 282:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 18.64it/s, loss=10.3, v_num=iijv, train_loss=11.10, elbo_estimator=-116.]
+
+
+Epoch 283:  76%|█████████████████████████████████████████████████▎               | 60/79 [00:03<00:01, 16.92it/s, loss=10, v_num=iijv, train_loss=12.70, elbo_estimator=-115.]
+
+
+Epoch 284:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 16.83it/s, loss=9.67, v_num=iijv, train_loss=12.10, elbo_estimator=-157.]
+
+
+Epoch 285:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 16.24it/s, loss=9.66, v_num=iijv, train_loss=10.60, elbo_estimator=-80.2]
+
+
+Epoch 286:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:00, 19.60it/s, loss=10.2, v_num=iijv, train_loss=13.00, elbo_estimator=-79.3]
+
+
+Epoch 287: 100%|███████████████████████████████████████████████████████████████| 79/79 [00:05<00:00, 14.37it/s, loss=9.92, v_num=iijv, train_loss=12.10, elbo_estimator=-90.1]
+
+
+
+
+Epoch 289:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 18.41it/s, loss=9.74, v_num=iijv, train_loss=12.10, elbo_estimator=-82.3]
+
+
+Epoch 290:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 16.92it/s, loss=9.91, v_num=iijv, train_loss=11.10, elbo_estimator=-77.9]
+
+
+Epoch 291:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 18.53it/s, loss=9.71, v_num=iijv, train_loss=13.10, elbo_estimator=-114.]
+
+
+
+
+Epoch 293:  76%|█████████████████████████████████████████████████▎               | 60/79 [00:03<00:00, 19.13it/s, loss=10, v_num=iijv, train_loss=11.90, elbo_estimator=-93.9]
+
+
+Epoch 294:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 18.39it/s, loss=9.58, v_num=iijv, train_loss=12.40, elbo_estimator=-91.9]
+
+
+Epoch 295:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 21.97it/s, loss=10.3, v_num=iijv, train_loss=11.20, elbo_estimator=-95.6]
+
+
+
+
+Epoch 297:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 15.59it/s, loss=9.93, v_num=iijv, train_loss=11.00, elbo_estimator=-83.9]
+
+
+
+
+
+
+
+
+
+
+Epoch 301:  76%|████████████████████████████████████████████████▌               | 60/79 [00:03<00:00, 19.43it/s, loss=9.5, v_num=iijv, train_loss=12.70, elbo_estimator=-88.5]
+
+
+Epoch 302:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 16.34it/s, loss=9.87, v_num=iijv, train_loss=11.40, elbo_estimator=-105.]
+
+
+Epoch 303:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 16.47it/s, loss=9.89, v_num=iijv, train_loss=11.50, elbo_estimator=-122.]
+
+
+
+
+
+
+
+
+
+
+Epoch 307:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 18.02it/s, loss=9.54, v_num=iijv, train_loss=11.10, elbo_estimator=-129.]
+
+
+Epoch 308:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 18.28it/s, loss=9.76, v_num=iijv, train_loss=12.30, elbo_estimator=-101.]
+
+
+
+
+
+Epoch 310:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 17.30it/s, loss=9.79, v_num=iijv, train_loss=12.40, elbo_estimator=-114.]
+
+
+Epoch 311:  76%|████████████████████████████████████████████████▌               | 60/79 [00:03<00:01, 18.95it/s, loss=9.7, v_num=iijv, train_loss=12.70, elbo_estimator=-95.2]
+
+
+Epoch 312:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 15.94it/s, loss=9.74, v_num=iijv, train_loss=11.50, elbo_estimator=-103.]
+
+
+
+
+Epoch 314:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 18.82it/s, loss=9.97, v_num=iijv, train_loss=11.20, elbo_estimator=-127.]
+
+
+Epoch 315:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 17.57it/s, loss=10.1, v_num=iijv, train_loss=11.50, elbo_estimator=-81.4]
+
+
+Epoch 316:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 16.81it/s, loss=9.61, v_num=iijv, train_loss=11.10, elbo_estimator=-98.4]
+
+
+Epoch 317:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 18.13it/s, loss=9.85, v_num=iijv, train_loss=11.30, elbo_estimator=-124.]
+
+
+Epoch 318:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 16.71it/s, loss=9.75, v_num=iijv, train_loss=12.00, elbo_estimator=-101.]
+
+
+
+
+Epoch 320:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:00, 19.26it/s, loss=9.94, v_num=iijv, train_loss=11.20, elbo_estimator=-109.]
+
+
+Epoch 321:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 15.78it/s, loss=9.72, v_num=iijv, train_loss=12.80, elbo_estimator=-102.]
+
+
+Epoch 322:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 16.88it/s, loss=9.75, v_num=iijv, train_loss=12.00, elbo_estimator=-114.]
+
+
+
+
+Epoch 324:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:00, 19.51it/s, loss=9.88, v_num=iijv, train_loss=11.20, elbo_estimator=-111.]
+
+
+Epoch 325:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 17.06it/s, loss=10.1, v_num=iijv, train_loss=12.50, elbo_estimator=-87.1]
+
+
+
+Epoch 327:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 17.72it/s, loss=10.3, v_num=iijv, train_loss=12.10, elbo_estimator=-125.]
+
+
+Epoch 328:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 16.99it/s, loss=10.1, v_num=iijv, train_loss=12.60, elbo_estimator=-98.5]
+
+
+Epoch 329:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 15.93it/s, loss=10.1, v_num=iijv, train_loss=10.90, elbo_estimator=-88.4]
+
+
+Epoch 330:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 17.68it/s, loss=9.81, v_num=iijv, train_loss=10.30, elbo_estimator=-122.]
+
+
+Epoch 331:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 17.63it/s, loss=9.83, v_num=iijv, train_loss=11.70, elbo_estimator=-97.6]
+
+
+Epoch 332:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 16.39it/s, loss=10.1, v_num=iijv, train_loss=11.40, elbo_estimator=-86.1]
+
+
+
+Epoch 334:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 16.68it/s, loss=9.89, v_num=iijv, train_loss=12.50, elbo_estimator=-99.2]
+
+
+
+
+Epoch 336:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 18.48it/s, loss=9.85, v_num=iijv, train_loss=11.40, elbo_estimator=-101.]
+
+
+Epoch 337:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 17.02it/s, loss=9.84, v_num=iijv, train_loss=11.90, elbo_estimator=-124.]
+
+
+Epoch 338:  76%|█████████████████████████████████████████████████▎               | 60/79 [00:03<00:01, 16.58it/s, loss=10, v_num=iijv, train_loss=10.90, elbo_estimator=-106.]
+
+
+Epoch 339:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 18.48it/s, loss=9.62, v_num=iijv, train_loss=11.30, elbo_estimator=-94.6]
+
+
+
+
+
+
+
+Epoch 342:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 18.44it/s, loss=9.83, v_num=iijv, train_loss=12.70, elbo_estimator=-121.]
+
+
+Epoch 343:  76%|█████████████████████████████████████████████████▎               | 60/79 [00:03<00:01, 18.55it/s, loss=10, v_num=iijv, train_loss=11.10, elbo_estimator=-107.]
+
+
+Epoch 344:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 17.26it/s, loss=10.1, v_num=iijv, train_loss=11.10, elbo_estimator=-108.]
+
+
+Epoch 345:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 16.57it/s, loss=9.96, v_num=iijv, train_loss=11.50, elbo_estimator=-113.]
+
+
+
+
+Epoch 347:  76%|████████████████████████████████████████████████▌               | 60/79 [00:03<00:01, 17.86it/s, loss=9.9, v_num=iijv, train_loss=13.00, elbo_estimator=-106.]
+
+
+Epoch 348:  76%|█████████████████████████████████████████████████▎               | 60/79 [00:04<00:01, 14.71it/s, loss=10, v_num=iijv, train_loss=11.30, elbo_estimator=-144.]
+
+
+
+
+
+
+
+
+
+
+Epoch 352:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 18.40it/s, loss=10.1, v_num=iijv, train_loss=12.00, elbo_estimator=-120.]
+
+
+Epoch 353:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 17.59it/s, loss=9.86, v_num=iijv, train_loss=12.30, elbo_estimator=-95.0]
+
+
+Epoch 354:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 18.64it/s, loss=10.2, v_num=iijv, train_loss=11.40, elbo_estimator=-94.0]
+
+
+Epoch 355:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 17.91it/s, loss=9.96, v_num=iijv, train_loss=12.30, elbo_estimator=-134.]
+
+
+
+
+
+Epoch 357:  76%|███████████████████████████████████████████████▊               | 60/79 [00:04<00:01, 14.92it/s, loss=9.91, v_num=iijv, train_loss=12.90, elbo_estimator=-103.]
+
+
+
+
+Epoch 359:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 16.50it/s, loss=10.5, v_num=iijv, train_loss=12.40, elbo_estimator=-95.9]
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 364:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:00, 19.67it/s, loss=10.1, v_num=iijv, train_loss=12.10, elbo_estimator=-102.]
+
+
+Epoch 365:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 18.08it/s, loss=9.87, v_num=iijv, train_loss=12.90, elbo_estimator=-92.3]
+
+
+Epoch 366:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 17.61it/s, loss=10.2, v_num=iijv, train_loss=11.10, elbo_estimator=-108.]
+
+
+Epoch 367:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:00, 19.09it/s, loss=10.1, v_num=iijv, train_loss=11.30, elbo_estimator=-117.]
+
+
+
+
+
+
+
+
+
+
+Epoch 371:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 18.31it/s, loss=9.76, v_num=iijv, train_loss=11.00, elbo_estimator=-120.]
+
+
+Epoch 372:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 17.79it/s, loss=9.98, v_num=iijv, train_loss=11.70, elbo_estimator=-109.]
+
+
+Epoch 373:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 17.42it/s, loss=9.86, v_num=iijv, train_loss=11.60, elbo_estimator=-122.]
+
+
+Epoch 374:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 15.90it/s, loss=9.65, v_num=iijv, train_loss=11.30, elbo_estimator=-118.]
+
+
+Epoch 375:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 18.54it/s, loss=9.96, v_num=iijv, train_loss=12.70, elbo_estimator=-102.]
+
+
+Epoch 376:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 18.52it/s, loss=10.1, v_num=iijv, train_loss=12.60, elbo_estimator=-104.]
+
+Epoch 377:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 20.25it/s, loss=10.3, v_num=iijv, train_loss=11.70, elbo_estimator=-114.]
+
+Epoch 378:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 16.59it/s, loss=9.96, v_num=iijv, train_loss=10.40, elbo_estimator=-106.]
+
+
+Epoch 379:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:00, 19.01it/s, loss=9.68, v_num=iijv, train_loss=12.20, elbo_estimator=-134.]
+
+
+Epoch 380:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 20.32it/s, loss=9.86, v_num=iijv, train_loss=12.50, elbo_estimator=-114.]
+
+
+Epoch 381:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 16.68it/s, loss=9.58, v_num=iijv, train_loss=11.30, elbo_estimator=-117.]
+
+
+
+
+
+
+Epoch 384:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 18.18it/s, loss=9.65, v_num=iijv, train_loss=12.70, elbo_estimator=-127.]
+
+
+Epoch 385:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 17.03it/s, loss=9.85, v_num=iijv, train_loss=11.10, elbo_estimator=-109.]
+
+
+Epoch 386:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 16.26it/s, loss=10.2, v_num=iijv, train_loss=12.80, elbo_estimator=-112.]
+
+
+
+
+
+
+
+Epoch 389:  76%|████████████████████████████████████████████████▌               | 60/79 [00:03<00:01, 17.89it/s, loss=9.9, v_num=iijv, train_loss=14.10, elbo_estimator=-114.]
+
+
+
+
+
+
+
+Epoch 392:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 16.42it/s, loss=10.2, v_num=iijv, train_loss=13.60, elbo_estimator=-122.]
+
+
+Epoch 393:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 16.72it/s, loss=10.2, v_num=iijv, train_loss=12.20, elbo_estimator=-98.1]
+
+
+Epoch 394:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 18.20it/s, loss=9.98, v_num=iijv, train_loss=12.60, elbo_estimator=-101.]
+
+
+Epoch 395:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 17.33it/s, loss=10.2, v_num=iijv, train_loss=12.60, elbo_estimator=-134.]
+
+
+Epoch 396:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 17.98it/s, loss=9.99, v_num=iijv, train_loss=12.00, elbo_estimator=-96.7]
+
+
+Epoch 397:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 17.48it/s, loss=10.2, v_num=iijv, train_loss=12.90, elbo_estimator=-96.3]
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 403:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 22.39it/s, loss=10.4, v_num=iijv, train_loss=12.00, elbo_estimator=-105.]
+
+
+Epoch 404:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 18.02it/s, loss=9.95, v_num=iijv, train_loss=12.40, elbo_estimator=-99.0]
+
+
+Epoch 405:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 16.92it/s, loss=9.97, v_num=iijv, train_loss=12.70, elbo_estimator=-113.]
+
+
+
+Epoch 407:  76%|█████████████████████████████████████████████████▎               | 60/79 [00:03<00:01, 17.28it/s, loss=10, v_num=iijv, train_loss=11.00, elbo_estimator=-116.]
+
+Epoch 408:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 16.12it/s, loss=10.1, v_num=iijv, train_loss=12.10, elbo_estimator=-102.]
+
+
+Epoch 409:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 16.66it/s, loss=10.3, v_num=iijv, train_loss=11.70, elbo_estimator=-109.]
+
+
+Epoch 410:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:00, 19.17it/s, loss=9.66, v_num=iijv, train_loss=10.80, elbo_estimator=-130.]
+
+
+Epoch 411:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 18.68it/s, loss=10.1, v_num=iijv, train_loss=12.40, elbo_estimator=-123.]
+
+
+
+
+
+
+
+Epoch 414:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 21.52it/s, loss=9.67, v_num=iijv, train_loss=10.70, elbo_estimator=-119.]
+
+
+Epoch 415:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 18.99it/s, loss=10.2, v_num=iijv, train_loss=12.90, elbo_estimator=-102.]
+
+
+
+
+
+
+
+Epoch 418:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:00, 19.07it/s, loss=10.1, v_num=iijv, train_loss=11.50, elbo_estimator=-115.]
+
+
+Epoch 419:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 16.85it/s, loss=9.98, v_num=iijv, train_loss=10.80, elbo_estimator=-109.]
+
+
+Epoch 420:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 17.67it/s, loss=10.2, v_num=iijv, train_loss=11.20, elbo_estimator=-100.]
+
+
+Epoch 421:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 15.96it/s, loss=10.4, v_num=iijv, train_loss=12.70, elbo_estimator=-138.]
+
+
+Epoch 422:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 16.37it/s, loss=10.1, v_num=iijv, train_loss=12.20, elbo_estimator=-118.]
+
+
+
+
+Epoch 424:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 18.86it/s, loss=10.2, v_num=iijv, train_loss=12.70, elbo_estimator=-128.]
+
+
+Epoch 425:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:00, 19.45it/s, loss=9.78, v_num=iijv, train_loss=10.20, elbo_estimator=-136.]
+
+
+Epoch 426:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 18.21it/s, loss=10.3, v_num=iijv, train_loss=11.90, elbo_estimator=-122.]
+
+
+Epoch 427:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 17.66it/s, loss=10.2, v_num=iijv, train_loss=11.70, elbo_estimator=-112.]
+
+
+Epoch 428:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 17.29it/s, loss=9.93, v_num=iijv, train_loss=11.00, elbo_estimator=-130.]
+
+
+
+Epoch 430:  76%|█████████████████████████████████████████████████▎               | 60/79 [00:03<00:01, 17.87it/s, loss=10, v_num=iijv, train_loss=11.70, elbo_estimator=-108.]
+
+
+Epoch 431:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 17.66it/s, loss=10.3, v_num=iijv, train_loss=13.80, elbo_estimator=-130.]
+
+
+Epoch 432:  76%|█████████████████████████████████████████████████▎               | 60/79 [00:03<00:01, 17.57it/s, loss=10, v_num=iijv, train_loss=11.60, elbo_estimator=-127.]
+
+
+Epoch 433:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:00, 19.26it/s, loss=10.1, v_num=iijv, train_loss=11.50, elbo_estimator=-147.]
+
+
+Epoch 434:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 16.09it/s, loss=9.84, v_num=iijv, train_loss=12.30, elbo_estimator=-103.]
+
+
+
+
+
+
+
+Epoch 437:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 17.64it/s, loss=9.95, v_num=iijv, train_loss=12.80, elbo_estimator=-98.6]
+
+
+Epoch 438:  76%|█████████████████████████████████████████████████▎               | 60/79 [00:03<00:01, 15.85it/s, loss=10, v_num=iijv, train_loss=12.50, elbo_estimator=-106.]
+
+
+Epoch 439:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 17.20it/s, loss=10.1, v_num=iijv, train_loss=13.10, elbo_estimator=-130.]
+
+Epoch 440:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 22.56it/s, loss=10.3, v_num=iijv, train_loss=12.60, elbo_estimator=-141.]
+
+
+Epoch 441:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 16.22it/s, loss=9.99, v_num=iijv, train_loss=10.30, elbo_estimator=-146.]
+
+
+Epoch 442:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 18.23it/s, loss=9.93, v_num=iijv, train_loss=12.10, elbo_estimator=-104.]
+
+
+Epoch 443:  76%|████████████████████████████████████████████████▌               | 60/79 [00:03<00:00, 19.46it/s, loss=9.8, v_num=iijv, train_loss=11.40, elbo_estimator=-121.]
+
+Epoch 444:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:00, 19.26it/s, loss=10.3, v_num=iijv, train_loss=11.90, elbo_estimator=-152.]
+
+
+Epoch 445:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 17.17it/s, loss=10.1, v_num=iijv, train_loss=13.20, elbo_estimator=-137.]
+
+
+Epoch 446:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 17.93it/s, loss=10.4, v_num=iijv, train_loss=13.90, elbo_estimator=-142.]
+
+
+
+
+Epoch 448:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 17.98it/s, loss=10.4, v_num=iijv, train_loss=13.60, elbo_estimator=-132.]
+
+
+Epoch 449:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 16.80it/s, loss=10.1, v_num=iijv, train_loss=11.80, elbo_estimator=-111.]
+
+
+Epoch 450:  76%|█████████████████████████████████████████████████▎               | 60/79 [00:03<00:00, 19.05it/s, loss=10, v_num=iijv, train_loss=12.20, elbo_estimator=-128.]
+
+
+Epoch 451:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 16.67it/s, loss=10.1, v_num=iijv, train_loss=13.10, elbo_estimator=-165.]
+
+
+
+
+
+
+
+Epoch 454:  76%|█████████████████████████████████████████████████▎               | 60/79 [00:03<00:00, 19.66it/s, loss=10, v_num=iijv, train_loss=11.50, elbo_estimator=-135.]
+
+
+Epoch 455:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 17.61it/s, loss=10.4, v_num=iijv, train_loss=11.20, elbo_estimator=-126.]
+
+
+Epoch 456:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:00, 19.67it/s, loss=9.83, v_num=iijv, train_loss=11.70, elbo_estimator=-125.]
+
+
+
+
+Epoch 458:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 20.79it/s, loss=10.2, v_num=iijv, train_loss=12.80, elbo_estimator=-137.]
+
+
+
+
+
+
+Epoch 461:  76%|████████████████████████████████████████████████▌               | 60/79 [00:03<00:00, 19.39it/s, loss=9.9, v_num=iijv, train_loss=13.10, elbo_estimator=-99.4]
+
+
+Epoch 462:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 17.39it/s, loss=10.2, v_num=iijv, train_loss=13.10, elbo_estimator=-109.]
+
+Epoch 463:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 15.58it/s, loss=10.3, v_num=iijv, train_loss=10.90, elbo_estimator=-122.]
+
+Epoch 464:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 16.63it/s, loss=10.2, v_num=iijv, train_loss=12.10, elbo_estimator=-127.]
+
+
+Epoch 465:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 17.88it/s, loss=10.5, v_num=iijv, train_loss=13.00, elbo_estimator=-117.]
+
+
+Epoch 466:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 16.49it/s, loss=9.96, v_num=iijv, train_loss=12.70, elbo_estimator=-106.]
+
+
+Epoch 467:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 17.88it/s, loss=10.3, v_num=iijv, train_loss=11.10, elbo_estimator=-145.]
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 472:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 16.81it/s, loss=10.1, v_num=iijv, train_loss=13.30, elbo_estimator=-114.]
+
+
+Epoch 473:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:00, 19.16it/s, loss=10.2, v_num=iijv, train_loss=11.30, elbo_estimator=-125.]
+
+
+
+
+
+
+Epoch 476:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 17.50it/s, loss=9.92, v_num=iijv, train_loss=11.30, elbo_estimator=-147.]
+
+
+Epoch 477:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 17.64it/s, loss=9.94, v_num=iijv, train_loss=11.90, elbo_estimator=-149.]
+
+
+Epoch 478:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 18.56it/s, loss=10.3, v_num=iijv, train_loss=10.80, elbo_estimator=-155.]
+
+
+Epoch 479:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 15.80it/s, loss=10.6, v_num=iijv, train_loss=12.00, elbo_estimator=-132.]
+
+Epoch 480:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 18.96it/s, loss=9.98, v_num=iijv, train_loss=11.20, elbo_estimator=-114.]
+
+
+Epoch 481:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 17.67it/s, loss=10.3, v_num=iijv, train_loss=11.50, elbo_estimator=-103.]
+
+
+Epoch 482:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 17.38it/s, loss=10.3, v_num=iijv, train_loss=12.30, elbo_estimator=-159.]
+
+
+Epoch 483:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 18.67it/s, loss=10.3, v_num=iijv, train_loss=13.20, elbo_estimator=-140.]
+
+
+
+Epoch 485:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 17.31it/s, loss=9.95, v_num=iijv, train_loss=11.90, elbo_estimator=-106.]
+
+
+
+
+Epoch 487:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 18.64it/s, loss=10.4, v_num=iijv, train_loss=13.60, elbo_estimator=-119.]
+
+Epoch 488:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 17.38it/s, loss=9.79, v_num=iijv, train_loss=11.20, elbo_estimator=-131.]
+
+
+Epoch 489:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 17.52it/s, loss=9.87, v_num=iijv, train_loss=12.90, elbo_estimator=-132.]
+
+
+Epoch 490:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:00, 19.26it/s, loss=9.97, v_num=iijv, train_loss=11.00, elbo_estimator=-148.]
+
+
+Epoch 491: 100%|███████████████████████████████████████████████████████████████| 79/79 [00:05<00:00, 14.30it/s, loss=10.1, v_num=iijv, train_loss=12.20, elbo_estimator=-145.]
+
+
+Epoch 492:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 16.35it/s, loss=10.2, v_num=iijv, train_loss=13.00, elbo_estimator=-126.]
+
+
+
+
+Epoch 494:  76%|█████████████████████████████████████████████████▎               | 60/79 [00:03<00:01, 17.83it/s, loss=10, v_num=iijv, train_loss=11.40, elbo_estimator=-148.]
+
+
+Epoch 495:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 17.18it/s, loss=10.2, v_num=iijv, train_loss=13.20, elbo_estimator=-120.]
+
+
+Epoch 496:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 16.11it/s, loss=10.5, v_num=iijv, train_loss=12.40, elbo_estimator=-109.]
+
+
+
+
+
+
+Epoch 499:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 18.66it/s, loss=10.1, v_num=iijv, train_loss=11.60, elbo_estimator=-115.]
+
+
+Epoch 500:  76%|█████████████████████████████████████████████████▎               | 60/79 [00:03<00:01, 18.14it/s, loss=10, v_num=iijv, train_loss=12.20, elbo_estimator=-118.]
+
+
+Epoch 501:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 21.09it/s, loss=10.6, v_num=iijv, train_loss=12.50, elbo_estimator=-154.]
+
+Epoch 502:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 20.74it/s, loss=10.2, v_num=iijv, train_loss=12.00, elbo_estimator=-127.]
+
+
+Epoch 503:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 21.04it/s, loss=10.4, v_num=iijv, train_loss=12.20, elbo_estimator=-109.]
+
+Epoch 504:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 20.91it/s, loss=9.99, v_num=iijv, train_loss=12.10, elbo_estimator=-118.]
+
+
+Epoch 505:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 20.94it/s, loss=10.2, v_num=iijv, train_loss=12.30, elbo_estimator=-131.]
+
+
+
+Epoch 507:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:00, 19.41it/s, loss=10.1, v_num=iijv, train_loss=11.50, elbo_estimator=-126.]
+
+
+Epoch 508:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 17.62it/s, loss=10.5, v_num=iijv, train_loss=11.80, elbo_estimator=-132.]
+
+
+
+
+Epoch 510:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:00, 19.30it/s, loss=9.94, v_num=iijv, train_loss=11.30, elbo_estimator=-130.]
+
+
+Epoch 511:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 17.66it/s, loss=10.1, v_num=iijv, train_loss=12.20, elbo_estimator=-107.]
+
+
+
+
+Epoch 513:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:00, 19.52it/s, loss=10.5, v_num=iijv, train_loss=11.80, elbo_estimator=-139.]
+
+
+Epoch 514:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 17.88it/s, loss=10.3, v_num=iijv, train_loss=11.90, elbo_estimator=-99.5]
+
+
+
+Epoch 516:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 16.78it/s, loss=10.4, v_num=iijv, train_loss=13.40, elbo_estimator=-149.]
+
+
+Epoch 517:  76%|█████████████████████████████████████████████████▎               | 60/79 [00:03<00:01, 18.14it/s, loss=10, v_num=iijv, train_loss=11.90, elbo_estimator=-143.]
+
+
+
+
+Epoch 519:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 18.28it/s, loss=10.2, v_num=iijv, train_loss=13.40, elbo_estimator=-140.]
+
+Epoch 520:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 17.30it/s, loss=10.3, v_num=iijv, train_loss=12.10, elbo_estimator=-154.]
+
+Epoch 521:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 17.74it/s, loss=10.2, v_num=iijv, train_loss=12.80, elbo_estimator=-105.]
+
+
+Epoch 522:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 17.97it/s, loss=10.7, v_num=iijv, train_loss=13.00, elbo_estimator=-135.]
+
+
+Epoch 523:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 18.41it/s, loss=9.95, v_num=iijv, train_loss=11.60, elbo_estimator=-112.]
+
+Epoch 524:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 20.39it/s, loss=9.81, v_num=iijv, train_loss=11.40, elbo_estimator=-131.]
+
+
+Epoch 525:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 17.21it/s, loss=9.89, v_num=iijv, train_loss=11.70, elbo_estimator=-118.]
+
+
+Epoch 526:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 17.52it/s, loss=10.1, v_num=iijv, train_loss=12.00, elbo_estimator=-131.]
+
+
+
+Epoch 528:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 17.17it/s, loss=10.1, v_num=iijv, train_loss=11.10, elbo_estimator=-133.]
+
+
+Epoch 529:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:00, 19.30it/s, loss=10.1, v_num=iijv, train_loss=13.20, elbo_estimator=-112.]
+
+
+
+
+Epoch 531:  76%|█████████████████████████████████████████████████▎               | 60/79 [00:02<00:00, 21.12it/s, loss=10, v_num=iijv, train_loss=12.80, elbo_estimator=-110.]
+
+
+Epoch 532:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 20.08it/s, loss=10.4, v_num=iijv, train_loss=11.70, elbo_estimator=-142.]
+
+Epoch 533:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 18.57it/s, loss=10.2, v_num=iijv, train_loss=11.80, elbo_estimator=-112.]
+
+
+Epoch 534:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 18.48it/s, loss=9.81, v_num=iijv, train_loss=11.10, elbo_estimator=-140.]
+
+
+Epoch 535:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 21.00it/s, loss=10.2, v_num=iijv, train_loss=12.40, elbo_estimator=-120.]
+
+Epoch 536:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:00, 19.39it/s, loss=9.87, v_num=iijv, train_loss=12.60, elbo_estimator=-114.]
+
+
+Epoch 537:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 23.40it/s, loss=9.76, v_num=iijv, train_loss=10.90, elbo_estimator=-106.]
+
+
+Epoch 538:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 16.94it/s, loss=9.98, v_num=iijv, train_loss=11.80, elbo_estimator=-133.]
+
+
+Epoch 539:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 16.98it/s, loss=9.68, v_num=iijv, train_loss=11.00, elbo_estimator=-153.]
+
+
+
+
+Epoch 541:  76%|████████████████████████████████████████████████▌               | 60/79 [00:03<00:00, 19.32it/s, loss=9.9, v_num=iijv, train_loss=12.20, elbo_estimator=-132.]
+
+
+Epoch 542:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 20.53it/s, loss=9.95, v_num=iijv, train_loss=12.30, elbo_estimator=-161.]
+
+
+
+
+Epoch 544:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 17.93it/s, loss=9.83, v_num=iijv, train_loss=10.90, elbo_estimator=-148.]
+
+
+Epoch 545:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 18.49it/s, loss=9.82, v_num=iijv, train_loss=10.50, elbo_estimator=-168.]
+
+
+Epoch 546:  76%|█████████████████████████████████████████████████▎               | 60/79 [00:03<00:00, 19.12it/s, loss=10, v_num=iijv, train_loss=12.20, elbo_estimator=-162.]
+
+
+
+
+Epoch 548:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:00, 19.77it/s, loss=9.84, v_num=iijv, train_loss=10.60, elbo_estimator=-153.]
+
+
+
+
+Epoch 550:  76%|█████████████████████████████████████████████████▎               | 60/79 [00:03<00:01, 17.69it/s, loss=10, v_num=iijv, train_loss=10.20, elbo_estimator=-142.]
+
+Epoch 551:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 16.69it/s, loss=9.98, v_num=iijv, train_loss=11.80, elbo_estimator=-123.]
+
+Epoch 552:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 18.99it/s, loss=10.2, v_num=iijv, train_loss=13.40, elbo_estimator=-143.]
+
+
+Epoch 553:  76%|████████████████████████████████████████████████▌               | 60/79 [00:03<00:01, 18.75it/s, loss=9.8, v_num=iijv, train_loss=11.60, elbo_estimator=-185.]
+
+
+
+
+Epoch 555:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:00, 19.64it/s, loss=10.2, v_num=iijv, train_loss=11.50, elbo_estimator=-165.]
+
+
+
+Epoch 557:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:00, 19.37it/s, loss=9.89, v_num=iijv, train_loss=11.40, elbo_estimator=-141.]
+
+
+Epoch 558:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 16.68it/s, loss=10.2, v_num=iijv, train_loss=12.10, elbo_estimator=-157.]
+
+
+Epoch 559:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 18.83it/s, loss=9.88, v_num=iijv, train_loss=11.90, elbo_estimator=-162.]
+
+
+
+Epoch 561:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 17.61it/s, loss=9.71, v_num=iijv, train_loss=12.10, elbo_estimator=-149.]
+
+
+
+
+Epoch 563:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:00, 19.48it/s, loss=9.72, v_num=iijv, train_loss=11.70, elbo_estimator=-160.]
+
+
+Epoch 564:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 18.29it/s, loss=9.87, v_num=iijv, train_loss=12.20, elbo_estimator=-190.]
+
+Epoch 565:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 21.08it/s, loss=9.98, v_num=iijv, train_loss=11.10, elbo_estimator=-174.]
+
+
+Epoch 566:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 18.85it/s, loss=9.58, v_num=iijv, train_loss=11.80, elbo_estimator=-204.]
+
+
+
+
+Epoch 568:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:00, 19.46it/s, loss=9.89, v_num=iijv, train_loss=11.20, elbo_estimator=-172.]
+
+Epoch 569:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 22.77it/s, loss=9.89, v_num=iijv, train_loss=10.80, elbo_estimator=-148.]
+
+
+Epoch 570:  76%|█████████████████████████████████████████████████▎               | 60/79 [00:03<00:01, 18.34it/s, loss=10, v_num=iijv, train_loss=13.20, elbo_estimator=-157.]
+
+
+Epoch 571:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 18.90it/s, loss=10.2, v_num=iijv, train_loss=11.00, elbo_estimator=-169.]
+
+
+
+
+Epoch 573:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 22.24it/s, loss=10.2, v_num=iijv, train_loss=13.40, elbo_estimator=-144.]
+
+Epoch 574:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:00, 19.96it/s, loss=9.89, v_num=iijv, train_loss=12.70, elbo_estimator=-138.]
+
+
+Epoch 575:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 22.00it/s, loss=10.1, v_num=iijv, train_loss=11.70, elbo_estimator=-169.]
+
+Epoch 576:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:00, 19.87it/s, loss=9.89, v_num=iijv, train_loss=12.00, elbo_estimator=-117.]
+
+
+Epoch 577:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 21.17it/s, loss=10.3, v_num=iijv, train_loss=11.60, elbo_estimator=-154.]
+
+Epoch 578:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:00, 19.54it/s, loss=9.98, v_num=iijv, train_loss=11.20, elbo_estimator=-139.]
+
+
+Epoch 579:  76%|█████████████████████████████████████████████████▎               | 60/79 [00:03<00:00, 19.10it/s, loss=10, v_num=iijv, train_loss=12.70, elbo_estimator=-120.]
+
+Epoch 580:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 20.65it/s, loss=9.91, v_num=iijv, train_loss=11.30, elbo_estimator=-153.]
+
+
+Epoch 581:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 20.13it/s, loss=9.84, v_num=iijv, train_loss=12.80, elbo_estimator=-143.]
+
+Epoch 582:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 20.23it/s, loss=9.79, v_num=iijv, train_loss=11.50, elbo_estimator=-168.]
+
+
+Epoch 583:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 18.47it/s, loss=10.1, v_num=iijv, train_loss=12.00, elbo_estimator=-125.]
+
+Epoch 584:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 22.90it/s, loss=9.79, v_num=iijv, train_loss=12.90, elbo_estimator=-143.]
+
+
+Epoch 585:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 20.54it/s, loss=9.93, v_num=iijv, train_loss=10.80, elbo_estimator=-152.]
+
+
+
+
+Epoch 587:  76%|████████████████████████████████████████████████▌               | 60/79 [00:02<00:00, 21.02it/s, loss=9.6, v_num=iijv, train_loss=10.60, elbo_estimator=-162.]
+
+
+
+
+Epoch 589:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 20.35it/s, loss=9.77, v_num=iijv, train_loss=12.00, elbo_estimator=-166.]
+
+
+Epoch 590:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:00, 19.55it/s, loss=9.51, v_num=iijv, train_loss=11.80, elbo_estimator=-177.]
+
+
+
+Epoch 592:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:00, 19.32it/s, loss=10.1, v_num=iijv, train_loss=11.70, elbo_estimator=-190.]
+
+
+
+
+Epoch 594:  76%|█████████████████████████████████████████████████▎               | 60/79 [00:02<00:00, 21.01it/s, loss=10, v_num=iijv, train_loss=12.50, elbo_estimator=-159.]
+
+
+
+
+Epoch 596:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 18.35it/s, loss=9.68, v_num=iijv, train_loss=12.30, elbo_estimator=-148.]
+
+
+Epoch 597:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:00, 19.67it/s, loss=9.84, v_num=iijv, train_loss=10.90, elbo_estimator=-202.]
+
+
+
+
+Epoch 599:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:00, 19.87it/s, loss=9.85, v_num=iijv, train_loss=12.40, elbo_estimator=-122.]
+
+Epoch 600:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 21.67it/s, loss=10.1, v_num=iijv, train_loss=10.80, elbo_estimator=-141.]
+
+Epoch 601:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 20.00it/s, loss=9.61, v_num=iijv, train_loss=10.60, elbo_estimator=-160.]
+
+
+
+
+Epoch 603:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 23.00it/s, loss=9.82, v_num=iijv, train_loss=10.40, elbo_estimator=-132.]
+
+
+
+Epoch 605:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 18.79it/s, loss=9.82, v_num=iijv, train_loss=12.50, elbo_estimator=-163.]
+
+
+Epoch 606:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:00, 19.78it/s, loss=9.51, v_num=iijv, train_loss=11.70, elbo_estimator=-165.]
+
+Epoch 607:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 22.15it/s, loss=9.89, v_num=iijv, train_loss=11.60, elbo_estimator=-171.]
+
+
+
+
+
+
+
+Epoch 610:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 21.87it/s, loss=9.81, v_num=iijv, train_loss=13.80, elbo_estimator=-171.]
+
+Epoch 611:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 21.46it/s, loss=10.1, v_num=iijv, train_loss=11.80, elbo_estimator=-150.]
+
+
+Epoch 612:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 16.64it/s, loss=9.97, v_num=iijv, train_loss=12.10, elbo_estimator=-145.]
+
+
+
+Epoch 614:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:00, 19.12it/s, loss=9.75, v_num=iijv, train_loss=12.40, elbo_estimator=-169.]
+
+
+Epoch 615:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 18.55it/s, loss=9.62, v_num=iijv, train_loss=11.00, elbo_estimator=-163.]
+
+
+
+
+Epoch 617:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 20.36it/s, loss=10.1, v_num=iijv, train_loss=12.00, elbo_estimator=-159.]
+
+
+Epoch 618:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 20.86it/s, loss=9.75, v_num=iijv, train_loss=12.10, elbo_estimator=-150.]
+
+Epoch 619:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 21.27it/s, loss=9.92, v_num=iijv, train_loss=13.20, elbo_estimator=-139.]
+
+
+Epoch 620:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 18.52it/s, loss=9.83, v_num=iijv, train_loss=10.40, elbo_estimator=-129.]
+
+Epoch 621:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 20.72it/s, loss=9.64, v_num=iijv, train_loss=12.10, elbo_estimator=-143.]
+
+
+Epoch 622:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 19.00it/s, loss=9.63, v_num=iijv, train_loss=10.80, elbo_estimator=-132.]
+
+
+
+
+Epoch 624:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 20.24it/s, loss=9.64, v_num=iijv, train_loss=11.80, elbo_estimator=-153.]
+
+
+Epoch 625:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:00, 19.50it/s, loss=9.24, v_num=iijv, train_loss=10.40, elbo_estimator=-137.]
+
+
+
+
+Epoch 627:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 20.82it/s, loss=9.34, v_num=iijv, train_loss=11.10, elbo_estimator=-143.]
+
+Epoch 628:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 21.17it/s, loss=9.53, v_num=iijv, train_loss=10.70, elbo_estimator=-149.]
+
+
+Epoch 629:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 21.57it/s, loss=9.81, v_num=iijv, train_loss=11.20, elbo_estimator=-159.]
+
+Epoch 630:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 20.05it/s, loss=9.44, v_num=iijv, train_loss=11.60, elbo_estimator=-124.]
+
+
+Epoch 631:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 20.40it/s, loss=9.73, v_num=iijv, train_loss=11.50, elbo_estimator=-149.]
+
+Epoch 632:  76%|████████████████████████████████████████████████▌               | 60/79 [00:03<00:00, 19.68it/s, loss=9.6, v_num=iijv, train_loss=12.60, elbo_estimator=-156.]
+
+
+Epoch 633:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 21.76it/s, loss=9.56, v_num=iijv, train_loss=11.40, elbo_estimator=-149.]
+
+Epoch 634:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 20.87it/s, loss=9.51, v_num=iijv, train_loss=9.520, elbo_estimator=-130.]
+
+
+Epoch 635:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 18.36it/s, loss=9.52, v_num=iijv, train_loss=11.70, elbo_estimator=-153.]
+
+
+
+
+Epoch 637:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 21.37it/s, loss=9.56, v_num=iijv, train_loss=12.40, elbo_estimator=-145.]
+
+Epoch 638:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 22.90it/s, loss=9.98, v_num=iijv, train_loss=11.00, elbo_estimator=-154.]
+
+
+Epoch 639:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 20.03it/s, loss=9.45, v_num=iijv, train_loss=12.10, elbo_estimator=-103.]
+
+Epoch 640:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 21.40it/s, loss=9.68, v_num=iijv, train_loss=10.70, elbo_estimator=-144.]
+
+
+Epoch 641:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:00, 19.78it/s, loss=9.44, v_num=iijv, train_loss=11.50, elbo_estimator=-131.]
+
+
+
+
+
+
+Epoch 644:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 20.22it/s, loss=9.29, v_num=iijv, train_loss=10.70, elbo_estimator=-150.]
+
+
+
+
+Epoch 646:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:00, 19.88it/s, loss=9.24, v_num=iijv, train_loss=11.90, elbo_estimator=-151.]
+
+
+
+
+Epoch 648:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 23.54it/s, loss=9.63, v_num=iijv, train_loss=12.00, elbo_estimator=-150.]
+
+Epoch 649:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:00, 19.89it/s, loss=9.35, v_num=iijv, train_loss=10.70, elbo_estimator=-156.]
+
+
+Epoch 650:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 21.76it/s, loss=9.45, v_num=iijv, train_loss=10.00, elbo_estimator=-149.]
+
+
+
+
+Epoch 652:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 20.27it/s, loss=9.59, v_num=iijv, train_loss=11.40, elbo_estimator=-151.]
+
+
+Epoch 653:  76%|████████████████████████████████████████████████▌               | 60/79 [00:03<00:00, 19.49it/s, loss=9.6, v_num=iijv, train_loss=12.20, elbo_estimator=-140.]
+
+
+
+
+Epoch 655:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 21.69it/s, loss=9.38, v_num=iijv, train_loss=11.30, elbo_estimator=-197.]
+
+
+
+
+Epoch 657:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 20.88it/s, loss=9.75, v_num=iijv, train_loss=11.00, elbo_estimator=-194.]
+
+
+
+
+Epoch 659:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 20.07it/s, loss=9.56, v_num=iijv, train_loss=11.30, elbo_estimator=-147.]
+
+
+Epoch 660:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:00, 19.20it/s, loss=9.65, v_num=iijv, train_loss=11.80, elbo_estimator=-158.]
+
+
+
+
+Epoch 662:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:00, 19.30it/s, loss=9.47, v_num=iijv, train_loss=11.10, elbo_estimator=-153.]
+
+Epoch 663:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 21.86it/s, loss=9.44, v_num=iijv, train_loss=11.00, elbo_estimator=-157.]
+
+
+Epoch 664:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:00, 19.86it/s, loss=9.61, v_num=iijv, train_loss=11.70, elbo_estimator=-160.]
+
+
+Epoch 665:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:00, 19.40it/s, loss=9.17, v_num=iijv, train_loss=12.10, elbo_estimator=-139.]
+
+Epoch 666:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 21.72it/s, loss=9.35, v_num=iijv, train_loss=12.30, elbo_estimator=-161.]
+
+
+Epoch 667:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 20.11it/s, loss=9.29, v_num=iijv, train_loss=9.430, elbo_estimator=-153.]
+
+Epoch 668:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 21.44it/s, loss=9.81, v_num=iijv, train_loss=10.90, elbo_estimator=-179.]
+
+
+
+
+Epoch 670:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 20.46it/s, loss=9.64, v_num=iijv, train_loss=11.00, elbo_estimator=-149.]
+
+
+
+
+Epoch 672:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 22.42it/s, loss=9.08, v_num=iijv, train_loss=11.70, elbo_estimator=-140.]
+
+
+
+
+Epoch 674:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:00, 19.97it/s, loss=9.43, v_num=iijv, train_loss=11.10, elbo_estimator=-148.]
+
+
+Epoch 675:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 18.16it/s, loss=9.42, v_num=iijv, train_loss=12.40, elbo_estimator=-167.]
+
+
+
+
+Epoch 677:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 20.61it/s, loss=8.96, v_num=iijv, train_loss=11.60, elbo_estimator=-128.]
+
+
+Epoch 678:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 21.79it/s, loss=9.35, v_num=iijv, train_loss=9.870, elbo_estimator=-140.]
+
+Epoch 679:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 21.90it/s, loss=9.86, v_num=iijv, train_loss=12.40, elbo_estimator=-133.]
+
+
+
+
+Epoch 681:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 22.26it/s, loss=9.38, v_num=iijv, train_loss=11.20, elbo_estimator=-120.]
+
+
+Epoch 682:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:00, 19.69it/s, loss=9.07, v_num=iijv, train_loss=10.50, elbo_estimator=-150.]
+
+
+
+
+Epoch 684:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:00, 19.50it/s, loss=9.35, v_num=iijv, train_loss=11.50, elbo_estimator=-141.]
+
+
+
+
+Epoch 686:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 21.89it/s, loss=9.36, v_num=iijv, train_loss=10.30, elbo_estimator=-140.]
+
+
+
+
+Epoch 688:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 22.38it/s, loss=9.27, v_num=iijv, train_loss=11.40, elbo_estimator=-141.]
+
+Epoch 689:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 21.30it/s, loss=9.32, v_num=iijv, train_loss=11.30, elbo_estimator=-139.]
+
+
+
+
+Epoch 691:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:00, 19.15it/s, loss=9.48, v_num=iijv, train_loss=11.20, elbo_estimator=-134.]
+
+
+Epoch 692:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 22.59it/s, loss=9.38, v_num=iijv, train_loss=11.70, elbo_estimator=-169.]
+
+
+
+
+Epoch 694:  76%|████████████████████████████████████████████████▌               | 60/79 [00:03<00:00, 19.83it/s, loss=9.5, v_num=iijv, train_loss=12.60, elbo_estimator=-138.]
+
+
+
+
+Epoch 696:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 20.54it/s, loss=9.25, v_num=iijv, train_loss=12.40, elbo_estimator=-140.]
+
+
+
+
+Epoch 698:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 22.27it/s, loss=9.14, v_num=iijv, train_loss=9.600, elbo_estimator=-151.]
+
+
+
+
+Epoch 700:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 18.87it/s, loss=9.65, v_num=iijv, train_loss=10.90, elbo_estimator=-153.]
+
+
+
+
+Epoch 702:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 20.42it/s, loss=9.21, v_num=iijv, train_loss=10.80, elbo_estimator=-144.]
+
+Epoch 703:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 22.79it/s, loss=9.29, v_num=iijv, train_loss=10.90, elbo_estimator=-133.]
+
+
+Epoch 704:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 16.42it/s, loss=9.14, v_num=iijv, train_loss=10.90, elbo_estimator=-179.]
+
+
+
+
+Epoch 706:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:00, 19.80it/s, loss=9.18, v_num=iijv, train_loss=12.70, elbo_estimator=-123.]
+
+
+
+
+Epoch 708:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 23.52it/s, loss=9.17, v_num=iijv, train_loss=10.90, elbo_estimator=-125.]
+
+
+
+Epoch 710:  76%|████████████████████████████████████████████████▌               | 60/79 [00:03<00:01, 18.31it/s, loss=9.3, v_num=iijv, train_loss=12.00, elbo_estimator=-128.]
+
+
+
+
+Epoch 712:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 20.59it/s, loss=9.34, v_num=iijv, train_loss=10.70, elbo_estimator=-141.]
+
+
+
+
+Epoch 714:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 20.84it/s, loss=9.15, v_num=iijv, train_loss=10.70, elbo_estimator=-145.]
+
+
+
+Epoch 716:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 18.64it/s, loss=9.51, v_num=iijv, train_loss=10.80, elbo_estimator=-136.]
+
+
+Epoch 717:  76%|████████████████████████████████████████████████▌               | 60/79 [00:03<00:01, 17.63it/s, loss=9.3, v_num=iijv, train_loss=10.60, elbo_estimator=-133.]
+
+
+
+
+Epoch 719:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 18.11it/s, loss=9.52, v_num=iijv, train_loss=10.20, elbo_estimator=-156.]
+
+
+Epoch 720:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 21.69it/s, loss=9.22, v_num=iijv, train_loss=10.80, elbo_estimator=-148.]
+
+Epoch 721:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 22.47it/s, loss=8.84, v_num=iijv, train_loss=8.980, elbo_estimator=-133.]
+
+
+Epoch 722:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 20.20it/s, loss=9.18, v_num=iijv, train_loss=10.80, elbo_estimator=-123.]
+
+Epoch 723:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 22.64it/s, loss=9.36, v_num=iijv, train_loss=11.00, elbo_estimator=-142.]
+
+
+
+
+Epoch 725:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 20.69it/s, loss=9.13, v_num=iijv, train_loss=11.30, elbo_estimator=-144.]
+
+
+
+
+Epoch 727:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 23.15it/s, loss=9.12, v_num=iijv, train_loss=11.60, elbo_estimator=-145.]
+
+
+
+
+Epoch 729:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:00, 19.26it/s, loss=9.22, v_num=iijv, train_loss=11.10, elbo_estimator=-182.]
+
+
+
+
+Epoch 731:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 18.74it/s, loss=9.35, v_num=iijv, train_loss=11.40, elbo_estimator=-167.]
+
+
+Epoch 732:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 20.39it/s, loss=9.38, v_num=iijv, train_loss=10.20, elbo_estimator=-168.]
+
+Epoch 733:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 23.18it/s, loss=9.09, v_num=iijv, train_loss=11.30, elbo_estimator=-185.]
+
+
+
+
+Epoch 735:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 20.42it/s, loss=9.18, v_num=iijv, train_loss=10.30, elbo_estimator=-166.]
+
+
+
+Epoch 737:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:00, 19.58it/s, loss=9.12, v_num=iijv, train_loss=9.920, elbo_estimator=-152.]
+
+Epoch 738:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 26.01it/s, loss=9.45, v_num=iijv, train_loss=10.80, elbo_estimator=-198.]
+
+
+
+
+Epoch 740:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 22.62it/s, loss=8.99, v_num=iijv, train_loss=9.610, elbo_estimator=-177.]
+
+
+
+
+
+
+Epoch 743:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 20.21it/s, loss=9.14, v_num=iijv, train_loss=11.20, elbo_estimator=-159.]
+
+
+
+
+Epoch 745:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 22.93it/s, loss=9.14, v_num=iijv, train_loss=10.10, elbo_estimator=-149.]
+
+
+
+
+Epoch 747:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 21.64it/s, loss=9.03, v_num=iijv, train_loss=10.20, elbo_estimator=-142.]
+
+Epoch 748:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 21.25it/s, loss=8.98, v_num=iijv, train_loss=10.10, elbo_estimator=-173.]
+
+
+Epoch 749:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 20.58it/s, loss=9.18, v_num=iijv, train_loss=11.30, elbo_estimator=-166.]
+
+
+
+
+Epoch 751:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 22.60it/s, loss=9.12, v_num=iijv, train_loss=10.70, elbo_estimator=-207.]
+
+Epoch 752:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 21.71it/s, loss=8.96, v_num=iijv, train_loss=11.50, elbo_estimator=-156.]
+
+
+
+
+Epoch 754:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 20.01it/s, loss=9.12, v_num=iijv, train_loss=11.20, elbo_estimator=-173.]
+
+Epoch 755:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 20.06it/s, loss=8.87, v_num=iijv, train_loss=10.20, elbo_estimator=-209.]
+
+
+Epoch 756:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 22.76it/s, loss=9.19, v_num=iijv, train_loss=10.10, elbo_estimator=-147.]
+
+
+
+
+Epoch 758:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 22.13it/s, loss=9.12, v_num=iijv, train_loss=11.50, elbo_estimator=-175.]
+
+Epoch 759:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 21.44it/s, loss=8.81, v_num=iijv, train_loss=10.40, elbo_estimator=-181.]
+
+
+
+
+Epoch 761:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 20.62it/s, loss=9.11, v_num=iijv, train_loss=11.50, elbo_estimator=-185.]
+
+
+
+
+Epoch 763:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:00, 19.43it/s, loss=9.07, v_num=iijv, train_loss=9.730, elbo_estimator=-171.]
+
+Epoch 764:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 23.27it/s, loss=8.98, v_num=iijv, train_loss=10.70, elbo_estimator=-156.]
+
+
+Epoch 765:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:00, 19.92it/s, loss=9.31, v_num=iijv, train_loss=12.40, elbo_estimator=-140.]
+
+Epoch 766:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 23.50it/s, loss=9.33, v_num=iijv, train_loss=11.70, elbo_estimator=-183.]
+
+
+Epoch 767:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 22.43it/s, loss=9.24, v_num=iijv, train_loss=10.50, elbo_estimator=-185.]
+
+
+
+
+Epoch 769:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 20.51it/s, loss=9.19, v_num=iijv, train_loss=10.80, elbo_estimator=-164.]
+
+
+
+
+Epoch 771:  76%|████████████████████████████████████████████████▌               | 60/79 [00:02<00:00, 20.02it/s, loss=9.2, v_num=iijv, train_loss=11.30, elbo_estimator=-130.]
+
+
+
+
+Epoch 773:  76%|████████████████████████████████████████████████▌               | 60/79 [00:02<00:00, 21.06it/s, loss=8.8, v_num=iijv, train_loss=9.650, elbo_estimator=-144.]
+
+Epoch 774:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 22.27it/s, loss=8.89, v_num=iijv, train_loss=10.90, elbo_estimator=-123.]
+
+Epoch 775:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:00, 19.82it/s, loss=8.91, v_num=iijv, train_loss=10.70, elbo_estimator=-144.]
+
+
+
+
+Epoch 777:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 22.14it/s, loss=8.69, v_num=iijv, train_loss=11.40, elbo_estimator=-164.]
+
+
+
+
+Epoch 779: 100%|███████████████████████████████████████████████████████████████| 79/79 [00:04<00:00, 18.02it/s, loss=9.12, v_num=iijv, train_loss=11.30, elbo_estimator=-194.]
+
+Epoch 780:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 20.87it/s, loss=9.04, v_num=iijv, train_loss=10.40, elbo_estimator=-186.]
+
+
+Epoch 781:  76%|████████████████████████████████████████████████▌               | 60/79 [00:03<00:01, 18.57it/s, loss=8.9, v_num=iijv, train_loss=9.510, elbo_estimator=-200.]
+
+Epoch 782:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 21.14it/s, loss=9.15, v_num=iijv, train_loss=11.70, elbo_estimator=-187.]
+
+
+
+
+Epoch 784:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:01, 18.34it/s, loss=9.18, v_num=iijv, train_loss=10.60, elbo_estimator=-196.]
+
+
+
+
+
+
+Epoch 787:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 23.80it/s, loss=9.39, v_num=iijv, train_loss=10.60, elbo_estimator=-167.]
+
+Epoch 788:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 22.55it/s, loss=8.94, v_num=iijv, train_loss=11.70, elbo_estimator=-146.]
+
+
+
+
+Epoch 790:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 24.79it/s, loss=8.56, v_num=iijv, train_loss=10.60, elbo_estimator=-171.]
+
+Epoch 791:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 23.89it/s, loss=9.02, v_num=iijv, train_loss=9.740, elbo_estimator=-168.]
+
+
+
+
+
+
+Epoch 794:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 23.25it/s, loss=8.86, v_num=iijv, train_loss=10.70, elbo_estimator=-157.]
+
+Epoch 795:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 22.81it/s, loss=8.83, v_num=iijv, train_loss=11.30, elbo_estimator=-202.]
+
+
+
+
+Epoch 797:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 23.07it/s, loss=9.33, v_num=iijv, train_loss=11.20, elbo_estimator=-177.]
+
+Epoch 798:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 22.82it/s, loss=8.96, v_num=iijv, train_loss=11.00, elbo_estimator=-208.]
+
+
+
+
+
+
+Epoch 801:  76%|███████████████████████████████████████████████▊               | 60/79 [00:03<00:00, 19.72it/s, loss=8.92, v_num=iijv, train_loss=9.950, elbo_estimator=-151.]
+
+Epoch 802:  76%|██████████████████████████████████████████████████▏               | 60/79 [00:02<00:00, 22.47it/s, loss=9, v_num=iijv, train_loss=11.90, elbo_estimator=-153.]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 810:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 27.58it/s, loss=9.01, v_num=iijv, train_loss=9.660, elbo_estimator=-180.]
+
+Epoch 811:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 29.32it/s, loss=9.18, v_num=iijv, train_loss=10.60, elbo_estimator=-168.]
+
+
+
+
+
+
+
+
+Epoch 815:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 23.40it/s, loss=9.01, v_num=iijv, train_loss=10.90, elbo_estimator=-174.]
+
+Epoch 816:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 25.33it/s, loss=9.13, v_num=iijv, train_loss=11.60, elbo_estimator=-169.]
+
+Epoch 817:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 25.77it/s, loss=8.94, v_num=iijv, train_loss=10.30, elbo_estimator=-188.]
+
+Epoch 818:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 27.16it/s, loss=8.86, v_num=iijv, train_loss=9.830, elbo_estimator=-215.]
+
+Epoch 819:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 29.98it/s, loss=9.01, v_num=iijv, train_loss=11.20, elbo_estimator=-195.]
+
+Epoch 820:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 24.04it/s, loss=9.13, v_num=iijv, train_loss=12.10, elbo_estimator=-182.]
+
+Epoch 821:  76%|███████████████████████████████████████████████▊               | 60/79 [00:01<00:00, 30.32it/s, loss=9.35, v_num=iijv, train_loss=10.90, elbo_estimator=-209.]
+
+Epoch 822:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 24.14it/s, loss=9.36, v_num=iijv, train_loss=11.50, elbo_estimator=-199.]
+
+Epoch 823:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 23.21it/s, loss=8.83, v_num=iijv, train_loss=10.30, elbo_estimator=-194.]
+
+Epoch 824:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 27.27it/s, loss=8.92, v_num=iijv, train_loss=10.50, elbo_estimator=-211.]
+
+Epoch 825:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 28.07it/s, loss=9.16, v_num=iijv, train_loss=11.50, elbo_estimator=-172.]
+
+Epoch 826:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 24.54it/s, loss=9.02, v_num=iijv, train_loss=12.20, elbo_estimator=-174.]
+
+Epoch 827:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 27.64it/s, loss=9.13, v_num=iijv, train_loss=10.10, elbo_estimator=-197.]
+
+Epoch 828:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 26.41it/s, loss=9.08, v_num=iijv, train_loss=12.10, elbo_estimator=-151.]
+
+Epoch 829:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 25.95it/s, loss=8.99, v_num=iijv, train_loss=11.10, elbo_estimator=-177.]
+
+Epoch 830:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 27.33it/s, loss=8.78, v_num=iijv, train_loss=9.510, elbo_estimator=-176.]
+
+Epoch 831:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 26.48it/s, loss=8.74, v_num=iijv, train_loss=11.10, elbo_estimator=-190.]
+
+Epoch 832:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 25.97it/s, loss=9.26, v_num=iijv, train_loss=11.20, elbo_estimator=-158.]
+
+Epoch 833:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 26.66it/s, loss=8.97, v_num=iijv, train_loss=9.720, elbo_estimator=-185.]
+
+Epoch 834: 100%|███████████████████████████████████████████████████████████████| 79/79 [00:03<00:00, 21.27it/s, loss=9.12, v_num=iijv, train_loss=11.00, elbo_estimator=-167.]
+
+
+
+
+
+
+
+Epoch 838:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 24.10it/s, loss=9.19, v_num=iijv, train_loss=12.70, elbo_estimator=-201.]
+
+Epoch 839:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 26.59it/s, loss=9.44, v_num=iijv, train_loss=11.10, elbo_estimator=-174.]
+
+Epoch 840:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 24.17it/s, loss=8.94, v_num=iijv, train_loss=11.90, elbo_estimator=-214.]
+
+Epoch 841:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 26.50it/s, loss=8.77, v_num=iijv, train_loss=9.740, elbo_estimator=-156.]
+
+Epoch 842:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 26.19it/s, loss=8.82, v_num=iijv, train_loss=11.40, elbo_estimator=-162.]
+
+Epoch 843:  76%|████████████████████████████████████████████████▌               | 60/79 [00:02<00:00, 26.30it/s, loss=8.9, v_num=iijv, train_loss=10.50, elbo_estimator=-151.]
+
+Epoch 844:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 27.90it/s, loss=8.87, v_num=iijv, train_loss=9.170, elbo_estimator=-196.]
+
+Epoch 845:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 23.51it/s, loss=9.27, v_num=iijv, train_loss=12.50, elbo_estimator=-185.]
+
+Epoch 846:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 26.79it/s, loss=8.85, v_num=iijv, train_loss=11.70, elbo_estimator=-162.]
+
+Epoch 847:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 26.40it/s, loss=8.93, v_num=iijv, train_loss=11.10, elbo_estimator=-180.]
+
+Epoch 848:  76%|████████████████████████████████████████████████▌               | 60/79 [00:02<00:00, 26.20it/s, loss=9.2, v_num=iijv, train_loss=9.900, elbo_estimator=-141.]
+
+Epoch 849:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 24.90it/s, loss=8.85, v_num=iijv, train_loss=10.70, elbo_estimator=-155.]
+
+Epoch 850:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 23.61it/s, loss=8.67, v_num=iijv, train_loss=11.10, elbo_estimator=-157.]
+
+Epoch 851:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 27.49it/s, loss=8.94, v_num=iijv, train_loss=10.40, elbo_estimator=-162.]
+
+Epoch 852:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 24.73it/s, loss=8.87, v_num=iijv, train_loss=11.40, elbo_estimator=-171.]
+
+Epoch 853:  76%|████████████████████████████████████████████████▌               | 60/79 [00:02<00:00, 24.83it/s, loss=8.8, v_num=iijv, train_loss=9.370, elbo_estimator=-176.]
+
+Epoch 854:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 26.18it/s, loss=9.05, v_num=iijv, train_loss=12.20, elbo_estimator=-157.]
+
+Epoch 855:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 24.22it/s, loss=8.89, v_num=iijv, train_loss=11.50, elbo_estimator=-149.]
+
+
+
+
+
+
+
+
+
+Epoch 860:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 28.47it/s, loss=9.13, v_num=iijv, train_loss=10.10, elbo_estimator=-195.]
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 867:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 29.53it/s, loss=8.99, v_num=iijv, train_loss=11.20, elbo_estimator=-148.]
+
+
+
+
+
+
+
+
+
+
+Epoch 872:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 25.48it/s, loss=9.02, v_num=iijv, train_loss=9.830, elbo_estimator=-156.]
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 879:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 21.36it/s, loss=8.99, v_num=iijv, train_loss=10.90, elbo_estimator=-188.]
+
+Epoch 880:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 27.89it/s, loss=9.11, v_num=iijv, train_loss=10.30, elbo_estimator=-181.]
+
+Epoch 881:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 24.64it/s, loss=8.91, v_num=iijv, train_loss=10.00, elbo_estimator=-136.]
+
+Epoch 882:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 28.37it/s, loss=8.81, v_num=iijv, train_loss=10.90, elbo_estimator=-177.]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 899:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 29.96it/s, loss=8.94, v_num=iijv, train_loss=9.980, elbo_estimator=-164.]
+
+Epoch 900:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 25.61it/s, loss=8.78, v_num=iijv, train_loss=10.40, elbo_estimator=-162.]
+
+Epoch 901:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 28.22it/s, loss=8.65, v_num=iijv, train_loss=10.60, elbo_estimator=-171.]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 924:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 27.88it/s, loss=8.85, v_num=iijv, train_loss=10.60, elbo_estimator=-212.]
+
+Epoch 925:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 25.31it/s, loss=8.57, v_num=iijv, train_loss=10.50, elbo_estimator=-189.]
+
+Epoch 926:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 27.07it/s, loss=8.87, v_num=iijv, train_loss=11.60, elbo_estimator=-166.]
+
+Epoch 927:  76%|████████████████████████████████████████████████▌               | 60/79 [00:02<00:00, 25.07it/s, loss=8.9, v_num=iijv, train_loss=10.50, elbo_estimator=-218.]
+
+Epoch 928:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 27.62it/s, loss=8.63, v_num=iijv, train_loss=9.950, elbo_estimator=-200.]
+
+
+
+
+
+
+
+
+
+
+Epoch 934:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 28.39it/s, loss=8.94, v_num=iijv, train_loss=10.40, elbo_estimator=-198.]
+
+Epoch 935:  76%|███████████████████████████████████████████████▊               | 60/79 [00:01<00:00, 30.39it/s, loss=8.51, v_num=iijv, train_loss=10.00, elbo_estimator=-183.]
+
+Epoch 936:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 26.33it/s, loss=8.61, v_num=iijv, train_loss=10.50, elbo_estimator=-199.]
+
+Epoch 937:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 26.31it/s, loss=8.77, v_num=iijv, train_loss=9.130, elbo_estimator=-177.]
+
+
+
+
+
+
+
+
+Epoch 942:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 29.37it/s, loss=8.58, v_num=iijv, train_loss=10.20, elbo_estimator=-238.]
+
+Epoch 943:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 28.90it/s, loss=8.48, v_num=iijv, train_loss=10.10, elbo_estimator=-195.]
+
+Epoch 944:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 29.98it/s, loss=8.83, v_num=iijv, train_loss=11.70, elbo_estimator=-216.]
+
+
+
+
+
+
+
+
+Epoch 949:  76%|████████████████████████████████████████████████▌               | 60/79 [00:02<00:00, 28.83it/s, loss=8.7, v_num=iijv, train_loss=9.370, elbo_estimator=-189.]
+
+Epoch 950:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 27.47it/s, loss=8.67, v_num=iijv, train_loss=11.70, elbo_estimator=-164.]
+
+Epoch 951:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 26.15it/s, loss=9.05, v_num=iijv, train_loss=10.80, elbo_estimator=-197.]
+
+Epoch 952:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 28.88it/s, loss=8.88, v_num=iijv, train_loss=11.30, elbo_estimator=-192.]
+
+Epoch 953:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 26.01it/s, loss=8.97, v_num=iijv, train_loss=11.20, elbo_estimator=-204.]
+
+Epoch 954:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 27.20it/s, loss=8.95, v_num=iijv, train_loss=9.750, elbo_estimator=-194.]
+
+
+
+
+
+
+
+
+Epoch 959:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 28.60it/s, loss=8.79, v_num=iijv, train_loss=12.00, elbo_estimator=-179.]
+
+Epoch 960:  76%|███████████████████████████████████████████████▊               | 60/79 [00:01<00:00, 30.96it/s, loss=8.87, v_num=iijv, train_loss=11.60, elbo_estimator=-205.]
+
+Epoch 961:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 27.14it/s, loss=8.83, v_num=iijv, train_loss=11.10, elbo_estimator=-250.]
+
+
+
+
+Epoch 964:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 26.08it/s, loss=8.91, v_num=iijv, train_loss=11.10, elbo_estimator=-184.]
+
+Epoch 965:  76%|████████████████████████████████████████████████▌               | 60/79 [00:01<00:00, 30.18it/s, loss=8.8, v_num=iijv, train_loss=9.950, elbo_estimator=-217.]
+
+
+
+
+
+
+Epoch 969:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 28.89it/s, loss=8.66, v_num=iijv, train_loss=11.30, elbo_estimator=-214.]
+
+Epoch 970:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 29.84it/s, loss=8.71, v_num=iijv, train_loss=9.840, elbo_estimator=-219.]
+
+
+Epoch 972:  76%|███████████████████████████████████████████████▊               | 60/79 [00:01<00:00, 33.48it/s, loss=8.49, v_num=iijv, train_loss=10.00, elbo_estimator=-201.]
+
+Epoch 973:  76%|████████████████████████████████████████████████▌               | 60/79 [00:01<00:00, 31.72it/s, loss=8.9, v_num=iijv, train_loss=10.40, elbo_estimator=-172.]
+
+
+
+
+Epoch 976:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 27.61it/s, loss=8.85, v_num=iijv, train_loss=9.850, elbo_estimator=-186.]
+
+Epoch 977:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 28.35it/s, loss=8.96, v_num=iijv, train_loss=10.50, elbo_estimator=-209.]
+
+
+
+
+
+
+Epoch 981:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 28.19it/s, loss=8.91, v_num=iijv, train_loss=11.00, elbo_estimator=-189.]
+
+Epoch 982:  76%|███████████████████████████████████████████████▊               | 60/79 [00:01<00:00, 30.87it/s, loss=8.69, v_num=iijv, train_loss=11.00, elbo_estimator=-190.]
+
+
+Epoch 984:  76%|████████████████████████████████████████████████▌               | 60/79 [00:01<00:00, 32.12it/s, loss=8.8, v_num=iijv, train_loss=9.840, elbo_estimator=-214.]
+
+Epoch 985:  76%|███████████████████████████████████████████████▊               | 60/79 [00:01<00:00, 32.03it/s, loss=8.74, v_num=iijv, train_loss=12.40, elbo_estimator=-225.]
+
+
+
+
+
+
+Epoch 989:  76%|████████████████████████████████████████████████▌               | 60/79 [00:01<00:00, 30.61it/s, loss=8.9, v_num=iijv, train_loss=10.80, elbo_estimator=-170.]
+
+
+
+
+Epoch 992:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 29.74it/s, loss=8.96, v_num=iijv, train_loss=10.90, elbo_estimator=-189.]
+
+Epoch 993:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 25.11it/s, loss=8.88, v_num=iijv, train_loss=11.40, elbo_estimator=-176.]
+
+
+
+
+Epoch 996:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 27.82it/s, loss=8.63, v_num=iijv, train_loss=9.460, elbo_estimator=-178.]
+
+Epoch 997:  76%|███████████████████████████████████████████████▊               | 60/79 [00:01<00:00, 30.00it/s, loss=8.95, v_num=iijv, train_loss=10.20, elbo_estimator=-194.]
+
+Epoch 998:  76%|███████████████████████████████████████████████▊               | 60/79 [00:02<00:00, 27.38it/s, loss=8.85, v_num=iijv, train_loss=10.90, elbo_estimator=-193.]
+
+
+Epoch 999: 100%|███████████████████████████████████████████████████████████████| 79/79 [00:03<00:00, 22.23it/s, loss=9.74, v_num=iijv, train_loss=6.440, elbo_estimator=-196.]

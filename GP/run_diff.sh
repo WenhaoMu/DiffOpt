@@ -1,0 +1,45 @@
+# !/usr/bin/env bash
+
+CONFIG="$1"
+TASK="$2"
+# seeds="123 234 345"
+# seeds="234 345"
+# temp="$3"
+# seeds="123"
+# seeds="345"
+# seeds="456"
+seeds="1469983670"
+# seeds="42 98765 314159 271828 1469983670"
+# seeds="1369983670 1569983670 1669983670"
+# seeds="42"
+# Coefficients="0 -10 -20 -30 -40 -50 -60 -70 -80 -90 -100 10 20 30 40 50 60 70 80 90 100"
+# Coefficients="1 2 3 4 5 15 -1 -2 -3 -4 -5 -15"
+# Coefficients="20000000"
+Coefficients="0 10 50 100 500 1000 5000 10000 30000 50000 100000 200000 300000 400000 500000 600000 700000 800000 900000 1000000 1100000 1200000 1300000 1400000 1500000"
+# Coefficients="1600000 1700000 1800000 1900000 10000000"
+# Coefficients="5000 10000 50000 100000 500000 1000000 1500000"
+# Coefficients="0 100000 100000 100000 100000 500000 100000 100000 100000 100000"
+# Coefficients="1 2 3 4 5 10 15 20 30 40 50 60 70 80 90 100"
+# Coefficients="0 1000000 2000000 3000000 4000000 5000000 10000000 15000000 20000000 30000000 40000000 50000000 60000000 70000000 80000000 90000000 100000000"
+# Coefficients="0 -1000 -5000 -10000 -50000"
+# Coefficients="0 -1000 1000"
+gpu=3
+
+
+for seed in $seeds; do
+  for Coefficient in $Coefficients; do
+    echo $seed
+    echo $TASK
+    echo $Coefficient
+    echo $gpu
+
+    # python design_baselines/diff/trainer.py --config $CONFIG --seed $seed --use_gpu --mode 'train' --task $TASK --coefficient $Coefficient --which_gpu 2
+    # python design_baselines/diff/trainer_datadistance.py --config $CONFIG --seed $seed --use_gpu --mode 'eval' --task $TASK --coefficient $Coefficient --which_gpu 0 --suffix "max_ds_conditioning"
+    # python diff/trainer_amend.py --config $CONFIG --seed $seed --use_gpu --mode 'eval' --task $TASK --coefficient $Coefficient --which_gpu 0
+    # python diff/trainer_amend.py --config $CONFIG --seed $seed --use_gpu --mode 'eval' --task $TASK --coefficient $Coefficient --which_gpu $gpu --suffix "max_ds_conditioning"
+    # python diff/trainer_amend_deepGPtest.py --config $CONFIG --seed $seed --use_gpu --mode 'eval' --task $TASK --coefficient $Coefficient --which_gpu $gpu --suffix "max_ds_conditioning"
+    python diff/Diffusion_DKL.py --config $CONFIG --seed $seed --use_gpu --mode 'eval' --task $TASK --coefficient $Coefficient --which_gpu $gpu --suffix "max_ds_conditioning"
+    # python diff/Diffusion_DeepGP_Projection.py --config $CONFIG --seed $seed --use_gpu --mode 'eval' --task $TASK --coefficient $Coefficient --which_gpu $gpu --suffix "max_ds_conditioning"
+    # python design_baselines/diff/trainer_fourier.py --config $CONFIG --seed $seed --use_gpu --mode 'eval' --task $TASK --suffix "max_ds_conditioning"
+  done
+done
