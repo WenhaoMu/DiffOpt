@@ -22,6 +22,6 @@ for seed in $seeds; do
     echo $seed
     echo $TASK
     echo $Coefficient
-    python design_baselines/diff_multi/trainer_amend_multi_DKL_valid.py --config $CONFIG --seed $seed --use_gpu --mode 'eval' --task $TASK --coefficient $Coefficient --which_gpu 0 --suffix "max_ds_conditioning"
+    python design_baselines/diff_multi/DKL_train_regression_x0_multi.py --config $CONFIG --seed $seed --use_gpu --mode 'train' --task $TASK --which_gpu 4
   done
 done

@@ -910,9 +910,9 @@ def run_evaluate(
                     print(ys.max())
                 results.append(ys)
 
-                torch.save(qqq, 'molecular_test.pt')
+                torch.save(qqq, './design_baselines/diff_multi/molecular_discovery_problem/Result/molecular.pt')
             else:
-                print("fuck")
+                print("Error")
 
     designs = np.concatenate(designs, axis=0)
     # results = np.concatenate(results, axis=0)

@@ -12,12 +12,12 @@ from pprint import pprint
 import configargparse
 import sys
 from contextlib import contextmanager, redirect_stderr, redirect_stdout
-from forward import ForwardModel
+# from forward import ForwardModel
 
 from DKL_model_regression import GPRegressionModel
-from DKL_model import DKLModel
-from DGP_model_new import DeepGp
-from testnetwork import DeepGPtest
+# from DKL_model import DKLModel
+# from DGP_model_new import DeepGp
+# from testnetwork import DeepGPtest
 from gpytorch.models.deep_gps import DeepGPLayer, DeepGP
 from gpytorch.mlls import DeepApproximateMLL
 from gpytorch.mlls import VariationalELBO, AddedLossTerm
