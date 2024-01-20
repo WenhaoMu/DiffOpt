@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+
+CONFIG="$1"
+TASK="$2"
+# seeds="123 234 345"
+# seeds="123"
+# seeds="234"
+# seeds="345"
+# seeds="456"
+# seeds="567"
+# temp="$3"
+seeds="1469983670"
+Coefficients="0 1 5 10 15 20 50 -1 -5"
+
+for seed in $seeds; do
+  for Coefficient in $Coefficients; do
+    echo $seed
+    echo $TASK
+    echo $Coefficient
+    # python design_baselines/diff/trainer.py --config $CONFIG --seed $seed --use_gpu --mode 'train' --task $TASK
+    python design_baselines/diff/generation_plot_noreweight.py --config $CONFIG --seed $seed --use_gpu --mode 'eval' --task $TASK --coefficient $Coefficient --which_gpu 6 --suffix "max_ds_conditioning"
+    # python design_baselines/diff/generation_mean.py --config $CONFIG --seed $seed --use_gpu --mode 'eval' --task $TASK --suffix "max_ds_conditioning"
+  done
+done
