@@ -1,0 +1,380 @@
+('out_directory: '
+ './experiments/compound/fourier_1/1469983670_128/wandb/run-20240122_005325-dlkh74sj/files')
+[2.83775263e-05 5.08322272e-05 8.68622717e-05 1.44528924e-04
+ 2.38005072e-04 3.91357662e-04 6.42616917e-04 1.05566266e-03
+ 1.73076678e-03 2.83382212e-03 4.64730539e-03 7.60305048e-03
+ 1.24411336e-02 2.04060273e-02 3.33585867e-02 5.46495384e-02
+ 8.95039025e-02 1.46426812e-01 2.38238856e-01 3.85521854e-01]
+/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/loops/epoch/training_epoch_loop.py:53: LightningDeprecationWarning: Setting `max_steps = None` is deprecated in v1.5 and will no longer be supported in v1.7. Use `max_steps = -1` instead.
+  "Setting `max_steps = None` is deprecated in v1.5 and will no longer be supported in v1.7."
+/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/trainer/connectors/callback_connector.py:97: LightningDeprecationWarning: Setting `Trainer(progress_bar_refresh_rate=20)` is deprecated in v1.5 and will be removed in v1.7. Please pass `pytorch_lightning.callbacks.progress.TQDMProgressBar` with `refresh_rate` directly to the Trainer's `callbacks` argument instead. Or, to disable the progress bar pass `enable_progress_bar = False` to the Trainer.
+  f"Setting `Trainer(progress_bar_refresh_rate={progress_bar_refresh_rate})` is deprecated in v1.5 and"
+GPU available: True, used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+`Trainer(limit_val_batches=1.0)` was configured so 100% of the batches will be used..
+Sanity Checking DataLoader 0:   0%|                                                                                    | 0/2 [00:00<?, ?it/s]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [4]
+  | Name    | Type                  | Params
+--------------------------------------------------
+0 | mlp     | Network               | 5.3 M
+1 | inf_sde | VariancePreservingSDE | 1
+--------------------------------------------------
+5.3 M     Trainable params
+3         Non-trainable params
+5.3 M     Total params
+
+
+Epoch 1:  76%|████████████████████████████         | 60/79 [00:01<00:00, 35.29it/s, loss=0.682, v_num=74sj, train_loss=0.705, val_loss=0.658]
+
+
+Epoch 3:  76%|████████████████████████████         | 60/79 [00:01<00:00, 34.61it/s, loss=0.608, v_num=74sj, train_loss=0.713, val_loss=0.612]
+
+
+Epoch 5:  76%|████████████████████████████         | 60/79 [00:01<00:00, 34.02it/s, loss=0.586, v_num=74sj, train_loss=0.595, val_loss=0.653]
+
+
+Epoch 7:  76%|████████████████████████████         | 60/79 [00:01<00:00, 35.42it/s, loss=0.596, v_num=74sj, train_loss=0.654, val_loss=0.608]
+
+
+Epoch 9:  76%|████████████████████████████         | 60/79 [00:01<00:00, 34.53it/s, loss=0.617, v_num=74sj, train_loss=0.748, val_loss=0.656]
+
+
+
+
+Epoch 12:  76%|███████████████████████████▎        | 60/79 [00:02<00:00, 29.48it/s, loss=0.604, v_num=74sj, train_loss=0.650, val_loss=0.624]
+
+
+
+
+Epoch 15:  76%|███████████████████████████▎        | 60/79 [00:01<00:00, 34.38it/s, loss=0.565, v_num=74sj, train_loss=0.677, val_loss=0.596]
+
+
+
+
+Epoch 18:  76%|████████████████████████████         | 60/79 [00:01<00:00, 30.47it/s, loss=0.57, v_num=74sj, train_loss=0.656, val_loss=0.586]
+
+
+Epoch 20:  76%|███████████████████████████▎        | 60/79 [00:01<00:00, 36.13it/s, loss=0.571, v_num=74sj, train_loss=0.594, val_loss=0.569]
+
+Epoch 21:  76%|████████████████████████████         | 60/79 [00:01<00:00, 30.32it/s, loss=0.56, v_num=74sj, train_loss=0.510, val_loss=0.556]
+
+
+
+
+
+
+Epoch 25:  76%|███████████████████████████▎        | 60/79 [00:02<00:00, 25.59it/s, loss=0.569, v_num=74sj, train_loss=0.581, val_loss=0.641]
+
+Epoch 26:  76%|███████████████████████████▎        | 60/79 [00:02<00:00, 29.06it/s, loss=0.573, v_num=74sj, train_loss=0.588, val_loss=0.593]
+
+
+
+
+Epoch 29:  76%|███████████████████████████▎        | 60/79 [00:02<00:00, 29.59it/s, loss=0.554, v_num=74sj, train_loss=0.582, val_loss=0.526]
+
+Epoch 30:  76%|███████████████████████████▎        | 60/79 [00:02<00:00, 28.32it/s, loss=0.536, v_num=74sj, train_loss=0.625, val_loss=0.537]
+
+
+
+
+
+
+Epoch 34:  76%|███████████████████████████▎        | 60/79 [00:01<00:00, 30.63it/s, loss=0.573, v_num=74sj, train_loss=0.619, val_loss=0.576]
+
+
+
+
+
+
+Epoch 38:  76%|███████████████████████████▎        | 60/79 [00:01<00:00, 30.46it/s, loss=0.549, v_num=74sj, train_loss=0.588, val_loss=0.550]
+
+Epoch 39:  76%|███████████████████████████▎        | 60/79 [00:01<00:00, 30.04it/s, loss=0.545, v_num=74sj, train_loss=0.623, val_loss=0.542]
+
+
+
+
+
+
+Epoch 43:  76%|███████████████████████████▎        | 60/79 [00:02<00:00, 28.03it/s, loss=0.575, v_num=74sj, train_loss=0.676, val_loss=0.585]
+
+Epoch 44:  76%|███████████████████████████▎        | 60/79 [00:02<00:00, 26.45it/s, loss=0.544, v_num=74sj, train_loss=0.666, val_loss=0.594]
+
+
+
+
+
+
+
+
+Epoch 49:  76%|████████████████████████████         | 60/79 [00:02<00:00, 27.42it/s, loss=0.55, v_num=74sj, train_loss=0.541, val_loss=0.584]
+
+
+
+
+
+
+Epoch 53:  76%|██████████████████▏     | 60/79 [00:01<00:00, 30.57it/s, loss=0.535, v_num=74sj, train_loss=0.502, val_loss=0.601]
+
+
+
+
+
+
+Epoch 57:  76%|██████████████████▏     | 60/79 [00:01<00:00, 30.18it/s, loss=0.542, v_num=74sj, train_loss=0.540, val_loss=0.556]
+
+Epoch 58:  76%|██████████████████▏     | 60/79 [00:02<00:00, 27.94it/s, loss=0.565, v_num=74sj, train_loss=0.554, val_loss=0.545]
+
+
+
+
+
+
+Epoch 62:  76%|██████████████████▏     | 60/79 [00:01<00:00, 31.06it/s, loss=0.544, v_num=74sj, train_loss=0.553, val_loss=0.606]
+
+
+
+
+Epoch 65:  76%|██████████████████▏     | 60/79 [00:02<00:00, 28.98it/s, loss=0.549, v_num=74sj, train_loss=0.571, val_loss=0.534]
+
+
+
+
+
+
+Epoch 69:  76%|██████████████████▏     | 60/79 [00:01<00:00, 30.01it/s, loss=0.557, v_num=74sj, train_loss=0.575, val_loss=0.516]
+
+
+
+
+Epoch 72:  76%|██████████████████▏     | 60/79 [00:02<00:00, 29.63it/s, loss=0.539, v_num=74sj, train_loss=0.597, val_loss=0.593]
+
+Epoch 73:  76%|██████████████████▏     | 60/79 [00:01<00:00, 30.63it/s, loss=0.541, v_num=74sj, train_loss=0.526, val_loss=0.529]
+
+
+
+
+Epoch 76:  76%|██████████████████▏     | 60/79 [00:02<00:00, 27.63it/s, loss=0.568, v_num=74sj, train_loss=0.667, val_loss=0.568]
+
+Epoch 77:  76%|██████████████████▉      | 60/79 [00:02<00:00, 28.03it/s, loss=0.54, v_num=74sj, train_loss=0.652, val_loss=0.563]
+
+
+
+
+
+
+
+
+
+
+Epoch 83:  76%|██████████████████▏     | 60/79 [00:02<00:00, 28.28it/s, loss=0.556, v_num=74sj, train_loss=0.698, val_loss=0.543]
+
+Epoch 84:  76%|██████████████████▏     | 60/79 [00:02<00:00, 27.98it/s, loss=0.544, v_num=74sj, train_loss=0.636, val_loss=0.556]
+
+Epoch 85:  76%|██████████████████▏     | 60/79 [00:02<00:00, 28.20it/s, loss=0.552, v_num=74sj, train_loss=0.598, val_loss=0.543]
+
+
+
+
+
+
+Epoch 89:  76%|██████████████████▏     | 60/79 [00:01<00:00, 30.09it/s, loss=0.539, v_num=74sj, train_loss=0.653, val_loss=0.614]
+
+Epoch 90:  76%|██████████████████▏     | 60/79 [00:02<00:00, 28.13it/s, loss=0.559, v_num=74sj, train_loss=0.640, val_loss=0.579]
+
+
+
+
+
+
+Epoch 94:  76%|██████████████████▏     | 60/79 [00:02<00:00, 26.95it/s, loss=0.578, v_num=74sj, train_loss=0.655, val_loss=0.539]
+
+Epoch 95:  76%|██████████████████▏     | 60/79 [00:02<00:00, 28.40it/s, loss=0.537, v_num=74sj, train_loss=0.535, val_loss=0.534]
+
+
+
+
+Epoch 98:  76%|██████████████████▏     | 60/79 [00:02<00:00, 28.28it/s, loss=0.575, v_num=74sj, train_loss=0.612, val_loss=0.594]
+
+Epoch 99:  76%|██████████████████▏     | 60/79 [00:02<00:00, 27.40it/s, loss=0.551, v_num=74sj, train_loss=0.581, val_loss=0.557]
+
+Epoch 100:  76%|█████████████████▍     | 60/79 [00:02<00:00, 27.72it/s, loss=0.542, v_num=74sj, train_loss=0.654, val_loss=0.603]
+
+Epoch 101:  76%|█████████████████▍     | 60/79 [00:02<00:00, 25.94it/s, loss=0.552, v_num=74sj, train_loss=0.598, val_loss=0.606]
+
+
+
+
+
+
+Epoch 105:  76%|█████████████████▍     | 60/79 [00:02<00:00, 29.61it/s, loss=0.546, v_num=74sj, train_loss=0.563, val_loss=0.547]
+
+Epoch 106:  76%|█████████████████▍     | 60/79 [00:01<00:00, 31.21it/s, loss=0.548, v_num=74sj, train_loss=0.612, val_loss=0.594]
+
+
+
+
+
+
+Epoch 110:  76%|█████████████████▍     | 60/79 [00:02<00:00, 29.08it/s, loss=0.562, v_num=74sj, train_loss=0.650, val_loss=0.551]
+
+Epoch 111:  76%|█████████████████▍     | 60/79 [00:02<00:00, 26.54it/s, loss=0.544, v_num=74sj, train_loss=0.584, val_loss=0.606]
+
+
+
+
+Epoch 114:  76%|█████████████████▍     | 60/79 [00:02<00:00, 27.44it/s, loss=0.557, v_num=74sj, train_loss=0.655, val_loss=0.565]
+
+Epoch 115:  76%|█████████████████▍     | 60/79 [00:02<00:00, 28.04it/s, loss=0.541, v_num=74sj, train_loss=0.530, val_loss=0.563]
+
+Epoch 116:  76%|█████████████████▍     | 60/79 [00:02<00:00, 28.86it/s, loss=0.548, v_num=74sj, train_loss=0.566, val_loss=0.549]
+
+
+
+
+
+
+Epoch 120:  76%|█████████████████▍     | 60/79 [00:01<00:00, 30.09it/s, loss=0.566, v_num=74sj, train_loss=0.604, val_loss=0.544]
+
+Epoch 121:  76%|█████████████████▍     | 60/79 [00:02<00:00, 29.07it/s, loss=0.536, v_num=74sj, train_loss=0.617, val_loss=0.561]
+
+
+
+
+
+
+
+
+
+
+Epoch 127:  76%|█████████████████▍     | 60/79 [00:02<00:00, 29.25it/s, loss=0.568, v_num=74sj, train_loss=0.564, val_loss=0.600]
+
+Epoch 128:  76%|█████████████████▍     | 60/79 [00:01<00:00, 30.43it/s, loss=0.586, v_num=74sj, train_loss=0.741, val_loss=0.502]
+
+
+
+
+Epoch 131:  76%|█████████████████▍     | 60/79 [00:01<00:00, 32.28it/s, loss=0.573, v_num=74sj, train_loss=0.665, val_loss=0.549]
+
+Epoch 132:  76%|█████████████████▍     | 60/79 [00:01<00:00, 30.88it/s, loss=0.636, v_num=74sj, train_loss=0.722, val_loss=0.568]
+
+
+
+
+Epoch 135:  76%|█████████████████▍     | 60/79 [00:02<00:00, 29.08it/s, loss=0.579, v_num=74sj, train_loss=0.624, val_loss=0.582]
+
+
+
+
+
+
+Epoch 139:  76%|█████████████████▍     | 60/79 [00:02<00:00, 28.65it/s, loss=0.565, v_num=74sj, train_loss=0.752, val_loss=0.547]
+
+
+
+
+Epoch 142:  76%|█████████████████▍     | 60/79 [00:02<00:00, 25.11it/s, loss=0.582, v_num=74sj, train_loss=0.789, val_loss=0.549]
+
+Epoch 143:  76%|█████████████████▍     | 60/79 [00:02<00:00, 27.59it/s, loss=0.547, v_num=74sj, train_loss=0.647, val_loss=0.547]
+
+Epoch 144:  76%|█████████████████▍     | 60/79 [00:01<00:00, 30.59it/s, loss=0.571, v_num=74sj, train_loss=0.651, val_loss=0.583]
+
+
+
+
+
+
+Epoch 148:  76%|██████████████████▏     | 60/79 [00:02<00:00, 28.85it/s, loss=0.54, v_num=74sj, train_loss=0.536, val_loss=0.543]
+
+Epoch 149:  76%|█████████████████▍     | 60/79 [00:02<00:00, 28.90it/s, loss=0.547, v_num=74sj, train_loss=0.572, val_loss=0.568]
+
+
+
+
+
+
+Epoch 153:  76%|█████████████████▍     | 60/79 [00:02<00:00, 28.02it/s, loss=0.558, v_num=74sj, train_loss=0.543, val_loss=0.541]
+
+Epoch 154:  76%|█████████████████▍     | 60/79 [00:02<00:00, 29.26it/s, loss=0.554, v_num=74sj, train_loss=0.616, val_loss=0.551]
+
+
+
+
+
+
+Epoch 158:  76%|█████████████████▍     | 60/79 [00:02<00:00, 29.01it/s, loss=0.568, v_num=74sj, train_loss=0.608, val_loss=0.627]
+
+
+
+
+
+
+Epoch 162:  76%|█████████████████▍     | 60/79 [00:01<00:00, 31.49it/s, loss=0.537, v_num=74sj, train_loss=0.637, val_loss=0.565]
+
+
+
+
+
+
+Epoch 166:  76%|█████████████████▍     | 60/79 [00:02<00:00, 29.27it/s, loss=0.549, v_num=74sj, train_loss=0.586, val_loss=0.553]
+
+Epoch 167:  76%|█████████████████▍     | 60/79 [00:02<00:00, 28.73it/s, loss=0.534, v_num=74sj, train_loss=0.688, val_loss=0.535]
+
+
+
+
+
+
+Epoch 171:  76%|█████████████████▍     | 60/79 [00:02<00:00, 29.05it/s, loss=0.564, v_num=74sj, train_loss=0.655, val_loss=0.568]
+
+
+
+
+
+
+Epoch 175:  76%|█████████████████▍     | 60/79 [00:02<00:00, 29.10it/s, loss=0.582, v_num=74sj, train_loss=0.684, val_loss=0.597]
+
+Epoch 176:  76%|█████████████████▍     | 60/79 [00:02<00:00, 26.68it/s, loss=0.578, v_num=74sj, train_loss=0.598, val_loss=0.584]
+
+
+
+
+
+
+Epoch 180:  76%|█████████████████▍     | 60/79 [00:01<00:00, 31.03it/s, loss=0.582, v_num=74sj, train_loss=0.697, val_loss=0.600]
+
+Epoch 181: 100%|████████████████████████| 79/79 [00:03<00:00, 24.01it/s, loss=0.57, v_num=74sj, train_loss=0.621, val_loss=0.628]
+
+
+
+
+Epoch 184:  76%|█████████████████▍     | 60/79 [00:02<00:00, 29.95it/s, loss=0.551, v_num=74sj, train_loss=0.600, val_loss=0.589]
+
+Epoch 185:  76%|█████████████████▍     | 60/79 [00:02<00:00, 26.34it/s, loss=0.559, v_num=74sj, train_loss=0.578, val_loss=0.600]
+
+
+
+
+Epoch 188:  76%|█████████████████▍     | 60/79 [00:02<00:00, 29.59it/s, loss=0.566, v_num=74sj, train_loss=0.632, val_loss=0.588]
+
+Epoch 189:  76%|██████████████████▏     | 60/79 [00:01<00:00, 30.70it/s, loss=0.54, v_num=74sj, train_loss=0.499, val_loss=0.570]
+
+
+
+
+Epoch 192:  76%|█████████████████▍     | 60/79 [00:01<00:00, 30.22it/s, loss=0.549, v_num=74sj, train_loss=0.626, val_loss=0.623]
+
+Epoch 193:  76%|█████████████████▍     | 60/79 [00:02<00:00, 26.94it/s, loss=0.548, v_num=74sj, train_loss=0.645, val_loss=0.555]
+
+
+
+
+Epoch 196:  76%|██████████████████▏     | 60/79 [00:02<00:00, 29.65it/s, loss=0.55, v_num=74sj, train_loss=0.596, val_loss=0.590]
+
+Epoch 197:  76%|█████████████████▍     | 60/79 [00:01<00:00, 31.08it/s, loss=0.547, v_num=74sj, train_loss=0.537, val_loss=0.611]
+
+
+
+
+Epoch 199: 100%|███████████████████████| 79/79 [00:03<00:00, 22.70it/s, loss=0.567, v_num=74sj, train_loss=0.477, val_loss=0.555]

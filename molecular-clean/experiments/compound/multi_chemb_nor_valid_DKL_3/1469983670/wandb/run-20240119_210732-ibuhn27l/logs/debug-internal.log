@@ -1,0 +1,889 @@
+2024-01-19 21:07:32,894 INFO    StreamThr :8582 [internal.py:wandb_internal():86] W&B internal server running at pid: 8582, started at: 2024-01-19 21:07:32.893743
+2024-01-19 21:07:32,896 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status
+2024-01-19 21:07:32,902 INFO    WriterThread:8582 [datastore.py:open_for_write():85] open: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/run-ibuhn27l.wandb
+2024-01-19 21:07:32,903 DEBUG   SenderThread:8582 [sender.py:send():380] send: header
+2024-01-19 21:07:32,904 DEBUG   SenderThread:8582 [sender.py:send():380] send: run
+2024-01-19 21:07:32,906 INFO    SenderThread:8582 [sender.py:_maybe_setup_resume():759] checking resume status for None/score-matching /ibuhn27l
+2024-01-19 21:07:33,281 INFO    SenderThread:8582 [dir_watcher.py:__init__():211] watching files in: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files
+2024-01-19 21:07:33,281 INFO    SenderThread:8582 [sender.py:_start_run_threads():1122] run started: ibuhn27l with start time 1705716452.894627
+2024-01-19 21:07:33,290 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: check_version
+2024-01-19 21:07:33,291 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: check_version
+2024-01-19 21:07:33,458 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: run_start
+2024-01-19 21:07:33,470 DEBUG   HandlerThread:8582 [system_info.py:__init__():32] System info init
+2024-01-19 21:07:33,470 DEBUG   HandlerThread:8582 [system_info.py:__init__():47] System info init done
+2024-01-19 21:07:33,470 INFO    HandlerThread:8582 [system_monitor.py:start():194] Starting system monitor
+2024-01-19 21:07:33,480 INFO    SystemMonitor:8582 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-01-19 21:07:33,481 INFO    HandlerThread:8582 [system_monitor.py:probe():214] Collecting system info
+2024-01-19 21:07:33,492 INFO    SystemMonitor:8582 [interfaces.py:start():190] Started cpu monitoring
+2024-01-19 21:07:33,504 INFO    SystemMonitor:8582 [interfaces.py:start():190] Started disk monitoring
+2024-01-19 21:07:33,529 INFO    SystemMonitor:8582 [interfaces.py:start():190] Started gpu monitoring
+2024-01-19 21:07:33,541 INFO    SystemMonitor:8582 [interfaces.py:start():190] Started memory monitoring
+2024-01-19 21:07:33,568 INFO    SystemMonitor:8582 [interfaces.py:start():190] Started network monitoring
+2024-01-19 21:07:33,597 DEBUG   HandlerThread:8582 [system_info.py:probe():196] Probing system
+2024-01-19 21:07:33,608 DEBUG   HandlerThread:8582 [gitlib.py:_init_repo():53] git repository is invalid
+2024-01-19 21:07:33,608 DEBUG   HandlerThread:8582 [system_info.py:probe():244] Probing system done
+2024-01-19 21:07:33,608 DEBUG   HandlerThread:8582 [system_monitor.py:probe():223] {'os': 'Linux-5.4.0-148-generic-x86_64-with-glibc2.17', 'python': '3.8.18', 'heartbeatAt': '2024-01-20T02:07:33.597872', 'startedAt': '2024-01-20T02:07:32.884880', 'docker': None, 'cuda': None, 'args': ('--config', './configs/classifier_multi.cfg', '--seed', '1469983670', '--use_gpu', '--mode', 'train', '--task', 'compound', '--which_gpu', '4'), 'state': 'running', 'program': 'design_baselines/diff_multi/DKL_train_regression_x0_multi.py', 'codePathLocal': 'design_baselines/diff_multi/DKL_train_regression_x0_multi.py', 'codePath': 'design_baselines/diff_multi/DKL_train_regression_x0_multi.py', 'host': 'dmserv', 'username': 'wmu30', 'executable': '/nethome/wmu30/anaconda3/envs/GP/bin/python', 'cpu_count': 24, 'cpu_count_logical': 48, 'cpu_freq': {'current': 2315.009520833333, 'min': 1000.0, 'max': 3200.0}, 'cpu_freq_per_core': [{'current': 2699.999, 'min': 1000.0, 'max': 3200.0}, {'current': 2700.0, 'min': 1000.0, 'max': 3200.0}, {'current': 2199.999, 'min': 1000.0, 'max': 3200.0}, {'current': 2200.0, 'min': 1000.0, 'max': 3200.0}, {'current': 2200.0, 'min': 1000.0, 'max': 3200.0}, {'current': 2200.0, 'min': 1000.0, 'max': 3200.0}, {'current': 2200.0, 'min': 1000.0, 'max': 3200.0}, {'current': 2199.999, 'min': 1000.0, 'max': 3200.0}, {'current': 2199.998, 'min': 1000.0, 'max': 3200.0}, {'current': 2200.001, 'min': 1000.0, 'max': 3200.0}, {'current': 2199.999, 'min': 1000.0, 'max': 3200.0}, {'current': 2199.999, 'min': 1000.0, 'max': 3200.0}, {'current': 2200.0, 'min': 1000.0, 'max': 3200.0}, {'current': 2199.999, 'min': 1000.0, 'max': 3200.0}, {'current': 2199.999, 'min': 1000.0, 'max': 3200.0}, {'current': 2655.667, 'min': 1000.0, 'max': 3200.0}, {'current': 2164.946, 'min': 1000.0, 'max': 3200.0}, {'current': 2199.998, 'min': 1000.0, 'max': 3200.0}, {'current': 2199.998, 'min': 1000.0, 'max': 3200.0}, {'current': 2199.999, 'min': 1000.0, 'max': 3200.0}, {'current': 2700.0, 'min': 1000.0, 'max': 3200.0}, {'current': 2700.0, 'min': 1000.0, 'max': 3200.0}, {'current': 2700.0, 'min': 1000.0, 'max': 3200.0}, {'current': 2220.341, 'min': 1000.0, 'max': 3200.0}, {'current': 2699.999, 'min': 1000.0, 'max': 3200.0}, {'current': 2699.999, 'min': 1000.0, 'max': 3200.0}, {'current': 2199.999, 'min': 1000.0, 'max': 3200.0}, {'current': 2199.999, 'min': 1000.0, 'max': 3200.0}, {'current': 2200.0, 'min': 1000.0, 'max': 3200.0}, {'current': 2200.0, 'min': 1000.0, 'max': 3200.0}, {'current': 2200.0, 'min': 1000.0, 'max': 3200.0}, {'current': 2199.999, 'min': 1000.0, 'max': 3200.0}, {'current': 2199.999, 'min': 1000.0, 'max': 3200.0}, {'current': 2200.0, 'min': 1000.0, 'max': 3200.0}, {'current': 2199.999, 'min': 1000.0, 'max': 3200.0}, {'current': 2200.001, 'min': 1000.0, 'max': 3200.0}, {'current': 2200.0, 'min': 1000.0, 'max': 3200.0}, {'current': 2199.999, 'min': 1000.0, 'max': 3200.0}, {'current': 2199.999, 'min': 1000.0, 'max': 3200.0}, {'current': 2653.265, 'min': 1000.0, 'max': 3200.0}, {'current': 2163.032, 'min': 1000.0, 'max': 3200.0}, {'current': 2199.999, 'min': 1000.0, 'max': 3200.0}, {'current': 2199.999, 'min': 1000.0, 'max': 3200.0}, {'current': 2199.999, 'min': 1000.0, 'max': 3200.0}, {'current': 2700.0, 'min': 1000.0, 'max': 3200.0}, {'current': 2700.001, 'min': 1000.0, 'max': 3200.0}, {'current': 2699.999, 'min': 1000.0, 'max': 3200.0}, {'current': 2191.807, 'min': 1000.0, 'max': 3200.0}], 'disk': {'/': {'total': 416.53770446777344, 'used': 239.59008407592773}}, 'gpu': 'NVIDIA GeForce RTX 2080 Ti', 'gpu_count': 8, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 2080 Ti', 'memory_total': 11811160064}, {'name': 'NVIDIA GeForce RTX 2080 Ti', 'memory_total': 11811160064}, {'name': 'NVIDIA GeForce RTX 2080 Ti', 'memory_total': 11811160064}, {'name': 'NVIDIA GeForce RTX 2080 Ti', 'memory_total': 11811160064}, {'name': 'NVIDIA GeForce RTX 2080 Ti', 'memory_total': 11811160064}, {'name': 'NVIDIA GeForce RTX 2080 Ti', 'memory_total': 11811160064}, {'name': 'NVIDIA GeForce RTX 2080 Ti', 'memory_total': 11811160064}, {'name': 'NVIDIA GeForce RTX 2080 Ti', 'memory_total': 11811160064}], 'memory': {'total': 376.5663185119629}}
+2024-01-19 21:07:33,609 INFO    HandlerThread:8582 [system_monitor.py:probe():224] Finished collecting system info
+2024-01-19 21:07:33,609 INFO    HandlerThread:8582 [system_monitor.py:probe():227] Publishing system info
+2024-01-19 21:07:33,609 DEBUG   HandlerThread:8582 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2024-01-19 21:07:33,609 DEBUG   HandlerThread:8582 [system_info.py:_save_pip():68] Saving pip packages done
+2024-01-19 21:07:33,610 DEBUG   HandlerThread:8582 [system_info.py:_save_conda():75] Saving list of conda packages installed into the current environment
+2024-01-19 21:07:34,283 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_created():271] file/dir created: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/requirements.txt
+2024-01-19 21:07:34,284 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_created():271] file/dir created: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/conda-environment.yaml
+2024-01-19 21:07:41,284 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/conda-environment.yaml
+2024-01-19 21:07:41,313 DEBUG   HandlerThread:8582 [system_info.py:_save_conda():87] Saving conda packages done
+2024-01-19 21:07:41,314 INFO    HandlerThread:8582 [system_monitor.py:probe():229] Finished publishing system info
+2024-01-19 21:07:41,326 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:07:41,327 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: keepalive
+2024-01-19 21:07:41,328 DEBUG   SenderThread:8582 [sender.py:send():380] send: files
+2024-01-19 21:07:41,328 INFO    SenderThread:8582 [sender.py:_save_file():1378] saving file wandb-metadata.json with policy now
+2024-01-19 21:07:41,336 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:07:41,337 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:07:41,341 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:07:41,535 DEBUG   SenderThread:8582 [sender.py:send():380] send: telemetry
+2024-01-19 21:07:41,535 DEBUG   SenderThread:8582 [sender.py:send():380] send: metric
+2024-01-19 21:07:41,536 DEBUG   SenderThread:8582 [sender.py:send():380] send: telemetry
+2024-01-19 21:07:41,536 DEBUG   SenderThread:8582 [sender.py:send():380] send: metric
+2024-01-19 21:07:41,536 WARNING SenderThread:8582 [sender.py:send_metric():1329] Seen metric with glob (shouldn't happen)
+2024-01-19 21:07:41,536 DEBUG   SenderThread:8582 [sender.py:send():380] send: config
+2024-01-19 21:07:41,691 INFO    wandb-upload_0:8582 [upload_job.py:push():131] Uploaded file /tmp/tmp9qc8griewandb/13edbgz1-wandb-metadata.json
+2024-01-19 21:07:42,285 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_created():271] file/dir created: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/wandb-metadata.json
+2024-01-19 21:07:42,285 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_created():271] file/dir created: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/args.json
+2024-01-19 21:07:42,285 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_created():271] file/dir created: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:07:43,546 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:07:44,285 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:07:49,031 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:07:49,287 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:07:54,032 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:07:56,337 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:07:56,338 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:07:56,343 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:07:59,398 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:08:02,292 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:08:04,719 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:08:05,294 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/config.yaml
+2024-01-19 21:08:09,870 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:08:11,296 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:08:11,338 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:08:11,339 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:08:11,342 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:08:15,204 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:08:16,299 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:08:20,205 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:08:25,205 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:08:26,501 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:08:26,502 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:08:26,502 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:08:28,303 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:08:30,588 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:08:33,569 DEBUG   SystemMonitor:8582 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-01-19 21:08:33,572 DEBUG   SenderThread:8582 [sender.py:send():380] send: stats
+2024-01-19 21:08:36,573 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:08:41,411 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:08:41,414 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:08:41,415 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:08:42,309 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:08:42,557 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:08:47,558 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:08:52,559 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:08:54,314 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:08:56,411 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:08:56,414 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:08:56,414 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:08:58,484 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:09:03,485 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:09:03,574 DEBUG   SenderThread:8582 [sender.py:send():380] send: stats
+2024-01-19 21:09:08,319 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:09:09,001 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:09:11,412 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:09:11,414 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:09:11,415 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:09:14,530 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:09:19,531 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:09:22,325 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:09:25,059 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:09:26,412 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:09:26,413 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:09:26,414 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:09:30,491 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:09:33,579 DEBUG   SenderThread:8582 [sender.py:send():380] send: stats
+2024-01-19 21:09:36,239 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:09:38,331 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:09:41,240 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:09:41,413 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:09:41,414 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:09:41,415 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:09:46,547 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:09:51,744 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:09:52,336 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:09:56,412 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:09:56,413 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:09:56,413 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:09:57,481 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:10:02,481 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:10:03,580 DEBUG   SenderThread:8582 [sender.py:send():380] send: stats
+2024-01-19 21:10:06,341 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:10:08,063 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:10:11,412 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:10:11,413 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:10:11,414 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:10:13,566 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:10:19,134 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:10:20,348 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:10:24,135 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:10:26,412 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:10:26,414 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:10:26,414 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:10:29,550 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:10:33,583 DEBUG   SenderThread:8582 [sender.py:send():380] send: stats
+2024-01-19 21:10:34,353 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:10:34,584 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:10:39,585 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:10:41,413 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:10:41,416 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:10:41,416 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:10:45,558 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:10:48,369 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:10:50,876 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:10:55,877 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:10:56,413 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:10:56,414 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:10:56,414 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:11:01,665 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:11:02,374 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:11:03,586 DEBUG   SenderThread:8582 [sender.py:send():380] send: stats
+2024-01-19 21:11:07,588 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:11:11,413 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:11:11,414 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:11:11,415 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:11:13,495 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:11:16,379 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:11:19,421 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:11:24,422 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:11:26,413 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:11:26,414 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:11:26,415 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:11:30,295 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:11:30,386 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:11:33,588 DEBUG   SenderThread:8582 [sender.py:send():380] send: stats
+2024-01-19 21:11:35,590 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:11:40,591 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:11:41,413 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:11:41,414 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:11:41,415 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:11:44,392 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:11:45,913 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:11:50,914 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:11:56,297 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:11:56,397 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:11:56,413 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:11:56,415 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:11:56,416 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:12:01,509 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:12:03,592 DEBUG   SenderThread:8582 [sender.py:send():380] send: stats
+2024-01-19 21:12:06,593 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:12:10,401 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:12:11,413 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:12:11,415 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:12:11,415 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:12:16,230 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:12:21,231 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:12:24,407 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:12:26,414 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:12:26,415 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:12:26,416 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:12:26,532 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:12:31,533 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:12:33,595 DEBUG   SenderThread:8582 [sender.py:send():380] send: stats
+2024-01-19 21:12:36,635 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:12:38,412 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:12:41,414 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:12:41,415 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:12:41,416 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:12:42,475 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:12:47,476 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:12:50,419 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:12:52,854 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:12:56,415 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:12:56,416 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:12:56,416 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:12:58,518 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:13:03,598 DEBUG   SenderThread:8582 [sender.py:send():380] send: stats
+2024-01-19 21:13:03,602 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:13:04,425 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:13:08,600 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:13:11,414 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:13:11,416 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:13:11,416 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:13:14,494 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:13:18,430 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:13:20,448 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:13:25,449 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:13:26,414 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:13:26,416 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:13:26,416 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:13:30,435 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:13:30,784 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:13:33,601 DEBUG   SenderThread:8582 [sender.py:send():380] send: stats
+2024-01-19 21:13:36,603 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:13:41,414 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:13:41,416 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:13:41,416 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:13:42,185 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:13:44,440 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:13:47,187 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:13:52,188 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:13:56,414 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:13:56,416 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:13:56,417 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:13:56,445 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:13:57,568 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:14:02,570 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:14:03,604 DEBUG   SenderThread:8582 [sender.py:send():380] send: stats
+2024-01-19 21:14:07,606 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:14:10,451 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:14:11,415 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:14:11,417 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:14:11,418 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:14:14,544 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:14:19,545 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:14:24,456 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:14:25,231 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:14:26,415 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:14:26,417 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:14:26,418 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:14:30,515 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:14:33,607 DEBUG   SenderThread:8582 [sender.py:send():380] send: stats
+2024-01-19 21:14:35,609 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:14:38,461 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:14:40,850 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:14:41,416 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:14:41,419 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:14:41,420 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:14:46,578 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:14:51,844 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:14:52,466 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:14:56,415 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:14:56,418 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:14:56,419 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:14:57,574 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:15:02,574 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:15:03,609 DEBUG   SenderThread:8582 [sender.py:send():380] send: stats
+2024-01-19 21:15:06,472 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:15:07,648 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:15:11,416 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:15:11,420 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:15:11,420 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:15:13,547 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:15:18,651 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:15:20,476 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:15:23,652 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:15:26,420 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:15:26,420 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:15:26,421 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:15:29,526 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:15:33,612 DEBUG   SenderThread:8582 [sender.py:send():380] send: stats
+2024-01-19 21:15:34,481 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:15:34,614 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:15:39,615 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:15:41,420 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:15:41,421 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:15:41,421 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:15:45,559 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:15:48,487 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:15:51,009 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:15:56,010 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:15:56,421 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:15:56,421 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:15:56,421 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:16:00,504 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:16:01,589 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:16:03,616 DEBUG   SenderThread:8582 [sender.py:send():380] send: stats
+2024-01-19 21:16:06,618 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:16:11,421 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:16:11,422 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:16:11,423 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:16:12,564 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:16:14,510 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:16:18,531 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:16:23,532 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:16:26,526 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:16:26,527 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:16:26,615 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:16:28,717 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:16:30,516 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:16:33,617 DEBUG   SenderThread:8582 [sender.py:send():380] send: stats
+2024-01-19 21:16:34,618 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:16:39,619 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:16:41,442 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:16:41,442 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:16:41,442 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:16:42,521 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:16:45,527 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:16:50,528 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:16:55,529 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:16:56,444 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:16:56,445 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:16:56,445 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:16:56,526 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:17:00,566 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:17:03,619 DEBUG   SenderThread:8582 [sender.py:send():380] send: stats
+2024-01-19 21:17:05,620 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:17:10,740 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:17:11,442 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:17:11,442 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:17:11,443 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:17:12,532 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:17:16,491 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:17:21,492 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:17:26,443 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:17:26,443 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:17:26,443 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:17:26,534 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:17:26,539 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:17:31,535 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:17:33,621 DEBUG   SenderThread:8582 [sender.py:send():380] send: stats
+2024-01-19 21:17:36,626 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:17:38,544 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:17:41,442 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:17:41,443 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:17:41,443 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:17:42,556 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:17:47,557 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:17:52,550 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:17:52,622 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:17:56,443 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:17:56,444 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:17:56,484 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:17:58,592 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:18:03,593 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:18:03,623 DEBUG   SenderThread:8582 [sender.py:send():380] send: stats
+2024-01-19 21:18:08,555 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:18:08,873 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:18:11,443 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:18:11,444 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:18:11,444 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:18:14,600 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:18:19,601 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:18:22,566 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:18:24,992 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:18:26,443 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:18:26,443 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:18:26,443 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:18:30,563 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:18:33,625 DEBUG   SenderThread:8582 [sender.py:send():380] send: stats
+2024-01-19 21:18:36,173 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:18:36,571 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:18:41,174 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:18:41,443 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:18:41,444 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:18:41,444 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:18:46,889 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:18:50,576 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:18:52,161 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:18:56,444 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:18:56,444 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:18:56,445 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:18:57,611 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:19:03,078 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:19:03,630 DEBUG   SenderThread:8582 [sender.py:send():380] send: stats
+2024-01-19 21:19:04,589 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:19:08,632 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:19:11,443 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:19:11,444 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:19:11,444 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:19:14,594 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:19:18,594 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:19:19,969 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:19:24,971 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:19:26,444 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:19:26,444 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:19:26,445 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:19:30,951 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:19:32,599 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:19:33,632 DEBUG   SenderThread:8582 [sender.py:send():380] send: stats
+2024-01-19 21:19:36,634 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:19:41,443 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:19:41,444 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:19:41,446 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:19:42,598 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:19:44,604 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:19:47,909 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:19:52,910 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:19:56,444 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:19:56,444 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:19:56,447 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:19:57,970 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:20:00,610 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:20:02,972 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:20:03,637 DEBUG   SenderThread:8582 [sender.py:send():380] send: stats
+2024-01-19 21:20:08,640 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:20:11,655 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:20:11,655 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:20:11,659 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:20:13,706 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:20:14,615 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:20:18,707 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:20:23,708 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:20:26,684 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:20:27,060 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:20:27,060 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:20:28,621 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:20:29,196 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:20:33,637 DEBUG   SenderThread:8582 [sender.py:send():380] send: stats
+2024-01-19 21:20:34,638 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:20:39,639 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:20:41,709 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:20:41,710 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:20:41,715 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:20:42,632 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:20:45,010 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:20:50,011 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:20:55,012 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:20:56,607 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:20:56,608 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:20:56,631 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:20:56,637 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:21:00,759 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:21:03,640 DEBUG   SenderThread:8582 [sender.py:send():380] send: stats
+2024-01-19 21:21:06,642 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:21:10,644 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:21:11,608 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:21:11,608 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:21:11,631 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:21:14,730 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:21:19,731 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:21:24,650 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:21:25,126 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:21:26,608 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:21:26,609 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:21:26,631 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:21:30,700 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:21:33,641 DEBUG   SenderThread:8582 [sender.py:send():380] send: stats
+2024-01-19 21:21:36,643 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:21:38,656 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:21:41,609 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:21:41,610 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:21:41,631 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:21:43,523 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:21:48,524 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:21:52,661 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:21:54,011 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:21:56,609 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:21:56,610 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:21:56,631 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:21:59,678 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:22:03,644 DEBUG   SenderThread:8582 [sender.py:send():380] send: stats
+2024-01-19 21:22:04,784 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:22:06,666 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:22:09,786 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:22:11,608 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:22:11,609 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:22:11,631 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:22:15,563 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:22:20,671 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:22:21,489 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:22:26,490 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:22:26,608 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:22:26,609 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:22:26,631 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:22:31,718 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:22:33,647 DEBUG   SenderThread:8582 [sender.py:send():380] send: stats
+2024-01-19 21:22:34,676 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:22:37,648 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:22:41,609 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:22:41,611 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:22:41,632 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:22:42,723 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:22:48,176 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:22:48,684 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:22:53,177 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:22:56,609 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:22:56,610 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:22:56,632 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:22:58,680 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:23:00,689 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:23:03,648 DEBUG   SenderThread:8582 [sender.py:send():380] send: stats
+2024-01-19 21:23:04,649 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:23:09,650 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:23:11,610 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:23:11,611 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:23:11,632 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:23:14,741 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:23:16,695 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:23:19,741 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:23:24,742 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:23:26,609 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:23:26,610 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:23:26,632 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:23:28,699 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:23:30,036 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:23:33,652 DEBUG   SenderThread:8582 [sender.py:send():380] send: stats
+2024-01-19 21:23:35,654 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:23:41,610 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:23:41,611 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:23:41,632 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:23:42,704 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:23:44,277 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:23:49,278 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:23:54,279 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:23:56,610 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:23:56,611 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:23:56,632 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:23:56,709 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:23:59,691 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:24:03,657 DEBUG   SenderThread:8582 [sender.py:send():380] send: stats
+2024-01-19 21:24:05,659 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:24:08,714 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:24:11,611 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:24:11,611 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:24:11,633 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:24:13,752 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:24:18,753 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:24:22,720 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:24:24,382 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:24:26,610 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:24:26,611 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:24:26,633 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:24:29,743 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:24:33,659 DEBUG   SenderThread:8582 [sender.py:send():380] send: stats
+2024-01-19 21:24:35,032 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:24:36,725 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:24:40,073 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:24:41,611 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:24:41,612 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:24:41,634 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:24:45,729 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:24:50,732 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:24:51,718 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:24:56,611 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:24:56,612 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:24:56,637 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:24:57,704 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:25:03,481 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:25:03,662 DEBUG   SenderThread:8582 [sender.py:send():380] send: stats
+2024-01-19 21:25:04,741 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:25:08,665 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:25:11,611 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:25:11,612 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:25:11,637 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:25:13,694 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:25:16,746 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:25:19,230 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:25:24,231 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:25:26,616 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:25:26,616 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:25:26,637 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:25:29,654 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:25:30,752 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:25:33,663 DEBUG   SenderThread:8582 [sender.py:send():380] send: stats
+2024-01-19 21:25:34,665 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:25:39,665 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:25:41,613 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:25:41,613 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:25:41,637 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:25:44,757 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:25:45,107 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:25:50,108 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:25:55,109 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:25:56,613 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:25:56,613 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:25:56,637 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:25:58,763 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:26:00,917 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:26:03,668 DEBUG   SenderThread:8582 [sender.py:send():380] send: stats
+2024-01-19 21:26:06,670 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:26:11,613 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:26:11,613 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:26:11,637 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:26:11,734 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:26:12,768 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:26:16,735 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:26:21,735 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:26:24,773 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:26:26,613 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:26:26,614 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:26:26,638 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:26:27,698 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:26:32,699 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:26:33,670 DEBUG   SenderThread:8582 [sender.py:send():380] send: stats
+2024-01-19 21:26:38,397 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:26:38,785 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:26:41,614 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:26:41,614 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:26:41,638 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:26:44,478 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:26:49,479 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:26:52,790 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:26:54,794 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:26:56,613 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:26:56,614 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:26:56,638 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:27:00,750 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:27:03,672 DEBUG   SenderThread:8582 [sender.py:send():380] send: stats
+2024-01-19 21:27:04,795 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:27:06,344 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:27:11,345 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:27:11,613 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:27:11,614 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:27:11,638 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:27:16,414 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:27:18,800 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:27:22,146 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:27:26,613 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:27:26,614 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:27:26,638 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:27:27,749 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:27:32,806 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:27:32,883 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:27:33,676 DEBUG   SenderThread:8582 [sender.py:send():380] send: stats
+2024-01-19 21:27:38,678 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:27:41,615 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:27:41,616 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:27:41,642 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:27:43,855 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:27:46,811 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:27:49,411 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:27:54,412 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:27:56,614 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:27:56,614 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:27:56,642 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:28:00,057 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:28:00,817 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:28:03,678 DEBUG   SenderThread:8582 [sender.py:send():380] send: stats
+2024-01-19 21:28:05,680 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:28:10,682 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:28:11,710 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:28:11,711 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:28:11,717 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:28:15,823 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:28:16,588 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:28:21,589 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:28:26,684 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:28:26,685 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:28:26,768 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:28:26,829 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:28:27,827 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:28:31,830 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:28:33,681 DEBUG   SenderThread:8582 [sender.py:send():380] send: stats
+2024-01-19 21:28:37,683 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:28:41,683 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:28:41,684 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:28:41,766 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:28:41,847 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:28:44,042 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:28:49,043 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:28:54,169 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:28:55,852 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:28:56,683 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:28:56,683 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:28:56,766 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:28:59,767 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:29:03,683 DEBUG   SenderThread:8582 [sender.py:send():380] send: stats
+2024-01-19 21:29:05,684 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:29:09,857 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:29:10,751 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:29:11,684 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:29:11,685 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:29:11,767 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:29:15,775 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:29:21,325 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:29:21,862 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:29:26,326 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:29:26,685 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:29:26,685 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:29:26,767 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:29:31,746 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:29:33,686 DEBUG   SenderThread:8582 [sender.py:send():380] send: stats
+2024-01-19 21:29:35,867 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:29:37,688 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:29:41,684 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:29:41,684 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:29:41,767 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:29:42,731 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:29:48,449 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:29:49,873 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:29:53,450 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:29:56,684 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:29:56,684 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:29:56,767 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:29:58,801 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:30:03,688 DEBUG   SenderThread:8582 [sender.py:send():380] send: stats
+2024-01-19 21:30:03,878 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:30:04,689 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:30:09,690 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:30:11,684 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:30:11,684 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:30:11,767 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:30:15,633 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:30:15,883 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:30:20,634 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:30:25,635 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:30:26,684 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:30:26,684 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:30:26,767 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:30:29,891 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:30:31,553 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:30:33,692 DEBUG   SenderThread:8582 [sender.py:send():380] send: stats
+2024-01-19 21:30:36,695 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:30:41,696 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:30:41,747 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:30:41,748 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:30:41,768 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:30:43,897 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:30:47,434 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:30:52,435 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:30:56,833 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:30:56,834 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:30:56,915 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:30:57,903 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:30:57,994 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:31:02,999 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:31:03,694 DEBUG   SenderThread:8582 [sender.py:send():380] send: stats
+2024-01-19 21:31:08,696 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:31:11,804 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-19 21:31:11,805 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: stop_status
+2024-01-19 21:31:11,821 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:31:11,908 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:31:13,864 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:31:18,865 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:31:20,743 DEBUG   SenderThread:8582 [sender.py:send():380] send: exit
+2024-01-19 21:31:20,743 INFO    SenderThread:8582 [sender.py:send_exit():585] handling exit code: 1
+2024-01-19 21:31:20,744 INFO    SenderThread:8582 [sender.py:send_exit():587] handling runtime: 1427
+2024-01-19 21:31:20,744 INFO    SenderThread:8582 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-01-19 21:31:20,745 INFO    SenderThread:8582 [sender.py:send_exit():593] send defer
+2024-01-19 21:31:20,745 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: defer
+2024-01-19 21:31:20,745 INFO    HandlerThread:8582 [handler.py:handle_request_defer():172] handle defer: 0
+2024-01-19 21:31:20,745 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: defer
+2024-01-19 21:31:20,745 INFO    SenderThread:8582 [sender.py:send_request_defer():609] handle sender defer: 0
+2024-01-19 21:31:20,745 INFO    SenderThread:8582 [sender.py:transition_state():613] send defer: 1
+2024-01-19 21:31:20,746 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: defer
+2024-01-19 21:31:20,746 INFO    HandlerThread:8582 [handler.py:handle_request_defer():172] handle defer: 1
+2024-01-19 21:31:20,746 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: defer
+2024-01-19 21:31:20,746 INFO    SenderThread:8582 [sender.py:send_request_defer():609] handle sender defer: 1
+2024-01-19 21:31:20,746 INFO    SenderThread:8582 [sender.py:transition_state():613] send defer: 2
+2024-01-19 21:31:20,746 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: defer
+2024-01-19 21:31:20,746 INFO    HandlerThread:8582 [handler.py:handle_request_defer():172] handle defer: 2
+2024-01-19 21:31:20,746 INFO    HandlerThread:8582 [system_monitor.py:finish():203] Stopping system monitor
+2024-01-19 21:31:20,747 DEBUG   SystemMonitor:8582 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-01-19 21:31:20,748 DEBUG   SystemMonitor:8582 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-01-19 21:31:20,750 INFO    HandlerThread:8582 [interfaces.py:finish():202] Joined cpu monitor
+2024-01-19 21:31:20,751 INFO    HandlerThread:8582 [interfaces.py:finish():202] Joined disk monitor
+2024-01-19 21:31:20,913 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_created():271] file/dir created: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/wandb-summary.json
+2024-01-19 21:31:22,559 INFO    HandlerThread:8582 [interfaces.py:finish():202] Joined gpu monitor
+2024-01-19 21:31:22,559 INFO    HandlerThread:8582 [interfaces.py:finish():202] Joined memory monitor
+2024-01-19 21:31:22,560 INFO    HandlerThread:8582 [interfaces.py:finish():202] Joined network monitor
+2024-01-19 21:31:22,560 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: poll_exit
+2024-01-19 21:31:22,561 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: defer
+2024-01-19 21:31:22,561 INFO    SenderThread:8582 [sender.py:send_request_defer():609] handle sender defer: 2
+2024-01-19 21:31:22,561 INFO    SenderThread:8582 [sender.py:transition_state():613] send defer: 3
+2024-01-19 21:31:22,561 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: defer
+2024-01-19 21:31:22,562 INFO    HandlerThread:8582 [handler.py:handle_request_defer():172] handle defer: 3
+2024-01-19 21:31:22,562 DEBUG   SenderThread:8582 [sender.py:send():380] send: stats
+2024-01-19 21:31:22,563 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: poll_exit
+2024-01-19 21:31:22,563 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: defer
+2024-01-19 21:31:22,564 INFO    SenderThread:8582 [sender.py:send_request_defer():609] handle sender defer: 3
+2024-01-19 21:31:22,564 INFO    SenderThread:8582 [sender.py:transition_state():613] send defer: 4
+2024-01-19 21:31:22,564 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: defer
+2024-01-19 21:31:22,564 INFO    HandlerThread:8582 [handler.py:handle_request_defer():172] handle defer: 4
+2024-01-19 21:31:22,564 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: defer
+2024-01-19 21:31:22,564 INFO    SenderThread:8582 [sender.py:send_request_defer():609] handle sender defer: 4
+2024-01-19 21:31:22,564 INFO    SenderThread:8582 [sender.py:transition_state():613] send defer: 5
+2024-01-19 21:31:22,564 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: defer
+2024-01-19 21:31:22,564 INFO    HandlerThread:8582 [handler.py:handle_request_defer():172] handle defer: 5
+2024-01-19 21:31:22,565 DEBUG   SenderThread:8582 [sender.py:send():380] send: summary
+2024-01-19 21:31:22,565 INFO    SenderThread:8582 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-01-19 21:31:22,566 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: defer
+2024-01-19 21:31:22,566 INFO    SenderThread:8582 [sender.py:send_request_defer():609] handle sender defer: 5
+2024-01-19 21:31:22,566 INFO    SenderThread:8582 [sender.py:transition_state():613] send defer: 6
+2024-01-19 21:31:22,566 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: defer
+2024-01-19 21:31:22,566 INFO    HandlerThread:8582 [handler.py:handle_request_defer():172] handle defer: 6
+2024-01-19 21:31:22,566 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: defer
+2024-01-19 21:31:22,566 INFO    SenderThread:8582 [sender.py:send_request_defer():609] handle sender defer: 6
+2024-01-19 21:31:22,566 INFO    SenderThread:8582 [sender.py:transition_state():613] send defer: 7
+2024-01-19 21:31:22,566 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: status_report
+2024-01-19 21:31:22,566 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: defer
+2024-01-19 21:31:22,566 INFO    HandlerThread:8582 [handler.py:handle_request_defer():172] handle defer: 7
+2024-01-19 21:31:22,567 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: defer
+2024-01-19 21:31:22,567 INFO    SenderThread:8582 [sender.py:send_request_defer():609] handle sender defer: 7
+2024-01-19 21:31:22,750 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: poll_exit
+2024-01-19 21:31:22,914 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/wandb-summary.json
+2024-01-19 21:31:22,914 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:31:24,479 INFO    SenderThread:8582 [sender.py:transition_state():613] send defer: 8
+2024-01-19 21:31:24,479 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: poll_exit
+2024-01-19 21:31:24,479 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: defer
+2024-01-19 21:31:24,480 INFO    HandlerThread:8582 [handler.py:handle_request_defer():172] handle defer: 8
+2024-01-19 21:31:24,480 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: defer
+2024-01-19 21:31:24,480 INFO    SenderThread:8582 [sender.py:send_request_defer():609] handle sender defer: 8
+2024-01-19 21:31:24,480 INFO    SenderThread:8582 [job_builder.py:build():281] Attempting to build job artifact
+2024-01-19 21:31:24,481 INFO    SenderThread:8582 [job_builder.py:_get_source_type():404] no source found
+2024-01-19 21:31:24,481 INFO    SenderThread:8582 [sender.py:transition_state():613] send defer: 9
+2024-01-19 21:31:24,481 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: defer
+2024-01-19 21:31:24,481 INFO    HandlerThread:8582 [handler.py:handle_request_defer():172] handle defer: 9
+2024-01-19 21:31:24,481 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: defer
+2024-01-19 21:31:24,481 INFO    SenderThread:8582 [sender.py:send_request_defer():609] handle sender defer: 9
+2024-01-19 21:31:24,481 INFO    SenderThread:8582 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-01-19 21:31:24,915 INFO    Thread-12 :8582 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:31:24,916 INFO    SenderThread:8582 [dir_watcher.py:finish():388] scan: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files
+2024-01-19 21:31:24,916 INFO    SenderThread:8582 [dir_watcher.py:finish():402] scan save: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/wandb-metadata.json wandb-metadata.json
+2024-01-19 21:31:24,916 INFO    SenderThread:8582 [dir_watcher.py:finish():402] scan save: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/args.json args.json
+2024-01-19 21:31:24,916 INFO    SenderThread:8582 [dir_watcher.py:finish():402] scan save: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/wandb-summary.json wandb-summary.json
+2024-01-19 21:31:24,917 INFO    SenderThread:8582 [dir_watcher.py:finish():402] scan save: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/conda-environment.yaml conda-environment.yaml
+2024-01-19 21:31:24,924 INFO    SenderThread:8582 [dir_watcher.py:finish():402] scan save: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/config.yaml config.yaml
+2024-01-19 21:31:24,930 INFO    SenderThread:8582 [dir_watcher.py:finish():402] scan save: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/requirements.txt requirements.txt
+2024-01-19 21:31:24,943 INFO    SenderThread:8582 [dir_watcher.py:finish():402] scan save: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log output.log
+2024-01-19 21:31:24,948 INFO    SenderThread:8582 [sender.py:transition_state():613] send defer: 10
+2024-01-19 21:31:24,949 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: defer
+2024-01-19 21:31:24,949 INFO    HandlerThread:8582 [handler.py:handle_request_defer():172] handle defer: 10
+2024-01-19 21:31:24,950 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: defer
+2024-01-19 21:31:24,954 INFO    SenderThread:8582 [sender.py:send_request_defer():609] handle sender defer: 10
+2024-01-19 21:31:24,955 INFO    SenderThread:8582 [file_pusher.py:finish():175] shutting down file pusher
+2024-01-19 21:31:25,390 INFO    wandb-upload_0:8582 [upload_job.py:push():131] Uploaded file ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/args.json
+2024-01-19 21:31:25,612 INFO    wandb-upload_3:8582 [upload_job.py:push():131] Uploaded file ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/config.yaml
+2024-01-19 21:31:25,630 INFO    wandb-upload_2:8582 [upload_job.py:push():131] Uploaded file ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/conda-environment.yaml
+2024-01-19 21:31:25,639 INFO    wandb-upload_4:8582 [upload_job.py:push():131] Uploaded file ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/requirements.txt
+2024-01-19 21:31:25,651 INFO    wandb-upload_5:8582 [upload_job.py:push():131] Uploaded file ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/output.log
+2024-01-19 21:31:25,680 INFO    wandb-upload_1:8582 [upload_job.py:push():131] Uploaded file ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files/wandb-summary.json
+2024-01-19 21:31:25,881 INFO    Thread-11 :8582 [sender.py:transition_state():613] send defer: 11
+2024-01-19 21:31:25,882 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: defer
+2024-01-19 21:31:25,882 INFO    HandlerThread:8582 [handler.py:handle_request_defer():172] handle defer: 11
+2024-01-19 21:31:25,882 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: defer
+2024-01-19 21:31:25,883 INFO    SenderThread:8582 [sender.py:send_request_defer():609] handle sender defer: 11
+2024-01-19 21:31:25,883 INFO    SenderThread:8582 [file_pusher.py:join():181] waiting for file pusher
+2024-01-19 21:31:25,883 INFO    SenderThread:8582 [sender.py:transition_state():613] send defer: 12
+2024-01-19 21:31:25,883 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: defer
+2024-01-19 21:31:25,883 INFO    HandlerThread:8582 [handler.py:handle_request_defer():172] handle defer: 12
+2024-01-19 21:31:25,883 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: defer
+2024-01-19 21:31:25,884 INFO    SenderThread:8582 [sender.py:send_request_defer():609] handle sender defer: 12
+2024-01-19 21:31:25,884 INFO    SenderThread:8582 [file_stream.py:finish():595] file stream finish called
+2024-01-19 21:31:26,055 INFO    SenderThread:8582 [file_stream.py:finish():599] file stream finish is done
+2024-01-19 21:31:26,055 INFO    SenderThread:8582 [sender.py:transition_state():613] send defer: 13
+2024-01-19 21:31:26,055 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: defer
+2024-01-19 21:31:26,055 INFO    HandlerThread:8582 [handler.py:handle_request_defer():172] handle defer: 13
+2024-01-19 21:31:26,056 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: defer
+2024-01-19 21:31:26,056 INFO    SenderThread:8582 [sender.py:send_request_defer():609] handle sender defer: 13
+2024-01-19 21:31:26,056 INFO    SenderThread:8582 [sender.py:transition_state():613] send defer: 14
+2024-01-19 21:31:26,057 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: defer
+2024-01-19 21:31:26,057 DEBUG   SenderThread:8582 [sender.py:send():380] send: final
+2024-01-19 21:31:26,057 INFO    HandlerThread:8582 [handler.py:handle_request_defer():172] handle defer: 14
+2024-01-19 21:31:26,057 DEBUG   SenderThread:8582 [sender.py:send():380] send: footer
+2024-01-19 21:31:26,057 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: defer
+2024-01-19 21:31:26,057 INFO    SenderThread:8582 [sender.py:send_request_defer():609] handle sender defer: 14
+2024-01-19 21:31:26,058 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: poll_exit
+2024-01-19 21:31:26,059 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: poll_exit
+2024-01-19 21:31:26,059 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: server_info
+2024-01-19 21:31:26,060 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: server_info
+2024-01-19 21:31:26,064 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: get_summary
+2024-01-19 21:31:26,064 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: sampled_history
+2024-01-19 21:31:26,064 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-19 21:31:26,065 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: job_info
+2024-01-19 21:31:26,115 DEBUG   SenderThread:8582 [sender.py:send_request():407] send_request: job_info
+2024-01-19 21:31:26,116 INFO    MainThread:8582 [wandb_run.py:_footer_history_summary_info():3599] rendering history
+2024-01-19 21:31:26,116 INFO    MainThread:8582 [wandb_run.py:_footer_history_summary_info():3631] rendering summary
+2024-01-19 21:31:26,116 INFO    MainThread:8582 [wandb_run.py:_footer_sync_info():3558] logging synced files
+2024-01-19 21:31:26,117 DEBUG   HandlerThread:8582 [handler.py:handle_request():146] handle_request: shutdown
+2024-01-19 21:31:26,117 INFO    HandlerThread:8582 [handler.py:finish():866] shutting down handler
+2024-01-19 21:31:27,065 INFO    WriterThread:8582 [datastore.py:close():294] close: ./experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/run-ibuhn27l.wandb
+2024-01-19 21:31:27,116 INFO    SenderThread:8582 [sender.py:finish():1534] shutting down sender
+2024-01-19 21:31:27,116 INFO    SenderThread:8582 [file_pusher.py:finish():175] shutting down file pusher
+2024-01-19 21:31:27,116 INFO    SenderThread:8582 [file_pusher.py:join():181] waiting for file pusher

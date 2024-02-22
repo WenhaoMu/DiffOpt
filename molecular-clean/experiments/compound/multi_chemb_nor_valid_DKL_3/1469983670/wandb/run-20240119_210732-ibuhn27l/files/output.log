@@ -1,0 +1,146 @@
+('out_directory: '
+ './experiments/compound/multi_chemb_nor_valid_DKL_3/1469983670/wandb/run-20240119_210732-ibuhn27l/files')
+The device used is : cuda
+[0.05189754 0.0546398  0.05715263 0.05955841 0.06104146 0.06128392
+ 0.05934593 0.05677216 0.05340054 0.05305983 0.05742928 0.05453719
+ 0.03827698 0.03599268 0.03263596 0.04027841 0.02949854 0.04507445
+ 0.04768255 0.05044157]
+DEVICE: cuda
+/nethome/wmu30/anaconda3/envs/GP/lib/python3.8/site-packages/linear_operator/utils/interpolation.py:71: UserWarning: The torch.cuda.*DtypeTensor constructors are no longer recommended. It's best to use methods such as torch.tensor(data, dtype=*, device='cuda') to create tensors. (Triggered internally at ../torch/csrc/tensor/python_tensor.cpp:83.)
+  summing_matrix = cls(summing_matrix_indices, summing_matrix_values, size)
+/nethome/wmu30/anaconda3/envs/GP/lib/python3.8/site-packages/linear_operator/utils/interpolation.py:71: UserWarning: torch.sparse.SparseTensor(indices, values, shape, *, device=) is deprecated.  Please use torch.sparse_coo_tensor(indices, values, shape, dtype=, device=). (Triggered internally at ../torch/csrc/utils/tensor_new.cpp:605.)
+  summing_matrix = cls(summing_matrix_indices, summing_matrix_values, size)
+Epoch 1/200, Train Loss: 0.01170689176188575, Val Loss: 0.012107495546340942
+/nethome/wmu30/anaconda3/envs/GP/lib/python3.8/site-packages/gpytorch/distributions/multivariate_normal.py:319: NumericalWarning: Negative variance values detected. This is likely due to numerical instabilities. Rounding negative variances up to 1e-06.
+  warnings.warn(
+Epoch 2/200, Train Loss: 0.010868036945660908, Val Loss: 0.011420663595199585
+Epoch 3/200, Train Loss: 0.010674481285942925, Val Loss: 0.011361406326293946
+Epoch 4/200, Train Loss: 0.01048795951075024, Val Loss: 0.01132331371307373
+Epoch 5/200, Train Loss: 0.010448338601324294, Val Loss: 0.011428668141365051
+Epoch 6/200, Train Loss: 0.010417525357670255, Val Loss: 0.0111752108335495
+Epoch 7/200, Train Loss: 0.010319675266742706, Val Loss: 0.011323635220527649
+Epoch 8/200, Train Loss: 0.010277129544152153, Val Loss: 0.011183875679969788
+Epoch 9/200, Train Loss: 0.01029329921801885, Val Loss: 0.011384359478950501
+Epoch 10/200, Train Loss: 0.010243184288342793, Val Loss: 0.011379790425300598
+Epoch 11/200, Train Loss: 0.010063409904638927, Val Loss: 0.01120777702331543
+Epoch 12/200, Train Loss: 0.010263198289606307, Val Loss: 0.011326559901237487
+Epoch 13/200, Train Loss: 0.010200742688443926, Val Loss: 0.01128670084476471
+Epoch 14/200, Train Loss: 0.010052061902152168, Val Loss: 0.01151198959350586
+Epoch 15/200, Train Loss: 0.01004543082581626, Val Loss: 0.011448172450065613
+Epoch 16/200, Train Loss: 0.010152563426229689, Val Loss: 0.011176553606987
+Epoch 17/200, Train Loss: 0.01010024658176634, Val Loss: 0.01104378604888916
+Epoch 18/200, Train Loss: 0.009956368678145939, Val Loss: 0.01099117934703827
+Epoch 19/200, Train Loss: 0.009909679101573097, Val Loss: 0.01144737184047699
+Epoch 20/200, Train Loss: 0.00967125686009725, Val Loss: 0.011495066285133361
+Epoch 21/200, Train Loss: 0.009820894791020288, Val Loss: 0.011490736424922944
+Epoch 22/200, Train Loss: 0.009855556507905325, Val Loss: 0.01165371811389923
+Epoch 23/200, Train Loss: 0.009657493193944296, Val Loss: 0.011839329242706299
+Epoch 24/200, Train Loss: 0.00996427290307151, Val Loss: 0.011464937210083008
+Epoch 25/200, Train Loss: 0.00973080712556839, Val Loss: 0.011527649521827698
+Epoch 26/200, Train Loss: 0.009817192574342092, Val Loss: 0.011612715244293213
+Epoch 27/200, Train Loss: 0.009909534513950349, Val Loss: 0.011588061809539795
+Epoch 28/200, Train Loss: 0.009803228855133057, Val Loss: 0.011573351144790649
+Epoch 29/200, Train Loss: 0.009682812650998433, Val Loss: 0.011574870109558105
+Epoch 30/200, Train Loss: 0.009468780954678853, Val Loss: 0.011457546591758728
+Epoch 31/200, Train Loss: 0.009506409207979839, Val Loss: 0.01094703722000122
+Epoch 32/200, Train Loss: 0.009545135431819491, Val Loss: 0.011677618741989136
+Epoch 33/200, Train Loss: 0.009640128506554498, Val Loss: 0.011500372409820556
+Epoch 34/200, Train Loss: 0.009309474878840976, Val Loss: 0.011518725037574768
+Epoch 35/200, Train Loss: 0.009437588466538324, Val Loss: 0.011373209357261658
+Epoch 36/200, Train Loss: 0.009331899676058027, Val Loss: 0.011598190546035766
+Epoch 37/200, Train Loss: 0.009439051826794942, Val Loss: 0.011294202089309693
+Epoch 38/200, Train Loss: 0.009514424131976234, Val Loss: 0.011389987349510192
+Epoch 39/200, Train Loss: 0.009400013784567516, Val Loss: 0.01139339429140091
+Epoch 40/200, Train Loss: 0.00916633880800671, Val Loss: 0.01141158902645111
+Epoch 41/200, Train Loss: 0.009152540213531919, Val Loss: 0.011838342666625977
+Epoch 42/200, Train Loss: 0.009371406098206837, Val Loss: 0.011165925741195678
+Epoch 43/200, Train Loss: 0.008898006445831722, Val Loss: 0.01171986973285675
+Epoch 44/200, Train Loss: 0.009326314608256022, Val Loss: 0.011349024534225463
+Epoch 45/200, Train Loss: 0.009138243628872765, Val Loss: 0.011401980459690094
+Epoch 46/200, Train Loss: 0.009375786741574606, Val Loss: 0.011642659902572633
+Epoch 47/200, Train Loss: 0.009226079066594442, Val Loss: 0.01167899227142334
+Epoch 48/200, Train Loss: 0.009179267591900296, Val Loss: 0.01163903385400772
+Epoch 49/200, Train Loss: 0.008813085973262786, Val Loss: 0.012134662985801696
+Epoch 50/200, Train Loss: 0.009017146726449331, Val Loss: 0.011641304731369019
+Epoch 51/200, Train Loss: 0.008787383099397023, Val Loss: 0.011105301022529603
+Epoch 52/200, Train Loss: 0.00920494114028083, Val Loss: 0.012527977466583252
+Epoch 53/200, Train Loss: 0.008921536849604712, Val Loss: 0.012076938211917878
+Epoch 54/200, Train Loss: 0.008866140445073445, Val Loss: 0.011928824067115784
+Epoch 55/200, Train Loss: 0.009067848410871293, Val Loss: 0.011677887797355652
+Epoch 56/200, Train Loss: 0.008794346749782562, Val Loss: 0.01161973488330841
+Epoch 57/200, Train Loss: 0.008871714221106636, Val Loss: 0.011486158192157746
+Epoch 58/200, Train Loss: 0.008408668180306753, Val Loss: 0.011911818623542786
+Epoch 59/200, Train Loss: 0.008636712153752646, Val Loss: 0.011670370697975158
+Epoch 60/200, Train Loss: 0.008651756127675374, Val Loss: 0.012748498678207397
+Epoch 61/200, Train Loss: 0.008634144319428338, Val Loss: 0.011164755403995514
+Epoch 62/200, Train Loss: 0.008769734111097124, Val Loss: 0.012631900906562805
+Epoch 63/200, Train Loss: 0.008744130498833127, Val Loss: 0.011288374423980714
+Epoch 64/200, Train Loss: 0.008605021668805016, Val Loss: 0.011438769578933717
+Epoch 65/200, Train Loss: 0.008807131654686398, Val Loss: 0.011473579943180084
+Epoch 66/200, Train Loss: 0.00862106959025065, Val Loss: 0.011791729092597961
+Epoch 67/200, Train Loss: 0.008379390981462266, Val Loss: 0.012112817347049713
+Epoch 68/200, Train Loss: 0.008424360738860236, Val Loss: 0.012768345296382905
+Epoch 69/200, Train Loss: 0.008367569228013357, Val Loss: 0.011423499822616577
+Epoch 70/200, Train Loss: 0.008931897050804561, Val Loss: 0.011625104129314423
+Epoch 71/200, Train Loss: 0.00843151612414254, Val Loss: 0.012040585339069366
+Epoch 72/200, Train Loss: 0.008475337591436174, Val Loss: 0.012134640455245971
+Epoch 73/200, Train Loss: 0.008402017427815331, Val Loss: 0.011409586310386658
+Epoch 74/200, Train Loss: 0.008306072983476851, Val Loss: 0.012817956686019897
+Epoch 75/200, Train Loss: 0.008411919236183167, Val Loss: 0.01282491171360016
+Epoch 76/200, Train Loss: 0.008237450844711728, Val Loss: 0.012589949011802673
+Epoch 77/200, Train Loss: 0.008173519213994344, Val Loss: 0.012618900060653686
+Epoch 78/200, Train Loss: 0.00781023962630166, Val Loss: 0.012656804442405701
+Epoch 79/200, Train Loss: 0.007896631042162577, Val Loss: 0.01272404432296753
+Epoch 80/200, Train Loss: 0.008017402827739715, Val Loss: 0.01268738853931427
+Epoch 81/200, Train Loss: 0.008358003795146942, Val Loss: 0.012386656641960144
+Epoch 82/200, Train Loss: 0.008404864033063253, Val Loss: 0.011909409284591674
+Epoch 83/200, Train Loss: 0.008028897537125481, Val Loss: 0.012918747305870056
+Epoch 84/200, Train Loss: 0.008315697530905405, Val Loss: 0.013702336311340333
+Epoch 85/200, Train Loss: 0.008158875491884019, Val Loss: 0.011655869603157043
+Epoch 86/200, Train Loss: 0.007759288933542039, Val Loss: 0.012855730772018433
+Epoch 87/200, Train Loss: 0.008122070319122739, Val Loss: 0.012298569619655609
+Epoch 88/200, Train Loss: 0.008258285416497124, Val Loss: 0.012795735597610474
+Epoch 89/200, Train Loss: 0.007598292741510603, Val Loss: 0.012305403411388397
+Epoch 90/200, Train Loss: 0.008236152867476145, Val Loss: 0.011561159670352936
+Epoch 91/200, Train Loss: 0.007850335948997074, Val Loss: 0.012299992620944977
+Epoch 92/200, Train Loss: 0.007976711849371593, Val Loss: 0.013178401947021485
+Epoch 93/200, Train Loss: 0.007776493357287513, Val Loss: 0.012804878711700439
+Epoch 94/200, Train Loss: 0.007853271987703112, Val Loss: 0.012623190522193909
+Epoch 95/200, Train Loss: 0.007865106675359938, Val Loss: 0.012808194935321808
+Epoch 96/200, Train Loss: 0.008245039621988932, Val Loss: 0.012337178468704224
+Epoch 97/200, Train Loss: 0.008034168038103315, Val Loss: 0.012834921956062317
+Epoch 98/200, Train Loss: 0.00783793694443173, Val Loss: 0.01259721040725708
+Epoch 99/200, Train Loss: 0.007537679837809668, Val Loss: 0.013790428221225738
+Epoch 100/200, Train Loss: 0.008059676157103644, Val Loss: 0.011665923535823823
+Epoch 101/200, Train Loss: 0.007927875075075362, Val Loss: 0.012446194350719452
+Epoch 102/200, Train Loss: 0.007629319151242574, Val Loss: 0.013463026046752929
+/nethome/wmu30/anaconda3/envs/GP/lib/python3.8/site-packages/linear_operator/utils/cholesky.py:40: NumericalWarning: A not p.d., added jitter of 1.0e-08 to the diagonal
+  warnings.warn(
+/nethome/wmu30/anaconda3/envs/GP/lib/python3.8/site-packages/linear_operator/utils/cholesky.py:40: NumericalWarning: A not p.d., added jitter of 1.0e-07 to the diagonal
+  warnings.warn(
+/nethome/wmu30/anaconda3/envs/GP/lib/python3.8/site-packages/linear_operator/utils/cholesky.py:40: NumericalWarning: A not p.d., added jitter of 1.0e-06 to the diagonal
+  warnings.warn(
+Traceback (most recent call last):
+  File "design_baselines/diff_multi/DKL_train_regression_x0_multi.py", line 708, in <module>
+    run_classifier(
+  File "design_baselines/diff_multi/DKL_train_regression_x0_multi.py", line 427, in run_classifier
+    output = model(torch.cat([x_hat, t_],dim=1))
+  File "/nethome/wmu30/anaconda3/envs/GP/lib/python3.8/site-packages/gpytorch/models/approximate_gp.py", line 108, in __call__
+    return self.variational_strategy(inputs, prior=prior, **kwargs)
+  File "/nethome/wmu30/anaconda3/envs/GP/lib/python3.8/site-packages/gpytorch/variational/variational_strategy.py", line 272, in __call__
+    return super().__call__(x, prior=prior, **kwargs)
+  File "/nethome/wmu30/anaconda3/envs/GP/lib/python3.8/site-packages/gpytorch/variational/_variational_strategy.py", line 341, in __call__
+    return super().__call__(
+  File "/nethome/wmu30/anaconda3/envs/GP/lib/python3.8/site-packages/gpytorch/module.py", line 31, in __call__
+    outputs = self.forward(*inputs, **kwargs)
+  File "/nethome/wmu30/anaconda3/envs/GP/lib/python3.8/site-packages/gpytorch/variational/variational_strategy.py", line 203, in forward
+    L = self._cholesky_factor(induc_induc_covar)
+  File "/nethome/wmu30/anaconda3/envs/GP/lib/python3.8/site-packages/gpytorch/utils/memoize.py", line 76, in g
+    return _add_to_cache_ignore_args(self, cache_name, method(self, *args, **kwargs))
+  File "/nethome/wmu30/anaconda3/envs/GP/lib/python3.8/site-packages/gpytorch/variational/variational_strategy.py", line 104, in _cholesky_factor
+    L = psd_safe_cholesky(to_dense(induc_induc_covar).type(_linalg_dtype_cholesky.value()))
+  File "/nethome/wmu30/anaconda3/envs/GP/lib/python3.8/site-packages/linear_operator/utils/cholesky.py", line 65, in psd_safe_cholesky
+    L = _psd_safe_cholesky(A, out=out, jitter=jitter, max_tries=max_tries)
+  File "/nethome/wmu30/anaconda3/envs/GP/lib/python3.8/site-packages/linear_operator/utils/cholesky.py", line 47, in _psd_safe_cholesky
+    raise NotPSDError(f"Matrix not positive definite after repeatedly adding jitter up to {jitter_new:.1e}.")
+linear_operator.utils.errors.NotPSDError: Matrix not positive definite after repeatedly adding jitter up to 1.0e-06.
