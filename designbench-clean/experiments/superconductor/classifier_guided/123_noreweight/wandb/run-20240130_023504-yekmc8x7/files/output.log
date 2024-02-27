@@ -1,0 +1,235 @@
+('out_directory: '
+ './experiments/superconductor/classifier_guided/123_noreweight/wandb/run-20240130_023504-yekmc8x7/files')
+Score matching loss
+[0.00466056 0.00565133 0.00683926 0.00826024 0.01003734 0.01212568
+ 0.01465298 0.01783654 0.02170513 0.02627187 0.03170122 0.03774159
+ 0.04592655 0.0554122  0.06783048 0.08176445 0.09948998 0.12181436
+ 0.14847985 0.18179831]
+[[0.45841408]
+ [0.45841408]
+ [0.2675822 ]
+ ...
+ [0.02025407]
+ [0.02025407]
+ [0.13513406]]
+(17014, 1)
+/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/sklearn/base.py:338: UserWarning: Trying to unpickle estimator DecisionTreeRegressor from version 0.23.1 when using version 1.0.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/modules/model_persistence.html#security-maintainability-limitations
+  UserWarning,
+/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/sklearn/base.py:338: UserWarning: Trying to unpickle estimator RandomForestRegressor from version 0.23.1 when using version 1.0.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/modules/model_persistence.html#security-maintainability-limitations
+  UserWarning,
+/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/loops/epoch/training_epoch_loop.py:53: LightningDeprecationWarning: Setting `max_steps = None` is deprecated in v1.5 and will no longer be supported in v1.7. Use `max_steps = -1` instead.
+  "Setting `max_steps = None` is deprecated in v1.5 and will no longer be supported in v1.7."
+/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/trainer/connectors/callback_connector.py:97: LightningDeprecationWarning: Setting `Trainer(progress_bar_refresh_rate=20)` is deprecated in v1.5 and will be removed in v1.7. Please pass `pytorch_lightning.callbacks.progress.TQDMProgressBar` with `refresh_rate` directly to the Trainer's `callbacks` argument instead. Or, to disable the progress bar pass `enable_progress_bar = False` to the Trainer.
+  f"Setting `Trainer(progress_bar_refresh_rate={progress_bar_refresh_rate})` is deprecated in v1.5 and"
+--- Logging error ---
+Traceback (most recent call last):
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/logging/__init__.py", line 1028, in emit
+    stream.write(msg + self.terminator)
+ValueError: I/O operation on closed file.
+Call stack:
+  File "diff/Diffusion_DKL2.py", line 925, in <module>
+    device=device,
+  File "diff/Diffusion_DKL2.py", line 337, in run_training
+    limit_test_batches=0,
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/utilities/argparse.py", line 339, in insert_env_defaults
+    return fn(self, **kwargs)
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/trainer/trainer.py", line 606, in __init__
+    self._setup_on_init(num_sanity_val_steps)
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/trainer/trainer.py", line 687, in _setup_on_init
+    self._log_device_info()
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/trainer/trainer.py", line 1801, in _log_device_info
+    f"GPU available: {torch.cuda.is_available()}, used: {isinstance(self.accelerator, GPUAccelerator)}"
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/utilities/rank_zero.py", line 32, in wrapped_fn
+    return fn(*args, **kwargs)
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/utilities/rank_zero.py", line 75, in rank_zero_info
+    _info(*args, stacklevel=stacklevel, **kwargs)
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/utilities/rank_zero.py", line 57, in _info
+    log.info(*args, **kwargs)
+Message: 'GPU available: True, used: True'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/logging/__init__.py", line 1028, in emit
+    stream.write(msg + self.terminator)
+ValueError: I/O operation on closed file.
+Call stack:
+  File "diff/Diffusion_DKL2.py", line 925, in <module>
+    device=device,
+  File "diff/Diffusion_DKL2.py", line 337, in run_training
+    limit_test_batches=0,
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/utilities/argparse.py", line 339, in insert_env_defaults
+    return fn(self, **kwargs)
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/trainer/trainer.py", line 606, in __init__
+    self._setup_on_init(num_sanity_val_steps)
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/trainer/trainer.py", line 687, in _setup_on_init
+    self._log_device_info()
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/trainer/trainer.py", line 1805, in _log_device_info
+    rank_zero_info(f"TPU available: {_TPU_AVAILABLE}, using: {num_tpu_cores} TPU cores")
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/utilities/rank_zero.py", line 32, in wrapped_fn
+    return fn(*args, **kwargs)
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/utilities/rank_zero.py", line 75, in rank_zero_info
+    _info(*args, stacklevel=stacklevel, **kwargs)
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/utilities/rank_zero.py", line 57, in _info
+    log.info(*args, **kwargs)
+Message: 'TPU available: False, using: 0 TPU cores'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/logging/__init__.py", line 1028, in emit
+    stream.write(msg + self.terminator)
+ValueError: I/O operation on closed file.
+Call stack:
+  File "diff/Diffusion_DKL2.py", line 925, in <module>
+    device=device,
+  File "diff/Diffusion_DKL2.py", line 337, in run_training
+    limit_test_batches=0,
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/utilities/argparse.py", line 339, in insert_env_defaults
+    return fn(self, **kwargs)
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/trainer/trainer.py", line 606, in __init__
+    self._setup_on_init(num_sanity_val_steps)
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/trainer/trainer.py", line 687, in _setup_on_init
+    self._log_device_info()
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/trainer/trainer.py", line 1808, in _log_device_info
+    rank_zero_info(f"IPU available: {_IPU_AVAILABLE}, using: {num_ipus} IPUs")
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/utilities/rank_zero.py", line 32, in wrapped_fn
+    return fn(*args, **kwargs)
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/utilities/rank_zero.py", line 75, in rank_zero_info
+    _info(*args, stacklevel=stacklevel, **kwargs)
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/utilities/rank_zero.py", line 57, in _info
+    log.info(*args, **kwargs)
+Message: 'IPU available: False, using: 0 IPUs'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/logging/__init__.py", line 1028, in emit
+    stream.write(msg + self.terminator)
+ValueError: I/O operation on closed file.
+Call stack:
+  File "diff/Diffusion_DKL2.py", line 925, in <module>
+    device=device,
+  File "diff/Diffusion_DKL2.py", line 337, in run_training
+    limit_test_batches=0,
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/utilities/argparse.py", line 339, in insert_env_defaults
+    return fn(self, **kwargs)
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/trainer/trainer.py", line 606, in __init__
+    self._setup_on_init(num_sanity_val_steps)
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/trainer/trainer.py", line 687, in _setup_on_init
+    self._log_device_info()
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/trainer/trainer.py", line 1811, in _log_device_info
+    rank_zero_info(f"HPU available: {_HPU_AVAILABLE}, using: {num_hpus} HPUs")
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/utilities/rank_zero.py", line 32, in wrapped_fn
+    return fn(*args, **kwargs)
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/utilities/rank_zero.py", line 75, in rank_zero_info
+    _info(*args, stacklevel=stacklevel, **kwargs)
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/utilities/rank_zero.py", line 57, in _info
+    log.info(*args, **kwargs)
+Message: 'HPU available: False, using: 0 HPUs'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/logging/__init__.py", line 1028, in emit
+    stream.write(msg + self.terminator)
+ValueError: I/O operation on closed file.
+Call stack:
+  File "diff/Diffusion_DKL2.py", line 925, in <module>
+    device=device,
+  File "diff/Diffusion_DKL2.py", line 337, in run_training
+    limit_test_batches=0,
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/utilities/argparse.py", line 339, in insert_env_defaults
+    return fn(self, **kwargs)
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/trainer/trainer.py", line 627, in __init__
+    fast_dev_run,
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/trainer/trainer.py", line 673, in _init_debugging_flags
+    self.limit_val_batches = _determine_batch_limits(limit_val_batches, "limit_val_batches")
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/trainer/trainer.py", line 2875, in _determine_batch_limits
+    rank_zero_info(f"`Trainer({name}=1.0)` was configured so {message}.")
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/utilities/rank_zero.py", line 32, in wrapped_fn
+    return fn(*args, **kwargs)
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/utilities/rank_zero.py", line 75, in rank_zero_info
+    _info(*args, stacklevel=stacklevel, **kwargs)
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/utilities/rank_zero.py", line 57, in _info
+    log.info(*args, **kwargs)
+Message: '`Trainer(limit_val_batches=1.0)` was configured so 100% of the batches will be used..'
+Arguments: ()
+Epoch 0:   0%|                                                                                                          | 0/134 [00:00<?, ?it/s]
+--- Logging error ---
+Traceback (most recent call last):
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/logging/__init__.py", line 1028, in emit
+    stream.write(msg + self.terminator)
+ValueError: I/O operation on closed file.
+Call stack:
+  File "diff/Diffusion_DKL2.py", line 925, in <module>
+    device=device,
+  File "diff/Diffusion_DKL2.py", line 346, in run_training
+    trainer.fit(model, data_module)
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/trainer/trainer.py", line 771, in fit
+    self._fit_impl, model, train_dataloaders, val_dataloaders, datamodule, ckpt_path
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/trainer/trainer.py", line 723, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/trainer/trainer.py", line 811, in _fit_impl
+    results = self._run(model, ckpt_path=self.ckpt_path)
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/trainer/trainer.py", line 1217, in _run
+    self.strategy.setup(self)
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/strategies/single_device.py", line 72, in setup
+    super().setup(trainer)
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/strategies/strategy.py", line 138, in setup
+    self.accelerator.setup(trainer)
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/accelerators/gpu.py", line 47, in setup
+    self.set_nvidia_flags(trainer.local_rank)
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/accelerators/gpu.py", line 57, in set_nvidia_flags
+    _log.info(f"LOCAL_RANK: {local_rank} - CUDA_VISIBLE_DEVICES: [{devices}]")
+Message: 'LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [2]'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/logging/__init__.py", line 1028, in emit
+    stream.write(msg + self.terminator)
+ValueError: I/O operation on closed file.
+Call stack:
+  File "diff/Diffusion_DKL2.py", line 925, in <module>
+    device=device,
+  File "diff/Diffusion_DKL2.py", line 346, in run_training
+    trainer.fit(model, data_module)
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/trainer/trainer.py", line 771, in fit
+    self._fit_impl, model, train_dataloaders, val_dataloaders, datamodule, ckpt_path
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/trainer/trainer.py", line 723, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/trainer/trainer.py", line 811, in _fit_impl
+    results = self._run(model, ckpt_path=self.ckpt_path)
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/trainer/trainer.py", line 1221, in _run
+    self._call_callback_hooks("on_fit_start")
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/trainer/trainer.py", line 1636, in _call_callback_hooks
+    fn(self, self.lightning_module, *args, **kwargs)
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/callbacks/model_summary.py", line 63, in on_fit_start
+    self.summarize(summary_data, total_parameters, trainable_parameters, model_size)
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/callbacks/model_summary.py", line 73, in summarize
+    log.info("\n" + summary_table)
+Message: '\n  | Name            | Type                  | Params\n----------------------------------------------------------\n0 | score_estimator | MLP                   | 2.3 M \n1 | inf_sde         | VariancePreservingSDE | 1     \n2 | gen_sde         | ScorePluginReverseSDE | 2.3 M \n----------------------------------------------------------\n2.3 M     Trainable params\n1         Non-trainable params\n2.3 M     Total params\n9.110     Total estimated model params size (MB)'
+
+
+
+Epoch 2:  90%|█████████████████████████████▌   | 120/134 [00:02<00:00, 55.57it/s, loss=42.9, v_num=c8x7, train_loss=43.70, elbo_estimator=-168.]
+
+
+
+
+Epoch 5:  90%|█████████████████████████████▌   | 120/134 [00:02<00:00, 52.46it/s, loss=41.6, v_num=c8x7, train_loss=40.90, elbo_estimator=-165.]
+
+
+Epoch 7:  90%|█████████████████████████████▌   | 120/134 [00:02<00:00, 52.84it/s, loss=38.9, v_num=c8x7, train_loss=38.80, elbo_estimator=-157.]
+Validation: 0it [00:00, ?it/s]
+Exception ignored in: <function _releaseLock at 0x7f5000b955f0>
+Traceback (most recent call last):
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/logging/__init__.py", line 221, in _releaseLock
+    def _releaseLock():
+KeyboardInterrupt
+Exception ignored in: <function _releaseLock at 0x7f5000b955f0>
+Traceback (most recent call last):
+  File "/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/logging/__init__.py", line 221, in _releaseLock
+    def _releaseLock():
+KeyboardInterrupt
+/nethome/wmu30/anaconda3/envs/design-baseliness/lib/python3.7/site-packages/pytorch_lightning/trainer/trainer.py:726: UserWarning: Detected KeyboardInterrupt, attempting graceful shutdown...
+
+  rank_zero_warn("Detected KeyboardInterrupt, attempting graceful shutdown...")
