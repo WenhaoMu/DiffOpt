@@ -1,11 +1,10 @@
 # D4CO
 
-This is the repo of Diffusion model for Black-Box Optimization.
+This is the repo of `DiffOpt`.
 
-`GP` folder contains files for DKL training and diffusion on design-bench tasks.    
+`synthetic` folder contains code for molecular design synthetic task.  
 
-`molecular` folder contains code for molecular design multi-objective problem.  
+`molecular` folder contains code for molecular design multi-objective task.  
 
-'ddom-copy6' folder contains files for MLP, fourier and x0 classifier training on design-bench tasks.
 
 
