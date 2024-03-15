@@ -43,22 +43,22 @@ with suppress_output():
     # from design_bench.datasets.continuous.hopper_controller_dataset import HopperControllerDataset
 
 import numpy as np
+import pandas as pd
 import pytorch_lightning as pl
+import pickle as pkl
 
 import torch
 from torch.utils.data import Dataset, DataLoader
 
-from nets import DiffusionTest, DiffusionScore
-from util import TASKNAME2TASK, configure_gpu, set_seed, get_weights
-
+from models.nets import DiffusionTest, DiffusionScore
+from models.util import TASKNAME2TASK, configure_gpu, set_seed, get_weights
 
 args_filename = "args.json"
 checkpoint_dir = "checkpoints"
 wandb_project = "sde-flow"
 
-from DKL_model_regression import GPRegressionModel
+from models.DKL_model_regression import GPRegressionModel
 import torch
-
 
 
 
@@ -309,11 +309,15 @@ def run_evaluate(
     normalise_y=False,
 ):
     
+
+    
     set_seed(seed)
     task = design_bench.make(TASKNAME2TASK[taskname])
+    exp_k = args.exp_k
     
     if task.is_discrete:
         task.map_to_logits()
+    
     if normalise_x:
         task.map_normalize_x()
     if normalise_y:
@@ -358,6 +362,8 @@ def run_evaluate(
     print('X Shape: ', train_X.shape)
     print('Y Shape: ', train_Y.shape)
 
+
+    # dataset.subsample()
     if not task.is_discrete:
         dim_x = task.x.shape[-1]
     else:
@@ -377,11 +383,10 @@ def run_evaluate(
             predictive_means, predictive_variances = preds.mean, preds.variance
             mean_grad, = torch.autograd.grad(predictive_means.mean(), x_in, retain_graph=True)  
             variance_grad, = torch.autograd.grad(predictive_variances.mean(), x_in)
-
             return mean_grad, variance_grad
 
 
-    def heun_sampler(sde, x_0, ya, num_steps, lmbd=0., keep_all_samples=True):
+    def heun_sampler(sde, x_0, ya, num_steps, exp_k, lmbd=0., keep_all_samples=True):
         device = sde.gen_sde.T.device
         batch_size = x_0.size(0)
         ndim = x_0.dim() - 1
@@ -402,9 +407,15 @@ def run_evaluate(
                 mu = sde.gen_sde.mu(t, x_t, lmbd=lmbd, gamma=args.gamma)
                 sigma = sde.gen_sde.sigma(t, x_t, lmbd=lmbd)
                 mean_gradient, var_gradient = cond_fn(x_t, t, ya)
-                mu = (
-                    mu.float() + args.coefficient[0] *mean_gradient.float() + args.coefficient[1] *var_gradient.float()
-                )
+
+                if args.strategy == 'cons':
+                    mu = (
+                        mu.float() + args.coefficient[0] *mean_gradient.float() + args.coefficient[1] *var_gradient.float()
+                    )
+                if args.strategy == 'exp':
+                    mu = (
+                        mu.float() + args.coefficient[0] * (1 - np.exp((-exp_k) * i)) *mean_gradient.float() + args.coefficient[1] *var_gradient.float()
+                    )
 
                 x_t = x_t + delta * mu + delta**0.5 * sigma * torch.randn_like(
                     x_t
@@ -413,7 +424,6 @@ def run_evaluate(
                 if i < num_steps - 1:
                     mu2 = sde.gen_sde.mu(t_n,
                                          x_t,
-                                        #  ya,
                                          lmbd=lmbd,
                                          gamma=args.gamma)
                     sigma2 = sde.gen_sde.sigma(t_n, x_t, lmbd=lmbd)
@@ -453,7 +463,6 @@ def run_evaluate(
                 mu = sde.gen_sde.mu(t, x_t, lmbd=lmbd, gamma=args.gamma)
                 sigma = sde.gen_sde.sigma(t, x_t, lmbd=lmbd)
 
-                # Add gradient
                 gradient = cond_fn(x_t, t, ya)
                 mu = (
                     mu.float() + 0*gradient.float()
@@ -513,6 +522,7 @@ def run_evaluate(
                           x_0,
                           y_,
                           num_steps,
+                          exp_k,
                           lmbd=lmbd,
                           keep_all_samples=False)  # sample
 
@@ -528,10 +538,9 @@ def run_evaluate(
                 else:
                     sol = sol.view(sol.size(0), -1, task.x.shape[-1])
                     ys = task.predict(sol.cpu().numpy())
-                    print(ys)
 
                 norm_result = ys.max()
-
+                
                 if normalise_y:
                     ys = task.denormalize_y(ys)
                     denorm_result = ys.max()
@@ -540,10 +549,11 @@ def run_evaluate(
                     print(ys.max())
                 results.append(ys)
             else:
-                print("No solutions!")
+                print("No solutions")
 
     designs = np.concatenate(designs, axis=0)
     results = np.concatenate(results, axis=0)
+
 
     print("--------------------------results----------------------------")
     print("nor: {}".format(norm_result))
@@ -551,10 +561,10 @@ def run_evaluate(
 
     coe = args.coefficient
 
-    if not os.path.exists('./DKL_solution_final_finetune'):
-        os.makedirs('./DKL_solution_final_finetune')
+    if not os.path.exists('./DKL_solution_final_finetune_exp'):
+        os.makedirs('./DKL_solution_final_finetune_exp')
 
-    filename = f"./DKL_solution_final_finetune/{args.task}_DKL.csv"
+    filename = f"./DKL_solution_final_finetune_exp/{args.task}_{args.exp_k}_DKL.csv"
     if not os.path.exists(filename):
         with open(filename, 'w', newline='') as csvfile:
             csvwriter = csv.writer(csvfile)
@@ -580,6 +590,10 @@ if __name__ == "__main__":
                         choices=['train', 'eval'],
                         default='train',
                         required=True)
+    parser.add_argument('--strategy',
+                        choices=['cons', 'exp'],
+                        default='cons',
+                        required=True)
     parser.add_argument('--task',
                         choices=list(TASKNAME2TASK.keys()),
                         required=True)
@@ -592,6 +606,11 @@ if __name__ == "__main__":
                     nargs=2,
                     default=[0.0, 0.0],
                     required=True)
+    parser.add_argument(
+        "--exp_k",
+            type=float,
+        default=0.01,
+    )
     # reproducibility
     parser.add_argument(
         "--seed",
@@ -778,10 +797,8 @@ if __name__ == "__main__":
     args.seed = np.random.randint(2**31 - 1) if args.seed is None else args.seed
     set_seed(args.seed + 1)
     device = configure_gpu(args.use_gpu, args.which_gpu)
-    # device = configure_gpu(args.use_gpu)
 
     expt_save_path = f"./experiments/{args.task}/{args.name}/{args.seed}_noreweight"
-    # expt_save_path = f"./experiments/{args.task}/{args.name}/{args.seed}"
 
     if args.mode == 'train':
         if not os.path.exists(expt_save_path):
@@ -802,8 +819,6 @@ if __name__ == "__main__":
     elif args.mode == 'eval':
         checkpoint_path = os.path.join(
             expt_save_path, "wandb/latest-run/files/checkpoints/last.ckpt")
-        # checkpoint_path = os.path.join(
-        #     expt_save_path, f"wandb/latest-run/files/checkpoints/val.ckpt")
         run_evaluate(taskname=args.task,
                      seed=args.seed,
                      hidden_size=args.hidden_size,

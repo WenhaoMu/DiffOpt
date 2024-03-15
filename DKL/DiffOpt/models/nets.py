@@ -39,10 +39,10 @@ from torch import optim, nn, utils, Tensor
 from torch.optim.lr_scheduler import LambdaLR
 from torch.optim import Optimizer
 
-from util import TASKNAME2TASK
+from models.util import TASKNAME2TASK
 
 from lib.sdes import VariancePreservingSDE, PluginReverseSDE, ScorePluginReverseSDE
-from unet import UNET_1D
+from models.unet import UNET_1D
 
 
 def get_cosine_schedule_with_warmup(optimizer: Optimizer,

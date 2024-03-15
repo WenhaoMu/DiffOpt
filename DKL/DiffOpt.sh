@@ -17,8 +17,8 @@ for seed in $seeds; do
         echo $TASK
         echo $Coefficient1 $Coefficient2
         echo $gpu
-        python diff/Diffusion_DKL2_exp.py --config $CONFIG --seed $seed --use_gpu --mode 'eval' --task $TASK --coefficient $Coefficient1 $Coefficient2 --which_gpu $gpu --exp_k $Exp_k --suffix "max_ds_conditioning"
-        # python diff/Diffusion_DKL2.py --config $CONFIG --seed $seed --use_gpu --mode 'train' --task $TASK --coefficient $Coefficient1 $Coefficient2 --which_gpu $gpu 
+        # python DiffOpt/Diffusion.py --config $CONFIG --seed $seed --use_gpu --mode 'train' --task $TASK --coefficient $Coefficient1 $Coefficient2 --which_gpu $gpu 
+        python DiffOpt/Diffusion.py --config $CONFIG --seed $seed --use_gpu --mode 'eval' --task $TASK --coefficient $Coefficient1 $Coefficient2 --which_gpu $gpu --exp_k $Exp_k --strategy 'exp' --suffix "max_ds_conditioning"
       done
     done
   done
