@@ -1,4 +1,4 @@
-# D4CO
+# DiffOpt
 
 This is the repo of `DiffOpt`.
 
