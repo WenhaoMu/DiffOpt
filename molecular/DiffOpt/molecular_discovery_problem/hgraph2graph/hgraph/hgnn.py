@@ -2,10 +2,10 @@ import torch
 import torch.nn as nn
 import rdkit.Chem as Chem
 import torch.nn.functional as F
-from .mol_graph import MolGraph
-from .encoder import HierMPNEncoder
-from .decoder import HierMPNDecoder
-from .nnutils import *
+from hgraph.mol_graph import MolGraph
+from hgraph.encoder import HierMPNEncoder
+from hgraph.decoder import HierMPNDecoder
+from hgraph.nnutils import *
 
 
 def make_cuda(tensors):

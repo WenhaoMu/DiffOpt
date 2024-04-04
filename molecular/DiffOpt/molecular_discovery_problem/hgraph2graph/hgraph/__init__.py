@@ -1,6 +1,6 @@
-from .mol_graph import MolGraph
-from .encoder import HierMPNEncoder
-from .decoder import HierMPNDecoder
-from .vocab import Vocab, PairVocab, common_atom_vocab
-from .hgnn import HierVAE, HierVGNN, HierCondVGNN
-from .dataset import MoleculeDataset, MolPairDataset, DataFolder, MolEnumRootDataset
+from hgraph.mol_graph import MolGraph
+from hgraph.encoder import HierMPNEncoder
+from hgraph.decoder import HierMPNDecoder
+from hgraph.vocab import Vocab, PairVocab, common_atom_vocab
+from hgraph.hgnn import HierVAE, HierVGNN, HierCondVGNN
+from hgraph.dataset import MoleculeDataset, MolPairDataset, DataFolder, MolEnumRootDataset
