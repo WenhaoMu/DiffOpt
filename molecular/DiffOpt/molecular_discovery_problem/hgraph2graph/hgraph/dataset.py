@@ -4,8 +4,8 @@ from rdkit import Chem
 import os, random, gc
 import pickle
 
-from hgraph.chemutils import get_leaves
-from hgraph.mol_graph import MolGraph
+from .chemutils import get_leaves
+from .mol_graph import MolGraph
 
 
 class MoleculeDataset(Dataset):
